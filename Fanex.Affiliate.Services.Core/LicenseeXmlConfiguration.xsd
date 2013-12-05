@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LicenseeXmlConfiguration"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:code="LicenseeXmlConfiguration"
+           xmlns="LicenseeXmlConfiguration"
+           targetNamespace="LicenseeXmlConfiguration"
+           elementFormDefault="qualified"
+           version="2.0">
+
+    <xs:element name="licensees" code:classname="LicenseeXmlConfiguration">
+        <xs:annotation>
+            <xs:documentation>
+                List of licensees
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" name="licensee" type="Licensee" code:classname="Licensees" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="Licensee">
+        <xs:annotation>
+            <xs:documentation>
+                Contains properties of a licensee
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="connectionStrings">
+                <xs:annotation>
+                    <xs:documentation>
+                        List of connection strings for a licensee
+                    </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" name="add" type="ConnectionString" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="Name" type="xs:string" use="required" />
+    </xs:complexType>
+
+    <xs:complexType name="ConnectionString">
+        <xs:annotation>
+            <xs:documentation>
+                Mapp to the application connection to get connection string
+            </xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="name" type="xs:string" use="required" code:classname="Name" />
+        <xs:attribute name="connectionString" type="xs:string" use="required" code:classname="Value" />
+        <xs:attribute name="providerName" type="xs:string" use="required" code:classname="ProviderName" />
+    </xs:complexType>
+</xs:schema>

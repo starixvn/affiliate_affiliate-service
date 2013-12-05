@@ -1,0 +1,68 @@
+﻿// --------------------------------------------------------------------------
+// <copyright file="ExchangeRateDataService.cs" company="Nexcel Solutions Vietnam">
+// Copyright (c) Nexcel Solutions Vietnam. All rights reserved.
+// </copyright>
+// --------------------------------------------------------------------------
+// <history>
+//   <change who="Leo.Vo" date="2013.06.25">Created</change>
+// </history>
+
+namespace Fanex.Affiliate.Services.DataService.Implement
+{
+    using System;
+    using System.Reflection;
+    using Fanex.Affiliate.Services.Core.Configuration;
+    using Fanex.Affiliate.Services.DataAccess;
+    using Fanex.Affiliate.Services.DataAccess.Implement;
+    using Fanex.Affiliate.Services.DataService.Xml;
+
+    /// <summary>
+    /// Exchange Rate DataService.
+    /// </summary>
+    public class ExchangeRateDataService : BaseDataService
+    {
+        /// <summary>
+        /// The data access.
+        /// </summary>
+        private readonly ExchangeRateDataAccess _dataAccess;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ExchangeRateDataService"/> class.
+        /// </summary>
+        /// <param name="licensee">The licensee information.</param>
+        public ExchangeRateDataService(Licensee licensee)
+            : base(licensee)
+        {
+            _dataAccess = new ExchangeRateDataAccess(licensee);
+        }
+
+        /// <summary>
+        /// Gets the exchange daily OANDA.
+        /// </summary>
+        /// <param name="date">The import date.</param>
+        /// <returns>Returns exchange daily OANDA.</returns>
+        public string GetExchangeDailyOanda(DateTime date)
+        {
+            LogTracer.Append(LogFormatter.Format(MethodBase.GetCurrentMethod(), date));
+            var dataTable = _dataAccess.ExchangeDailyOanda_SelByDate(date);
+            return XmlConverter.ToXmlString(dataTable);
+        }
+
+        /// <summary>
+        /// Imports the exchange rate.
+        /// </summary>
+        /// <param name="xmlData">The XML data.</param>
+        /// <param name="date">The import date.</param>
+        /// <returns>Returns import result.</returns>
+        public Result ImportExchangeRate(string xmlData, DateTime date)
+        {
+            if (!string.IsNullOrEmpty(xmlData))
+            {
+                LogTracer.Append(LogFormatter.Format(MethodBase.GetCurrentMethod(), xmlData, date));
+                return _dataAccess.Task_aff_DailyImportExchange(xmlData, date);
+            }
+
+            return Result.Empty;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+﻿// --------------------------------------------------------------------------
+// <copyright file="LogFormatter.cs" company="Nexcel Solutions Vietnam">
+// Copyright (c) Nexcel Solutions Vietnam. All rights reserved.
+// </copyright>
+// --------------------------------------------------------------------------
+// <history>
+//   <change who="Leo.Vo" date="2013.06.25">Created</change>
+// </history>
+
+namespace Fanex.Affiliate.Services.Core
+{
+    using System;
+    using System.Reflection;
+    using System.Text;
+
+    /// <summary>
+    /// LogFormatter utility methods.
+    /// </summary>
+    public class LogFormatter
+    {
+        /// <summary>
+        /// Formats method info.
+        /// </summary>
+        /// <param name="methodInfo">The method information.</param>
+        /// <param name="values">The array of values.</param>
+        /// <returns>Returns string.</returns>
+        public string Format(MethodBase methodInfo, params object[] values)
+        {
+            var stringBuilder = new StringBuilder();
+            stringBuilder.AppendFormat("Method {0}:", methodInfo.Name);
+            int i = 0;
+            foreach (var parameter in methodInfo.GetParameters())
+            {
+                var value = values[i];
+                if (value is DateTime)
+                {
+                    value = ((DateTime)value).ToShortDateString();
+                }
+
+                stringBuilder.AppendFormat("\n   {0}: {1}", parameter.Name, value);
+                i++;
+            }
+
+            stringBuilder.AppendLine();
+            return stringBuilder.ToString();
+        }
+
+        /// <summary>
+        /// Formats the specified object.
+        /// </summary>
+        /// <param name="obj">The object.</param>
+        /// <returns>Returns object in string.</returns>
+        public string Format(object obj)
+        {
+            var type = obj.GetType();
+            var properties = type.GetProperties();
+
+            var stringBuilder = new StringBuilder();
+            stringBuilder.AppendFormat("Object {0}:", type.Name);
+            foreach (var property in properties)
+            {
+                if (property.CanWrite)
+                {
+                    var name = property.Name;
+                    var value = property.GetValue(obj, null);
+                    stringBuilder.AppendFormat("\n   {0}: {1}", name, value);
+                }
+            }
+
+            stringBuilder.AppendLine();
+            return stringBuilder.ToString();
+        }
+    }
+}

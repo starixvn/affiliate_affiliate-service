@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Licensees xmlns="LicenseeXmlConfiguration"
+           xmlns:xsi="LicenseeXmlConfiguration">
+  <Licensee Name="i668bet">
+    <Settings>
+      <Setting Key="UsernamePrefix" Value="i668bet$" />
+    </Settings>
+  </Licensee>
+  <Licensee Name="mymbet">
+    <Settings>
+      <Setting Key="UsernamePrefix" Value="mymbet$" />
+    </Settings>
+  </Licensee>
+  <Licensee Name="livebet365">
+    <Settings>
+      <Setting Key="UsernamePrefix" Value="livebet365$" />
+    </Settings>
+  </Licensee>
+  <Licensee Name="itcbet">
+    <Settings>
+      <Setting Key="UsernamePrefix" Value="itcbet$" />
+    </Settings>
+  </Licensee>
+  <Licensee Name="bwinning">
+    <Settings>
+      <Setting Key="UsernamePrefix" Value="bwinning$" />
+    </Settings>
+  </Licensee>
+  <Licensee Name="aoncash">
+    <Settings>
+      <Setting Key="UsernamePrefix" Value="aoncash$" />
+    </Settings>
+  </Licensee>
+  <Licensee Name="macaubet">
+    <Settings>
+      <Setting Key="UsernamePrefix" Value="macaubet$" />
+    </Settings>
+  </Licensee>
+  <Licensee Name="Athena000">
+    <Settings>
+      <Setting Key="UsernamePrefix" Value="Athena000$" />
+    </Settings>
+  </Licensee>
+</Licensees>

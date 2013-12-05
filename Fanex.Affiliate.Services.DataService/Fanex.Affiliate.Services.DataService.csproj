@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B0D188EF-4D5C-415C-B4FE-B83F8C8A290D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fanex.Affiliate.Services.DataService</RootNamespace>
+    <AssemblyName>Fanex.Affiliate.Services.DataService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Fanex.Caching">
+      <HintPath>..\Dependencies\Fanex.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseDataService.cs" />
+    <Compile Include="Xml\Objects\GetLicenseeCustInfo.cs" />
+    <Compile Include="Xml\Objects\MemberFirstDepositDateTrans.cs" />
+    <Compile Include="Xml\Objects\XmlObject.cs" />
+    <Compile Include="Xml\Objects\MemberFirstDepositDate.cs" />
+    <Compile Include="Xml\XmlConverter.cs" />
+    <Compile Include="Implement\WebDataService.cs" />
+    <Compile Include="Implement\CommonDataService.cs" />
+    <Compile Include="Implement\ExchangeRateDataService.cs" />
+    <Compile Include="Implement\MemberDailyDataService.cs" />
+    <Compile Include="Implement\MemberInfoDataService.cs" />
+    <Compile Include="Interface\IImportMemberInfoDataService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\AffiliateWebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Xml\Objects\XmlResult.cs" />
+    <Compile Include="Xml\XmlTransformer.cs" />
+    <Compile Include="Xml\XsltFunctions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Fanex.Affiliate.Services.Core\Fanex.Affiliate.Services.Core.csproj">
+      <Project>{0B347564-FA0B-4BBF-991C-CE48722C2B11}</Project>
+      <Name>Fanex.Affiliate.Services.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fanex.Affiliate.Services.DataAccess\Fanex.Affiliate.Services.DataAccess.csproj">
+      <Project>{62ECBB03-E39B-45F0-8BCC-98B95DFA9E57}</Project>
+      <Name>Fanex.Affiliate.Services.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AffiliateWebService\service.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AffiliateWebService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AffiliateWebService\service.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AffiliateWebService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AffiliateWebService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AffiliateWebService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Xml\Templates\GetRegList.xslt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Xml\Objects\GetLicenseeCustInfo.xml" />
+    <Content Include="Xml\Templates\GetRegList.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

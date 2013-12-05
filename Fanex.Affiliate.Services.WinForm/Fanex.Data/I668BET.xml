@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Functions>
+  <Function Name="ServiceI668BET">
+    <!--ImportMemberInfo-->
+    <Setting Key="I668BET_Aff_MemberInfoGetMissingCreatedDate" SpName="Aff_MemberInfoGetMissingCreatedDate" DbName="DBAFFI668BET.Affiliate_I668Bet.bodbAdminNet" />
+    <Setting Key="I668BET_Task_Aff_MemberInfoImportData" SpName="Task_Aff_MemberInfoImportData" DbName="DBAFFI668BET.Affiliate_I668Bet.bodbAdminNet" TimeOut="1200" />
+    <Setting Key="I668BET_Task_Aff_MemberInfoUpdateCreatedDate" SpName="Task_Aff_MemberInfoUpdateCreatedDate" DbName="DBAFFI668BET.Affiliate_I668Bet.bodbAdminNet" />
+    <Setting Key="I668BET_Aff_GetAllMembers" SpName="Aff_GetAllMembers" DbName="DBAFFI668BET.Affiliate_I668Bet.bodbAdminNet" />
+    <Setting Key="I668BET_Aff_MemberInfoUpdate" SpName="Aff_MemberInfoUpdate" DbName="DBAFFI668BET.Affiliate_I668Bet.bodbAdminNet" />
+    <!--ImportMemberDaily-->
+    <Setting Key="I668BET_Aff_GetMembers" SpName="Aff_GetMembers" DbName="DBAFFI668BET.Affiliate_I668Bet.bodbAdminNet" />
+    <Setting Key="I668BET_Task_Aff_MemberDailyImportData" SpName="Task_Aff_MemberDailyImportData" DbName="DBAFFI668BET.Affiliate_I668Bet.bodbAdminNet" />
+    <Setting Key="I668BET_Task_Aff_MemberDailyTransactionImportData" SpName="Task_Aff_MemberDailyTransactionImportData" DbName="DBAFFI668BET.Affiliate_I668Bet.bodbAdminNet" />
+    <Setting Key="I668BET_DBA_GetAllWinlostDate" SpName="DBA_GetAllWinlostDate" DbName="DBAFFI668BET.Affiliate_I668Bet.bodbAdminNet" />
+    <Setting Key="I668BET_DBA_GetMemberList" SpName="DBA_GetMemberList" DbName="DBAFFI668BET.Affiliate_I668Bet.bodbAdminNet" />
+    <Setting Key="I668BET_DBA_Aff_MemberDailyUpdateData" SpName="DBA_Aff_MemberDailyUpdateData" DbName="DBAFFI668BET.Affiliate_I668Bet.bodbAdminNet" />
+
+    <!--ImportExchange-->
+    <Setting Key="I668BET_Task_aff_DailyImportExchange" SpName="Task_aff_DailyImportExchange" DbName="DBAFFI668BET.Affiliate_I668Bet.bodbAdminNet" />
+    <!--Common-->
+    <Setting Key="I668BET_Aff_CurrentDate" SpName="Aff_CurrentDate" DbName="DBAFFI668BET.Affiliate_I668Bet.bodbAdminNet" />
+    <Setting Key="I668BET_Aff_SystemSettingsSel" SpName="Aff_SystemSettingsSel" DbName="DBAFFI668BET.Affiliate_I668Bet.bodbAdminNet" />
+    <Setting Key="I668BET_Aff_AffiliateCurrenciesSel" SpName="Aff_AffiliateCurrenciesSel" DbName="DBAFFI668BET.Affiliate_I668Bet.bodbAdminNet" />
+    <Setting Key="I668BET_Aff_SystemSettingsSelByName" SpName="Aff_SystemSettingsSelByName" DbName="DBAFFI668BET.Affiliate_I668Bet.bodbAdminNet" />
+    <Setting Key="I668BET_Aff_BannerSelType" SpName="Aff_BannerSelType" DbName="DBAFFI668BET.Affiliate_I668Bet.bodbAdminNet" />
+    <Setting Key="I668BET_Aff_AffTypeSel" SpName="Aff_AffTypeSel" DbName="DBAFFI668BET.Affiliate_I668Bet.bodbAdminNet" />
+    <Setting Key="I668BET_Aff_CountrySelAll" SpName="Aff_CountrySelAll" DbName="DBAFFI668BET.Affiliate_I668Bet.bodbAdminNet" />
+    <Setting Key="I668BET_Aff_BaseCurrenciesSel" SpName="Aff_BaseCurrenciesSel" DbName="DBAFFI668BET.Affiliate_I668Bet.bodbAdminNet" />
+    <Setting Key="I668BET_Aff_CurrencyListSel" SpName="Aff_CurrencyListSel" DbName="DBAFFI668BET.Affiliate_I668Bet.bodbAdminNet" />
+    <Setting Key="I668BET_Aff_LanguageSel" SpName="Aff_LanguageSel" DbName="DBAFFI668BET.Affiliate_I668Bet.bodbAdminNet" />
+    <Setting Key="I668BET_Aff_TaskLogUpdStatus" SpName="Aff_TaskLogUpdStatus" DbName="DBAFFI668BET.Affiliate_I668Bet.bodbAdminNet" />
+    <Setting Key="I668BET_Aff_TaskLogIns" SpName="Aff_TaskLogIns" DbName="DBAFFI668BET.Affiliate_I668Bet.bodbAdminNet" />
+  </Function>
+</Functions>

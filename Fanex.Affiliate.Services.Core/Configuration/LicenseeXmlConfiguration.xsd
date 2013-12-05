@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="LicenseeXmlConfiguration"
+           targetNamespace="LicenseeXmlConfiguration"
+           elementFormDefault="qualified"
+           version="2.0">
+
+    <xs:element name="Licensees" type="LicenseeXmlConfiguration">
+        <xs:annotation>
+            <xs:documentation>
+                List of licensees
+            </xs:documentation>
+        </xs:annotation>
+    </xs:element>
+
+    <xs:complexType name="LicenseeXmlConfiguration">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="Licensee" type="Licensee" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Licensee">
+        <xs:annotation>
+            <xs:documentation>
+                Contains properties of a licensee
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="Settings">
+                <xs:annotation>
+                    <xs:documentation>
+                        List of settings for a licensee
+                    </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" name="Setting" type="Setting" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="Name" type="xs:string" use="required" />
+    </xs:complexType>
+    <xs:complexType name="Setting">
+        <xs:annotation>
+            <xs:documentation>
+                Licensee's setting key and value
+            </xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="Key" type="xs:string" use="required" />
+        <xs:attribute name="Value" type="xs:string" use="required" />
+    </xs:complexType>
+</xs:schema>

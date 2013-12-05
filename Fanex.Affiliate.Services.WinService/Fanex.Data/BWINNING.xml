@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Functions>
+  <Function Name="ServiceBWINNING">
+    <!--ImportMemberInfo-->
+    <Setting Key="BWINNING_Aff_MemberInfoGetMissingCreatedDate" SpName="Aff_MemberInfoGetMissingCreatedDate" DbName="DBAFFBWINNING.Affiliate_Bwinning.bodbAdminNet" />
+    <Setting Key="BWINNING_Task_Aff_MemberInfoImportData" SpName="Task_Aff_MemberInfoImportData" DbName="DBAFFBWINNING.Affiliate_Bwinning.bodbAdminNet" TimeOut="1200" />
+    <Setting Key="BWINNING_Task_Aff_MemberInfoUpdateCreatedDate" SpName="Task_Aff_MemberInfoUpdateCreatedDate" DbName="DBAFFBWINNING.Affiliate_Bwinning.bodbAdminNet" />
+    <!--ImportMemberDaily-->
+    <Setting Key="BWINNING_Aff_GetMembers" SpName="Aff_GetMembers" DbName="DBAFFBWINNING.Affiliate_Bwinning.bodbAdminNet" />
+    <Setting Key="BWINNING_Task_Aff_MemberDailyImportData" SpName="Task_Aff_MemberDailyImportData" DbName="DBAFFBWINNING.Affiliate_Bwinning.bodbAdminNet" />
+    <Setting Key="BWINNING_Task_Aff_MemberDailyTransactionImportData" SpName="Task_Aff_MemberDailyTransactionImportData" DbName="DBAFFBWINNING.Affiliate_Bwinning.bodbAdminNet" />
+    <!--ImportExchange-->
+    <Setting Key="BWINNING_Task_aff_DailyImportExchange" SpName="Task_aff_DailyImportExchange" DbName="DBAFFBWINNING.Affiliate_Bwinning.bodbAdminNet" />
+    <!--Common-->
+    <Setting Key="BWINNING_Aff_CurrentDate" SpName="Aff_CurrentDate" DbName="DBAFFBWINNING.Affiliate_Bwinning.bodbAdminNet" />
+    <Setting Key="BWINNING_Aff_SystemSettingsSel" SpName="Aff_SystemSettingsSel" DbName="DBAFFBWINNING.Affiliate_Bwinning.bodbAdminNet" />
+    <Setting Key="BWINNING_Aff_AffiliateCurrenciesSel" SpName="Aff_AffiliateCurrenciesSel" DbName="DBAFFBWINNING.Affiliate_Bwinning.bodbAdminNet" />
+    <Setting Key="BWINNING_Aff_SystemSettingsSelByName" SpName="Aff_SystemSettingsSelByName" DbName="DBAFFBWINNING.Affiliate_Bwinning.bodbAdminNet" />
+    <Setting Key="BWINNING_Aff_BannerSelType" SpName="Aff_BannerSelType" DbName="DBAFFBWINNING.Affiliate_Bwinning.bodbAdminNet" />
+    <Setting Key="BWINNING_Aff_AffTypeSel" SpName="Aff_AffTypeSel" DbName="DBAFFBWINNING.Affiliate_Bwinning.bodbAdminNet" />
+    <Setting Key="BWINNING_Aff_CountrySelAll" SpName="Aff_CountrySelAll" DbName="DBAFFBWINNING.Affiliate_Bwinning.bodbAdminNet" />
+    <Setting Key="BWINNING_Aff_BaseCurrenciesSel" SpName="Aff_BaseCurrenciesSel" DbName="DBAFFBWINNING.Affiliate_Bwinning.bodbAdminNet" />
+    <Setting Key="BWINNING_Aff_CurrencyListSel" SpName="Aff_CurrencyListSel" DbName="DBAFFBWINNING.Affiliate_Bwinning.bodbAdminNet" />
+    <Setting Key="BWINNING_Aff_LanguageSel" SpName="Aff_LanguageSel" DbName="DBAFFBWINNING.Affiliate_Bwinning.bodbAdminNet" />
+    <Setting Key="BWINNING_Aff_TaskLogUpdStatus" SpName="Aff_TaskLogUpdStatus" DbName="DBAFFBWINNING.Affiliate_Bwinning.bodbAdminNet" />
+    <Setting Key="BWINNING_Aff_TaskLogIns" SpName="Aff_TaskLogIns" DbName="DBAFFBWINNING.Affiliate_Bwinning.bodbAdminNet" />
+  </Function>
+</Functions>

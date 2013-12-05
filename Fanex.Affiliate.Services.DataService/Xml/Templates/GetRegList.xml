@@ -1,0 +1,12 @@
+﻿<RegList xmlns="">
+    <ReturnCode>0</ReturnCode>
+    <ReturnMessage>success</ReturnMessage>
+    <Count>1</Count>
+    <Registration>
+        <PlayerId>562</PlayerId>
+        <UserName>wong3525</UserName>
+        <Currency>MYR</Currency>
+        <Country>MY</Country>
+        <Btag>25_10029_640</Btag>
+    </Registration>
+</RegList>
