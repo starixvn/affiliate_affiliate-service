@@ -9,6 +9,7 @@
 
 namespace Fanex.Affiliate.Services.Core.Configuration
 {
+    using System;
     using System.Linq;
 
     /// <summary>
@@ -26,7 +27,7 @@ namespace Fanex.Affiliate.Services.Core.Configuration
         {
             get
             {
-                var setting = Settings.FirstOrDefault(x => x.Key == "UsernamePrefix");
+                var setting = Settings.FirstOrDefault(x => x.Key.Equals("UsernamePrefix", StringComparison.CurrentCultureIgnoreCase));
                 return setting != null ? setting.Value : null;
             }
         }

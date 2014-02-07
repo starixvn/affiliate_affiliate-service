@@ -90,7 +90,7 @@ namespace Fanex.Affiliate.Services.Core
         /// <returns>Returns licensee object.</returns>
         public static Licensee GetLicensee(string name)
         {
-            return _data.Licensees.FirstOrDefault(licensee => licensee.Name == name);
+            return _data.Licensees.FirstOrDefault(licensee => name.Equals(licensee.Name, StringComparison.CurrentCultureIgnoreCase));
         }
     }
 }
