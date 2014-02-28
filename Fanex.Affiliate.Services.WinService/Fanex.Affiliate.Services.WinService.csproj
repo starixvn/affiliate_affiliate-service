@@ -69,7 +69,7 @@
     <Reference Include="Common.Logging.Log4Net">
       <HintPath>..\Fanex.Affiliate.Services.WinForm\packages\Common.Logging.Log4Net.2.0.1\lib\net20\Common.Logging.Log4Net.dll</HintPath>
     </Reference>
-    <Reference Include="Fanex.Data, Version=0.5.404.60, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Fanex.Data">
       <HintPath>..\Dependencies\Fanex.Data.dll</HintPath>
     </Reference>
     <Reference Include="log4net">
