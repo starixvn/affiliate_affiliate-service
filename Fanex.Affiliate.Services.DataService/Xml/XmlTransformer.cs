@@ -38,9 +38,9 @@ namespace Fanex.Affiliate.Services.DataService.Xml
         /// <summary>
         /// Transforms XElement to string.
         /// </summary>
-        /// <param name="element">The XML element.</param>
+        /// <param name="node">The XML element.</param>
         /// <returns>Return XML string.</returns>
-        public string Transform(XElement element)
+        public string Transform(XNode node)
         {
             var transform = new XslCompiledTransform();
             var xsltArgs = new XsltArgumentList();
@@ -61,7 +61,7 @@ namespace Fanex.Affiliate.Services.DataService.Xml
 
                         using (var xmlWriter = XmlWriter.Create(stringWriter, settings))
                         {
-                            transform.Transform(element.CreateReader(), xsltArgs, xmlWriter);
+                            transform.Transform(node.CreateReader(), xsltArgs, xmlWriter);
                             return stringWriter.ToString();
                         }
                     }

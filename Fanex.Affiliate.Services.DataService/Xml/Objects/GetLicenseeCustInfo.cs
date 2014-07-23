@@ -16,6 +16,7 @@ namespace Fanex.Affiliate.Services.DataService.Xml.Objects
     /// <summary>
     /// The XML object.
     /// </summary>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("T4", "1.0.0.0")]
     public class GetLicenseeCustInfo : XmlObject
     {
         /// <summary>

@@ -127,9 +127,8 @@ namespace Fanex.Affiliate.Services.DataAccess
         /// </summary>
         /// <param name="uspKey">The USP Key.</param>
         /// <param name="parameters">The SP parameters.</param>
-        /// <param name="timeOut">The SP executing time.</param>
         /// <returns>Returns DataReader.</returns>
-        protected IDataReader ExecSpDataReader(string uspKey, Hashtable parameters, int timeOut)
+        protected IDataReader ExecSpDataReader(string uspKey, Hashtable parameters)
         {
             var actualKey = GetSpKeyByLicensee(uspKey);
             var objectDb = new ObjectDb(actualKey);
@@ -143,42 +142,20 @@ namespace Fanex.Affiliate.Services.DataAccess
         /// Return DataReader.
         /// </summary>
         /// <param name="uspKey">The USP Key.</param>
-        /// <param name="parameters">The SP parameters.</param>
-        /// <returns>Returns DataReader.</returns>
-        protected IDataReader ExecSpDataReader(string uspKey, Hashtable parameters)
-        {
-            return ExecSpDataReader(uspKey, parameters, DefaultTimeOut);
-        }
-
-        /// <summary>
-        /// Return DataReader.
-        /// </summary>
-        /// <param name="uspKey">The USP Key.</param>
-        /// <param name="timeOut">The SP executing timeout.</param>
-        /// <returns>Returns DataReader.</returns>
-        protected IDataReader ExecSpDataReader(string uspKey, int timeOut)
-        {
-            return ExecSpDataReader(uspKey, null, timeOut);
-        }
-
-        /// <summary>
-        /// Return DataReader.
-        /// </summary>
-        /// <param name="uspKey">The USP Key.</param>
         /// <returns>Return IDataReader.</returns>
         protected IDataReader ExecSpDataReader(string uspKey)
         {
-            return ExecSpDataReader(uspKey, DefaultTimeOut);
+            return ExecSpDataReader(uspKey, null);
         }
 
         /// <summary>
         /// Write Log by exception.
         /// </summary>
-        /// <param name="ex">The exception.</param>
-        protected void ProcessException(Exception ex)
+        /// <param name="exception">The exception.</param>
+        protected void ProcessException(Exception exception)
         {
-            Logger.Error(ex);
-            throw ex;
+            Logger.Error(exception);
+            throw exception;
         }
 
         /// <summary>

@@ -59,23 +59,23 @@ namespace Fanex.Affiliate.Services.Core
         /// <summary>
         /// Appends the specified object.
         /// </summary>
-        /// <param name="obj">The object.</param>
-        public void Append(object obj)
+        /// <param name="value">The object.</param>
+        public void Append(object value)
         {
-            if (obj != null)
+            if (value != null)
             {
-                _stringBuilder.AppendLine(obj.ToString());
+                _stringBuilder.AppendLine(value.ToString());
             }
         }
 
         /// <summary>
         /// Appends the specified exception.
         /// </summary>
-        /// <param name="ex">The exception.</param>
-        public void Append(Exception ex)
+        /// <param name="exception">The exception.</param>
+        public void Append(Exception exception)
         {
             _isError = true;
-            string message = ExceptionFormatter.GetMessage(ex);
+            string message = ExceptionFormatter.GetMessage(exception);
             _stringBuilder.AppendLine(message);
         }
 

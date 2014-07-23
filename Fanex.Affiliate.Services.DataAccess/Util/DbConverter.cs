@@ -23,13 +23,13 @@ namespace Fanex.Affiliate.Services.DataAccess.Util
         /// <returns>Returns boolean.</returns>
         public static bool ToBoolean(object value)
         {
-            bool result = false;
             if (IsValid(value))
             {
-                bool.TryParse(value.ToString(), out result);
+                bool result;
+                return bool.TryParse(value.ToString(), out result) ? result : false;
             }
 
-            return result;
+            return false;
         }
 
         /// <summary>
@@ -42,7 +42,7 @@ namespace Fanex.Affiliate.Services.DataAccess.Util
             byte result = 0;
             if (IsValid(value))
             {
-                byte.TryParse(value.ToString(), out result);
+                return byte.TryParse(value.ToString(), out result) ? result : (byte)0;
             }
 
             return result;
@@ -58,7 +58,7 @@ namespace Fanex.Affiliate.Services.DataAccess.Util
             short result = 0;
             if (IsValid(value))
             {
-                short.TryParse(value.ToString(), out result);
+                return short.TryParse(value.ToString(), out result) ? result : (short)0;
             }
 
             return result;
@@ -74,7 +74,7 @@ namespace Fanex.Affiliate.Services.DataAccess.Util
             int result = 0;
             if (IsValid(value))
             {
-                int.TryParse(value.ToString(), out result);
+                return int.TryParse(value.ToString(), out result) ? result : 0;
             }
 
             return result;
@@ -90,7 +90,7 @@ namespace Fanex.Affiliate.Services.DataAccess.Util
             long result = 0;
             if (IsValid(value))
             {
-                long.TryParse(value.ToString(), out result);
+                return long.TryParse(value.ToString(), out result) ? result : (long)0;
             }
 
             return result;
@@ -106,7 +106,7 @@ namespace Fanex.Affiliate.Services.DataAccess.Util
             double result = 0.0d;
             if (IsValid(value))
             {
-                double.TryParse(value.ToString(), out result);
+                return double.TryParse(value.ToString(), out result) ? result : (double)0;
             }
 
             return result;
@@ -122,7 +122,7 @@ namespace Fanex.Affiliate.Services.DataAccess.Util
             decimal result = 0.0m;
             if (IsValid(value))
             {
-                decimal.TryParse(value.ToString(), out result);
+                return decimal.TryParse(value.ToString(), out result) ? result : (decimal)0;
             }
 
             return result;
@@ -156,7 +156,7 @@ namespace Fanex.Affiliate.Services.DataAccess.Util
             DateTime result = DateTime.MinValue;
             if (IsValid(value))
             {
-                DateTime.TryParse(value.ToString(), out result);
+                return DateTime.TryParse(value.ToString(), out result) ? result : DateTime.MinValue;
             }
 
             return result;

@@ -60,11 +60,6 @@ namespace Fanex.Affiliate.Services.Core
         /// </exception>
         public static void Initialize(string fileName)
         {
-            if (_data != null)
-            {
-                throw new Exception("Initialize only one time");
-            }
-
             string filePath = FileUtil.ResolveFile(fileName);
             using (var reader = new StreamReader(filePath))
             {
@@ -75,11 +70,7 @@ namespace Fanex.Affiliate.Services.Core
 
                 // deserialize XML to object
                 var xs = new XmlSerializer(typeof(LicenseeXmlConfiguration));
-                _data = (LicenseeXmlConfiguration)xs.Deserialize(new StringReader(xml));
-                if (_data == null)
-                {
-                    throw new Exception("Data after initialization was null");
-                }
+                _data = (LicenseeXmlConfiguration)xs.Deserialize(new StringReader(xml));               
             }
         }
 

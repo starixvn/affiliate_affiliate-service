@@ -27,7 +27,7 @@ namespace Fanex.Affiliate.Services.Core.Configuration
             get
             {
                 var um = new UMBusiness();
-                return um.isUnderMaintainence(Sites.Affiliate, AppSetting.LbUrl);
+                return um.isUnderMaintainence(Sites.Affiliate, AppSetting.MainternanceServiceLocation);
             }
         }
     }

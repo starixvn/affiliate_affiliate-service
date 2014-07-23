@@ -23,7 +23,7 @@ namespace Fanex.Affiliate.Services.DataAccess.Util
         /// <param name="reader">The reader.</param>
         /// <param name="fieldName">Name of the field.</param>
         /// <returns>Returns boolean.</returns>
-        public static bool ToBoolean(this IDataReader reader, string fieldName)
+        public static bool ToBoolean(this IDataRecord reader, string fieldName)
         {
             return DbConverter.ToBoolean(reader[fieldName]);
         }
@@ -34,7 +34,7 @@ namespace Fanex.Affiliate.Services.DataAccess.Util
         /// <param name="reader">The reader.</param>
         /// <param name="fieldName">Name of the field.</param>
         /// <returns>Returns byte.</returns>
-        public static byte ToByte(this IDataReader reader, string fieldName)
+        public static byte ToByte(this IDataRecord reader, string fieldName)
         {
             return DbConverter.ToByte(reader[fieldName]);
         }
@@ -45,7 +45,7 @@ namespace Fanex.Affiliate.Services.DataAccess.Util
         /// <param name="reader">The reader.</param>
         /// <param name="fieldName">Name of the field.</param>
         /// <returns>Returns short.</returns>
-        public static short ToInt16(this IDataReader reader, string fieldName)
+        public static short ToInt16(this IDataRecord reader, string fieldName)
         {
             return DbConverter.ToInt16(reader[fieldName]);
         }
@@ -56,7 +56,7 @@ namespace Fanex.Affiliate.Services.DataAccess.Util
         /// <param name="reader">The reader.</param>
         /// <param name="fieldName">Name of the field.</param>
         /// <returns>Returns integer.</returns>
-        public static int ToInt32(this IDataReader reader, string fieldName)
+        public static int ToInt32(this IDataRecord reader, string fieldName)
         {
             return DbConverter.ToInt32(reader[fieldName]);
         }
@@ -67,7 +67,7 @@ namespace Fanex.Affiliate.Services.DataAccess.Util
         /// <param name="reader">The reader.</param>
         /// <param name="fieldName">Name of the field.</param>
         /// <returns>Returns long.</returns>
-        public static long ToInt64(this IDataReader reader, string fieldName)
+        public static long ToInt64(this IDataRecord reader, string fieldName)
         {
             return DbConverter.ToInt64(reader[fieldName]);
         }
@@ -78,7 +78,7 @@ namespace Fanex.Affiliate.Services.DataAccess.Util
         /// <param name="reader">The reader.</param>
         /// <param name="fieldName">Name of the field.</param>
         /// <returns>Returns double.</returns>
-        public static double ToDouble(this IDataReader reader, string fieldName)
+        public static double ToDouble(this IDataRecord reader, string fieldName)
         {
             return DbConverter.ToDouble(reader[fieldName]);
         }
@@ -89,7 +89,7 @@ namespace Fanex.Affiliate.Services.DataAccess.Util
         /// <param name="reader">The reader.</param>
         /// <param name="fieldName">Name of the field.</param>
         /// <returns>Returns decimal.</returns>
-        public static decimal ToDecimal(this IDataReader reader, string fieldName)
+        public static decimal ToDecimal(this IDataRecord reader, string fieldName)
         {
             return DbConverter.ToDecimal(reader[fieldName]);
         }
@@ -102,7 +102,7 @@ namespace Fanex.Affiliate.Services.DataAccess.Util
         /// <returns>
         /// A <see cref="System.String" /> that represents this instance.
         /// </returns>
-        public static string ToString(this IDataReader reader, string fieldName)
+        public static string ToString(this IDataRecord reader, string fieldName)
         {
             return DbConverter.ToString(reader[fieldName]);
         }
@@ -113,7 +113,7 @@ namespace Fanex.Affiliate.Services.DataAccess.Util
         /// <param name="reader">The reader.</param>
         /// <param name="fieldName">Name of the field.</param>
         /// <returns>Returns date time.</returns>
-        public static DateTime ToDateTime(this IDataReader reader, string fieldName)
+        public static DateTime ToDateTime(this IDataRecord reader, string fieldName)
         {
             return DbConverter.ToDateTime(reader[fieldName]);
         }

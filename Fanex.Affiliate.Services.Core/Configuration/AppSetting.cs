@@ -13,8 +13,6 @@ namespace Fanex.Affiliate.Services.Core.Configuration
     using System.Configuration;
     using System.Reflection;
     using Fanex.Affiliate.Services.Core.Util;
-    using log4net;
-    using log4net.Config;
     using NodaTime;
 
     /// <summary>
@@ -22,19 +20,6 @@ namespace Fanex.Affiliate.Services.Core.Configuration
     /// </summary>
     public static class AppSetting
     {
-        /// <summary>
-        /// Log4net handler.
-        /// </summary>
-        private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
-
-        /// <summary>
-        /// Initializes static members of the <see cref="AppSetting" /> class.
-        /// </summary>
-        static AppSetting()
-        {
-            XmlConfigurator.Configure();
-        }
-
         /// <summary>
         /// Gets AdminID passed as parameter when calling stored procedure for importing.
         /// </summary>
@@ -73,7 +58,7 @@ namespace Fanex.Affiliate.Services.Core.Configuration
         /// <value>
         /// The URL to check maintenance.
         /// </value>
-        public static string LbUrl { get; private set; }
+        public static string MainternanceServiceLocation { get; private set; }
 
         /// <summary>
         /// Gets the time to import data for yesterday.
@@ -100,7 +85,7 @@ namespace Fanex.Affiliate.Services.Core.Configuration
             ExpiredCacheTime = 10000; // seconds
             LocalTest = Convert.ToInt32(ConfigurationManager.AppSettings["LocalTest"]) == 1;
             LoggingMode = (LoggingMode)Convert.ToInt32(ConfigurationManager.AppSettings["LoggingMode"]);
-            LbUrl = ConfigurationManager.AppSettings["LBUrl"];
+            MainternanceServiceLocation = ConfigurationManager.AppSettings["LBUrl"];
 
             ImportExchangeRateStdTime = DateTimeUtil.GetLocalTime(ConfigurationManager.AppSettings["ImportExchangeRateStdTime"]);
             ImportMemberInfoStdTime = DateTimeUtil.GetLocalTime(ConfigurationManager.AppSettings["ImportMemberInfoStdTime"]);
@@ -114,8 +99,6 @@ namespace Fanex.Affiliate.Services.Core.Configuration
                 var value = p.GetValue(null, null);
                 message += string.Format("\n{0}: {1}", name, value);
             }
-
-            Log.Info(message);
         }
     }
 }

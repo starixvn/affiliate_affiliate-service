@@ -9,12 +9,9 @@
 
 namespace Fanex.Affiliate.Services.WinService
 {
-    using System;
-    using System.Diagnostics;
     using System.ServiceProcess;
     using Fanex.Affiliate.Services.Core;
     using Fanex.Affiliate.Services.Core.Configuration;
-    using Fanex.Affiliate.Services.Core.Util;
     using Fanex.Data.Configuration;
     using Quartz;
     using Quartz.Impl;
@@ -41,22 +38,13 @@ namespace Fanex.Affiliate.Services.WinService
         {
             InitializeComponent();
 
-            try
-            {
-                ServiceName = Constants.ServiceName;
+            ServiceName = Constants.ServiceName;
 
-                DbSettingProviderManager.Current.Start();
-                AppSetting.Initialize();
-                LicenseeManager.Initialize();
-                _schedulerFactory = new StdSchedulerFactory();
-                _scheduler = _schedulerFactory.GetScheduler();
-            }
-            catch (Exception ex)
-            {
-                string message = ExceptionFormatter.GetMessage(ex);
-                EventLog.WriteEntry(Constants.ServiceName, message, EventLogEntryType.Error);
-                throw;
-            }
+            DbSettingProviderManager.Current.Start();
+            AppSetting.Initialize();
+            LicenseeManager.Initialize();
+            _schedulerFactory = new StdSchedulerFactory();
+            _scheduler = _schedulerFactory.GetScheduler();
         }
 
         /// <summary>
@@ -67,16 +55,7 @@ namespace Fanex.Affiliate.Services.WinService
         /// <param name="args">Data passed by the start command.</param>
         protected override void OnStart(string[] args)
         {
-            try
-            {
-                _scheduler.Start();
-            }
-            catch (Exception ex)
-            {
-                string message = ExceptionFormatter.GetMessage(ex);
-                EventLog.WriteEntry(Constants.ServiceName, message, EventLogEntryType.Error);
-                throw;
-            }
+            _scheduler.Start();
         }
 
         /// <summary>
@@ -85,17 +64,7 @@ namespace Fanex.Affiliate.Services.WinService
         /// </summary>
         protected override void OnStop()
         {
-            try
-            {
-                _scheduler.Shutdown(true);
-            }
-            catch (Exception ex)
-            {
-                string message = ExceptionFormatter.GetMessage(ex);
-                EventLog.WriteEntry(Constants.ServiceName, message, EventLogEntryType.Error);
-            }
-
-            GC.Collect();
+            _scheduler.Shutdown(true);
         }
     }
 }

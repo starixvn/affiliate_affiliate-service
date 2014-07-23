@@ -9,96 +9,25 @@
     <job>
       <name>ImportExchangeRateJob</name>
       <description>ImportExchangeRateJob</description>
-      <job-type>Fanex.Affiliate.Services.Controller.QuartzJob.ImportExchangeRateJob, Fanex.Affiliate.Services.Controller</job-type>
+      <job-type>Fanex.Affiliate.Services.Jobs.QuartzJob.ImportExchangeRateJob, Fanex.Affiliate.Services.Jobs</job-type>
       <durable>true</durable>
       <recover>false</recover>
     </job>
     <job>
       <name>ImportMemberDailyJob</name>
       <description>ImportMemberDailyJob</description>
-      <job-type>Fanex.Affiliate.Services.Controller.QuartzJob.ImportMemberDailyJob, Fanex.Affiliate.Services.Controller</job-type>
+      <job-type>Fanex.Affiliate.Services.Jobs.QuartzJob.ImportMemberDailyJob, Fanex.Affiliate.Services.Jobs</job-type>
       <durable>true</durable>
       <recover>false</recover>
     </job>
     <job>
       <name>ImportMemberInfoJob</name>
       <description>ImportMemberInfoJob</description>
-      <job-type>Fanex.Affiliate.Services.Controller.QuartzJob.ImportMemberInfoJob, Fanex.Affiliate.Services.Controller</job-type>
+      <job-type>Fanex.Affiliate.Services.Jobs.QuartzJob.ImportMemberInfoJob, Fanex.Affiliate.Services.Jobs</job-type>
       <durable>true</durable>
       <recover>false</recover>
     </job>
 
-    <!--Begin - i668bet Triggers-->
-    <trigger>
-      <simple>
-        <name>i668bet_ImportExchangeRateTrigger</name>
-        <group>i668bet</group>
-        <description>i668bet_ImportExchangeRateTrigger</description>
-        <job-name>ImportExchangeRateJob</job-name>
-        <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>300000</repeat-interval>
-      </simple>
-    </trigger>
-    <trigger>
-      <simple>
-        <name>i668bet_ImportMemberDailyTrigger</name>
-        <group>i668bet</group>
-        <description>i668bet_ImportMemberDailyTrigger</description>
-        <job-name>ImportMemberDailyJob</job-name>
-        <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>300000</repeat-interval>
-      </simple>
-    </trigger>
-    <trigger>
-      <simple>
-        <name>i668bet_ImportMemberInfoTrigger</name>
-        <group>i668bet</group>
-        <description>i668bet_ImportMemberInfoTrigger</description>
-        <job-name>ImportMemberInfoJob</job-name>
-        <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>300000</repeat-interval>
-      </simple>
-    </trigger>
-    <!--End - i668bet Triggers-->
-
-    <!--Begin - mymbet Triggers-->
-    <trigger>
-      <simple>
-        <name>mymbet_ImportExchangeRateTrigger</name>
-        <group>mymbet</group>
-        <description>mymbet_ImportExchangeRateTrigger</description>
-        <job-name>ImportExchangeRateJob</job-name>
-        <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>300000</repeat-interval>
-      </simple>
-    </trigger>
-    <trigger>
-      <simple>
-        <name>mymbet_ImportMemberDailyTrigger</name>
-        <group>mymbet</group>
-        <description>mymbet_ImportMemberDailyTrigger</description>
-        <job-name>ImportMemberDailyJob</job-name>
-        <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>300000</repeat-interval>
-      </simple>
-    </trigger>
-    <trigger>
-      <simple>
-        <name>mymbet_ImportMemberInfoTrigger</name>
-        <group>mymbet</group>
-        <description>mymbet_ImportMemberInfoTrigger</description>
-        <job-name>ImportMemberInfoJob</job-name>
-        <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>300000</repeat-interval>
-      </simple>
-    </trigger>
-    <!--End - mymbet Triggers-->
     <!--Begin - Athena000 Triggers-->
     <trigger>
       <simple>
@@ -134,187 +63,5 @@
       </simple>
     </trigger>
     <!--End - Athena000 Triggers-->
-
-    <!--Begin - livebet365 Triggers-->
-    <trigger>
-      <simple>
-        <name>livebet365_ImportExchangeRateTrigger</name>
-        <group>livebet365</group>
-        <description>livebet365_ImportExchangeRateTrigger</description>
-        <job-name>ImportExchangeRateJob</job-name>
-        <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>300000</repeat-interval>
-      </simple>
-    </trigger>
-    <trigger>
-      <simple>
-        <name>livebet365_ImportMemberDailyTrigger</name>
-        <group>livebet365</group>
-        <description>livebet365_ImportMemberDailyTrigger</description>
-        <job-name>ImportMemberDailyJob</job-name>
-        <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>300000</repeat-interval>
-      </simple>
-    </trigger>
-    <trigger>
-      <simple>
-        <name>livebet365_ImportMemberInfoTrigger</name>
-        <group>livebet365</group>
-        <description>livebet365_ImportMemberInfoTrigger</description>
-        <job-name>ImportMemberInfoJob</job-name>
-        <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>300000</repeat-interval>
-      </simple>
-    </trigger>
-    <!--End - livebet365 Triggers-->
-
-    <!--Begin - itcbet Triggers-->
-    <trigger>
-      <simple>
-        <name>itcbet_ImportExchangeRateTrigger</name>
-        <group>itcbet</group>
-        <description>itcbet_ImportExchangeRateTrigger</description>
-        <job-name>ImportExchangeRateJob</job-name>
-        <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>300000</repeat-interval>
-      </simple>
-    </trigger>
-    <trigger>
-      <simple>
-        <name>itcbet_ImportMemberDailyTrigger</name>
-        <group>itcbet</group>
-        <description>itcbet_ImportMemberDailyTrigger</description>
-        <job-name>ImportMemberDailyJob</job-name>
-        <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>300000</repeat-interval>
-      </simple>
-    </trigger>
-    <trigger>
-      <simple>
-        <name>itcbet_ImportMemberInfoTrigger</name>
-        <group>itcbet</group>
-        <description>itcbet_ImportMemberInfoTrigger</description>
-        <job-name>ImportMemberInfoJob</job-name>
-        <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>300000</repeat-interval>
-      </simple>
-    </trigger>
-    <!--End - itcbet Triggers-->
-
-    <!--Begin - bwinning Triggers-->
-    <trigger>
-      <simple>
-        <name>bwinning_ImportExchangeRateTrigger</name>
-        <group>bwinning</group>
-        <description>bwinning_ImportExchangeRateTrigger</description>
-        <job-name>ImportExchangeRateJob</job-name>
-        <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>300000</repeat-interval>
-      </simple>
-    </trigger>
-    <trigger>
-      <simple>
-        <name>bwinning_ImportMemberDailyTrigger</name>
-        <group>bwinning</group>
-        <description>bwinning_ImportMemberDailyTrigger</description>
-        <job-name>ImportMemberDailyJob</job-name>
-        <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>300000</repeat-interval>
-      </simple>
-    </trigger>
-    <trigger>
-      <simple>
-        <name>bwinning_ImportMemberInfoTrigger</name>
-        <group>bwinning</group>
-        <description>bwinning_ImportMemberInfoTrigger</description>
-        <job-name>ImportMemberInfoJob</job-name>
-        <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>300000</repeat-interval>
-      </simple>
-    </trigger>
-    <!--End - bwinning Triggers-->
-
-    <!--Begin - aoncash Triggers-->
-    <trigger>
-      <simple>
-        <name>aoncash_ImportExchangeRateTrigger</name>
-        <group>aoncash</group>
-        <description>aoncash_ImportExchangeRateTrigger</description>
-        <job-name>ImportExchangeRateJob</job-name>
-        <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>300000</repeat-interval>
-      </simple>
-    </trigger>
-    <trigger>
-      <simple>
-        <name>aoncash_ImportMemberDailyTrigger</name>
-        <group>aoncash</group>
-        <description>aoncash_ImportMemberDailyTrigger</description>
-        <job-name>ImportMemberDailyJob</job-name>
-        <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>300000</repeat-interval>
-      </simple>
-    </trigger>
-    <trigger>
-      <simple>
-        <name>aoncash_ImportMemberInfoTrigger</name>
-        <group>aoncash</group>
-        <description>aoncash_ImportMemberInfoTrigger</description>
-        <job-name>ImportMemberInfoJob</job-name>
-        <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>300000</repeat-interval>
-      </simple>
-    </trigger>
-    <!--End - aoncash Triggers-->
-
-
-    <!--Begin - macaubet Triggers-->
-    <trigger>
-      <simple>
-        <name>macaubet_ImportExchangeRateTrigger</name>
-        <group>macaubet</group>
-        <description>macaubet_ImportExchangeRateTrigger</description>
-        <job-name>ImportExchangeRateJob</job-name>
-        <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>300000</repeat-interval>
-      </simple>
-    </trigger>
-    <trigger>
-      <simple>
-        <name>macaubet_ImportMemberDailyTrigger</name>
-        <group>macaubet</group>
-        <description>macaubet_ImportMemberDailyTrigger</description>
-        <job-name>ImportMemberDailyJob</job-name>
-        <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>300000</repeat-interval>
-      </simple>
-    </trigger>
-    <trigger>
-      <simple>
-        <name>macaubet_ImportMemberInfoTrigger</name>
-        <group>macaubet</group>
-        <description>macaubet_ImportMemberInfoTrigger</description>
-        <job-name>ImportMemberInfoJob</job-name>
-        <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>300000</repeat-interval>
-      </simple>
-    </trigger>
-    <!--End - macaubet Triggers-->
-
   </schedule>
 </job-scheduling-data>

@@ -43,8 +43,6 @@ namespace Fanex.Affiliate.Services.WinForm
             this.rdMemberDaily = new System.Windows.Forms.RadioButton();
             this.rdExchangeRate = new System.Windows.Forms.RadioButton();
             this.TestButton = new System.Windows.Forms.Button();
-            this.UpdateAllMemberInfoButton = new System.Windows.Forms.Button();
-            this.UpdateAllMemberDailyButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -128,7 +126,7 @@ namespace Fanex.Affiliate.Services.WinForm
             this.importButton.TabIndex = 8;
             this.importButton.Text = "Import";
             this.importButton.UseVisualStyleBackColor = true;
-            this.importButton.Click += new System.EventHandler(this.ImportButton_Click);
+            this.importButton.Click += new System.EventHandler(this.ImportButtonClicked);
             // 
             // groupBox3
             // 
@@ -182,35 +180,13 @@ namespace Fanex.Affiliate.Services.WinForm
             this.TestButton.TabIndex = 10;
             this.TestButton.Text = "Test";
             this.TestButton.UseVisualStyleBackColor = true;
-            this.TestButton.Click += new System.EventHandler(this.TestButton_Click);
-            // 
-            // UpdateAllMemberInfoButton
-            // 
-            this.UpdateAllMemberInfoButton.Location = new System.Drawing.Point(239, 234);
-            this.UpdateAllMemberInfoButton.Name = "UpdateAllMemberInfoButton";
-            this.UpdateAllMemberInfoButton.Size = new System.Drawing.Size(195, 23);
-            this.UpdateAllMemberInfoButton.TabIndex = 11;
-            this.UpdateAllMemberInfoButton.Text = "UpdateAllMemberInfo";
-            this.UpdateAllMemberInfoButton.UseVisualStyleBackColor = true;
-            this.UpdateAllMemberInfoButton.Click += new System.EventHandler(this.UpdateAllMemberInfoButtonClicked);
-            // 
-            // UpdateAllMemberDailyButton
-            // 
-            this.UpdateAllMemberDailyButton.Location = new System.Drawing.Point(239, 263);
-            this.UpdateAllMemberDailyButton.Name = "UpdateAllMemberDailyButton";
-            this.UpdateAllMemberDailyButton.Size = new System.Drawing.Size(195, 23);
-            this.UpdateAllMemberDailyButton.TabIndex = 12;
-            this.UpdateAllMemberDailyButton.Text = "UpdateAllMemberDaily";
-            this.UpdateAllMemberDailyButton.UseVisualStyleBackColor = true;
-            this.UpdateAllMemberDailyButton.Click += new System.EventHandler(this.UpdateAllMemberDailyButtonClick);
+            this.TestButton.Click += new System.EventHandler(this.TestButtonClicked);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(446, 377);
-            this.Controls.Add(this.UpdateAllMemberDailyButton);
-            this.Controls.Add(this.UpdateAllMemberInfoButton);
             this.Controls.Add(this.TestButton);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.importButton);
@@ -221,7 +197,7 @@ namespace Fanex.Affiliate.Services.WinForm
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Affilicate Service Application";
-            this.Load += new System.EventHandler(this.MainForm_Load);
+            this.Load += new System.EventHandler(this.MainFormLoad);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -246,8 +222,6 @@ namespace Fanex.Affiliate.Services.WinForm
     private System.Windows.Forms.RadioButton rdMemberDaily;
     private System.Windows.Forms.RadioButton rdExchangeRate;
     private System.Windows.Forms.Button TestButton;
-    private System.Windows.Forms.Button UpdateAllMemberInfoButton;
-    private System.Windows.Forms.Button UpdateAllMemberDailyButton;
   }
 }
 

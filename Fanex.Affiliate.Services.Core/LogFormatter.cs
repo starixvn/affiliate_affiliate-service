@@ -48,11 +48,11 @@ namespace Fanex.Affiliate.Services.Core
         /// <summary>
         /// Formats the specified object.
         /// </summary>
-        /// <param name="obj">The object.</param>
+        /// <param name="value">The object.</param>
         /// <returns>Returns object in string.</returns>
-        public string Format(object obj)
+        public string Format(object value)
         {
-            var type = obj.GetType();
+            var type = value.GetType();
             var properties = type.GetProperties();
 
             var stringBuilder = new StringBuilder();
@@ -62,8 +62,8 @@ namespace Fanex.Affiliate.Services.Core
                 if (property.CanWrite)
                 {
                     var name = property.Name;
-                    var value = property.GetValue(obj, null);
-                    stringBuilder.AppendFormat("\n   {0}: {1}", name, value);
+                    var propertyValue = property.GetValue(value, null);
+                    stringBuilder.AppendFormat("\n   {0}: {1}", name, propertyValue);
                 }
             }
 

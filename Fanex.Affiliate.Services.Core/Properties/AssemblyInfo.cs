@@ -7,6 +7,7 @@
 //   <change who="Leo.Vo" date="2013.06.25">Created</change>
 // </history>
 
+using System;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
@@ -26,6 +27,7 @@ using System.Runtime.InteropServices;
 // to COM components.  If you need to access a type in this assembly from
 // COM, set the ComVisible attribute to true on that type.
 [assembly: ComVisible(false)]
+[assembly: CLSCompliant(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("ac2e02b9-cf44-4fad-85ea-96d5c9130eb7")]

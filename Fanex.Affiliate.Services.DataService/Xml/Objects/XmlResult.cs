@@ -27,11 +27,11 @@ namespace Fanex.Affiliate.Services.DataService.Xml.Objects
         /// <summary>
         /// Creates the XmlResult from XElement.
         /// </summary>
-        /// <param name="element">The xml element.</param>
+        /// <param name="container">The xml element.</param>
         /// <returns>Return XML result.</returns>
-        public static XmlResult Create(XElement element)
+        public static XmlResult Create(XContainer container)
         {
-            return XmlConverter.To<XmlResult>(element);
+            return XmlConverter.To<XmlResult>(container);
         }
 
         /// <summary>

@@ -9,7 +9,6 @@
 
 namespace Fanex.Affiliate.Services.Core.Util
 {
-    using System;
     using System.IO;
     using System.Reflection;
     using System.Xml;
@@ -29,29 +28,22 @@ namespace Fanex.Affiliate.Services.Core.Util
         /// <exception cref="System.Exception">Unable to validate XML with schema:  + ex.Message.</exception>
         public static void ValidateXml(string xml, string xsdLocation)
         {
-            try
+            var settings = new XmlReaderSettings { ValidationType = ValidationType.Schema };
+            settings.ValidationFlags |= XmlSchemaValidationFlags.ProcessInlineSchema;
+            settings.ValidationFlags |= XmlSchemaValidationFlags.ProcessSchemaLocation;
+            settings.ValidationFlags |= XmlSchemaValidationFlags.ReportValidationWarnings;
+
+            var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(xsdLocation);
+            var schema = XmlSchema.Read(stream, XmlValidationCallBack);
+            settings.Schemas.Add(schema);
+            settings.ValidationEventHandler += XmlValidationCallBack;
+
+            // stream to validate
+            using (var reader = XmlReader.Create(new StringReader(xml), settings))
             {
-                var settings = new XmlReaderSettings { ValidationType = ValidationType.Schema };
-                settings.ValidationFlags |= XmlSchemaValidationFlags.ProcessInlineSchema;
-                settings.ValidationFlags |= XmlSchemaValidationFlags.ProcessSchemaLocation;
-                settings.ValidationFlags |= XmlSchemaValidationFlags.ReportValidationWarnings;
-
-                var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(xsdLocation);
-                var schema = XmlSchema.Read(stream, XmlValidationCallBack);
-                settings.Schemas.Add(schema);
-                settings.ValidationEventHandler += XmlValidationCallBack;
-
-                // stream to validate
-                using (var reader = XmlReader.Create(new StringReader(xml), settings))
+                while (reader.Read())
                 {
-                    while (reader.Read())
-                    {
-                    }
                 }
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Unable to validate XML with schema: " + ex.Message);
             }
         }
 

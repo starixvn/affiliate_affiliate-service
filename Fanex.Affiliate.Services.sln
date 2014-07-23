@@ -11,11 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fanex.Affiliate.Services.Wi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fanex.Affiliate.Services.DataService", "Fanex.Affiliate.Services.DataService\Fanex.Affiliate.Services.DataService.csproj", "{B0D188EF-4D5C-415C-B4FE-B83F8C8A290D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fanex.Affiliate.Services.Controller", "Fanex.Affiliate.Services.Controller\Fanex.Affiliate.Services.Controller.csproj", "{CC1F026D-A04C-40E0-99A2-E47C53FCFF3F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fanex.Affiliate.Services.Jobs", "Fanex.Affiliate.Services.Jobs\Fanex.Affiliate.Services.Jobs.csproj", "{CC1F026D-A04C-40E0-99A2-E47C53FCFF3F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeAnalysis", "CodeAnalysis", "{4608DBA3-5046-4447-8AF5-9E0F7118FC67}"
 	ProjectSection(SolutionItems) = preProject
 		CodeAnalysis\CodeAnalysisConfiguration.xml = CodeAnalysis\CodeAnalysisConfiguration.xml
+		CodeAnalysis\FxCopDictionary.xml = CodeAnalysis\FxCopDictionary.xml
 	EndProjectSection
 EndProject
 Global

@@ -25,10 +25,10 @@ namespace Fanex.Affiliate.Services.Core.Util
         /// <returns>Returns the absolute path.</returns>
         public static string ResolveFile(string fileName)
         {
-            if (fileName != null && fileName.StartsWith("~"))
+            if (fileName != null && fileName.StartsWith("~", StringComparison.CurrentCultureIgnoreCase))
             {
                 fileName = fileName.Substring(1);
-                if (fileName.StartsWith("/") || fileName.StartsWith("\\"))
+                if (fileName.StartsWith("/", StringComparison.CurrentCultureIgnoreCase) || fileName.StartsWith("\\", StringComparison.CurrentCultureIgnoreCase))
                 {
                     fileName = fileName.Substring(1);
                 }
