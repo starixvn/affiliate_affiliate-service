@@ -24,5 +24,6 @@
     <Setting Key="MYMBET_Aff_LanguageSel" SpName="Aff_LanguageSel" DbName="DBAFFMYMBET.Affiliate_MYMBet.bodbAdminNet" />
     <Setting Key="MYMBET_Aff_TaskLogUpdStatus" SpName="Aff_TaskLogUpdStatus" DbName="DBAFFMYMBET.Affiliate_MYMBet.bodbAdminNet" />
     <Setting Key="MYMBET_Aff_TaskLogIns" SpName="Aff_TaskLogIns" DbName="DBAFFMYMBET.Affiliate_MYMBet.bodbAdminNet" />
+    <Setting Key="MYMBET_Aff_TaskDetailSelByName" SpName="Aff_TaskDetailSelByName" DbName="DBAFFMYMBET.Affiliate_MYMBet.bodbAdminNet" />
   </Function>
 </Functions>

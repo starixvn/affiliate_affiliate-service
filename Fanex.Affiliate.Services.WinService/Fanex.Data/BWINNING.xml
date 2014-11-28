@@ -24,5 +24,6 @@
     <Setting Key="BWINNING_Aff_LanguageSel" SpName="Aff_LanguageSel" DbName="DBAFFBWINNING.Affiliate_Bwinning.bodbAdminNet" />
     <Setting Key="BWINNING_Aff_TaskLogUpdStatus" SpName="Aff_TaskLogUpdStatus" DbName="DBAFFBWINNING.Affiliate_Bwinning.bodbAdminNet" />
     <Setting Key="BWINNING_Aff_TaskLogIns" SpName="Aff_TaskLogIns" DbName="DBAFFBWINNING.Affiliate_Bwinning.bodbAdminNet" />
+    <Setting Key="BWINNING_Aff_TaskDetailSelByName" SpName="Aff_TaskDetailSelByName" DbName="DBAFFBWINNING.Affiliate_Bwinning.bodbAdminNet" />
   </Function>
 </Functions>

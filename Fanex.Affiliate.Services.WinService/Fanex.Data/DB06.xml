@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Functions>
+  <Function Name="DBACC.bodb02.bodbAdminNet">
+    <Setting Key="Common_Aff_PlayersWinlostByProductSel" SpName="Aff_PlayersWinlostByProductSel" DbName="DBACC.bodb02.bodbAdminNet" />
+    <Setting Key="Common_Aff_PlayersFundingSel" SpName="Aff_PlayersFundingSel" DbName="DBACC.bodb02.bodbAdminNet" />
+    <Setting Key="Common_ExchangeDailyOanda_SelByDate" SpName="Aff_ExchangeDailyOanda_SelByDate" DbName="DBACC.bodb02.bodbAdminNet" />
+  </Function>
+</Functions>

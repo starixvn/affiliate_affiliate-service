@@ -123,6 +123,24 @@
       <Link>Licensees.xml</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Fanex.Data\28BET.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\ALLBETCLUB.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\BE7.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\DB06.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\GOOBET.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\HBOBET.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Fanex.Data\IDLIVEBET365.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -138,6 +156,9 @@
     <Content Include="Fanex.Data\AONCASH.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Fanex.Data\M8BOLA.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Fanex.Data\MACAUBET.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -147,11 +168,29 @@
     <Content Include="Fanex.Data\I668BET.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Fanex.Data\MGM88.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Fanex.Data\MYMBET.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Fanex.Data\Common.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\NBCBET.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\Q8BOLA.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\THBET.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\WAWABET.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\WINNER99.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="QuartzJobs.xml">
@@ -169,6 +208,49 @@
     </None>
     <None Include="ConnectionString.config">
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="AppSetting.Local.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>AppSetting.config</DependentUpon>
+    </None>
+    <None Include="AppSetting.Sandbox.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>AppSetting.config</DependentUpon>
+    </None>
+    <None Include="AppSetting.Uat.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>AppSetting.config</DependentUpon>
+    </None>
+    <None Include="AppSetting.Pro.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>AppSetting.config</DependentUpon>
+    </None>
+    <None Include="ConnectionString.Local.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>ConnectionString.config</DependentUpon>
+    </None>
+    <None Include="ConnectionString.Sandbox.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>ConnectionString.config</DependentUpon>
+    </None>
+    <None Include="ConnectionString.Uat.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>ConnectionString.config</DependentUpon>
+    </None>
+    <None Include="ConnectionString.Pro.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>ConnectionString.config</DependentUpon>
+    </None>
+    <None Include="deployment.ignore">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="UninstallService.cmd">
