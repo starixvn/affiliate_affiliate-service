@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Licensees xmlns="LicenseeXmlConfiguration"
+           xmlns:xsi="LicenseeXmlConfiguration">
+    <Licensee Name="itcbet">
+        <Settings>
+            <Setting Key="UsernamePrefix" Value="itcbet$" />
+        </Settings>
+    </Licensee>
+    <Licensee Name="bwinning">
+        <Settings>
+            <Setting Key="UsernamePrefix" Value="bwinning$" />
+        </Settings>
+    </Licensee>
+    <Licensee Name="aoncash">
+        <Settings>
+            <Setting Key="UsernamePrefix" Value="aoncash$" />
+        </Settings>
+    </Licensee>
+    <Licensee Name="macaubet">
+        <Settings>
+            <Setting Key="UsernamePrefix" Value="macaubet$" />
+        </Settings>
+    </Licensee>
+    <Licensee Name="athena000">
+        <Settings>
+            <Setting Key="UsernamePrefix" Value="Athena000$" />
+        </Settings>
+    </Licensee>
+    <Licensee Name="winner99">
+        <Settings>
+            <Setting Key="UsernamePrefix" Value="winner99$" />
+        </Settings>
+    </Licensee>
+    <Licensee Name="mgm88">
+        <Settings>
+            <Setting Key="UsernamePrefix" Value="mgm88$" />
+        </Settings>
+    </Licensee>
+    <Licensee Name="hbobet">
+        <Settings>
+            <Setting Key="UsernamePrefix" Value="hbobet$" />
+        </Settings>
+    </Licensee>
+    <Licensee Name="wawabet">
+        <Settings>
+            <Setting Key="UsernamePrefix" Value="wawabet$" />
+        </Settings>
+    </Licensee>
+    <Licensee Name="allbetclub">
+        <Settings>
+            <Setting Key="UsernamePrefix" Value="allbetclub$" />
+        </Settings>
+    </Licensee>
+    <Licensee Name="thbet">
+        <Settings>
+            <Setting Key="UsernamePrefix" Value="thbet$" />
+        </Settings>
+    </Licensee>
+    <Licensee Name="m8bola">
+        <Settings>
+            <Setting Key="UsernamePrefix" Value="m8bola$" />
+        </Settings>
+    </Licensee>
+    <Licensee Name="be7">
+        <Settings>
+            <Setting Key="UsernamePrefix" Value="be7$" />
+        </Settings>
+    </Licensee>
+    <Licensee Name="q8bola">
+        <Settings>
+            <Setting Key="UsernamePrefix" Value="q8bola$" />
+        </Settings>
+    </Licensee>
+    <Licensee Name="goobet">
+        <Settings>
+            <Setting Key="UsernamePrefix" Value="goobet$" />
+        </Settings>
+    </Licensee>
+    <Licensee Name="nbcbet">
+        <Settings>
+            <Setting Key="UsernamePrefix" Value="nbcbet$" />
+        </Settings>
+    </Licensee>
+    <Licensee Name="yhy1980">
+        <Settings>
+            <Setting Key="UsernamePrefix" Value="yhy1980$" />
+        </Settings>
+    </Licensee>
+    <Licensee Name="unobet">
+        <Settings>
+            <Setting Key="UsernamePrefix" Value="unobet$" />
+        </Settings>
+    </Licensee>
+</Licensees>
