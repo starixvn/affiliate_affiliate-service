@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Functions>
+  <Function Name="ServiceWINNER99">
+    <!--ImportMemberInfo-->
+    <Setting Key="WINNER99_Aff_MemberInfoGetMissingCreatedDate" SpName="Aff_MemberInfoGetMissingCreatedDate" DbName="DBAFFWINNER99.Affiliate_Winner99.bodbAdminNet" />
+    <Setting Key="WINNER99_Task_Aff_MemberInfoImportData" SpName="Task_Aff_MemberInfoImportData" DbName="DBAFFWINNER99.Affiliate_Winner99.bodbAdminNet" TimeOut="1200" />
+    <Setting Key="WINNER99_Task_Aff_MemberInfoUpdateCreatedDate" SpName="Task_Aff_MemberInfoUpdateCreatedDate" DbName="DBAFFWINNER99.Affiliate_Winner99.bodbAdminNet" />
+    <!--ImportMemberDaily-->
+    <Setting Key="WINNER99_Aff_GetMembers" SpName="Aff_GetMembers" DbName="DBAFFWINNER99.Affiliate_Winner99.bodbAdminNet" />
+    <Setting Key="WINNER99_Task_Aff_MemberDailyImportData" SpName="Task_Aff_MemberDailyImportData" DbName="DBAFFWINNER99.Affiliate_Winner99.bodbAdminNet" />
+    <Setting Key="WINNER99_Task_Aff_MemberDailyTransactionImportData" SpName="Task_Aff_MemberDailyTransactionImportData" DbName="DBAFFWINNER99.Affiliate_Winner99.bodbAdminNet" />
+    <!--ImportExchange-->
+    <Setting Key="WINNER99_Task_aff_DailyImportExchange" SpName="Task_aff_DailyImportExchange" DbName="DBAFFWINNER99.Affiliate_Winner99.bodbAdminNet" />
+    <!--Common-->
+    <Setting Key="WINNER99_Aff_CurrentDate" SpName="Aff_CurrentDate" DbName="DBAFFWINNER99.Affiliate_Winner99.bodbAdminNet" />
+    <Setting Key="WINNER99_Aff_SystemSettingsSel" SpName="Aff_SystemSettingsSel" DbName="DBAFFWINNER99.Affiliate_Winner99.bodbAdminNet" />
+    <Setting Key="WINNER99_Aff_AffiliateCurrenciesSel" SpName="Aff_AffiliateCurrenciesSel" DbName="DBAFFWINNER99.Affiliate_Winner99.bodbAdminNet" />
+    <Setting Key="WINNER99_Aff_SystemSettingsSelByName" SpName="Aff_SystemSettingsSelByName" DbName="DBAFFWINNER99.Affiliate_Winner99.bodbAdminNet" />
+    <Setting Key="WINNER99_Aff_BannerSelType" SpName="Aff_BannerSelType" DbName="DBAFFWINNER99.Affiliate_Winner99.bodbAdminNet" />
+    <Setting Key="WINNER99_Aff_AffTypeSel" SpName="Aff_AffTypeSel" DbName="DBAFFWINNER99.Affiliate_Winner99.bodbAdminNet" />
+    <Setting Key="WINNER99_Aff_CountrySelAll" SpName="Aff_CountrySelAll" DbName="DBAFFWINNER99.Affiliate_Winner99.bodbAdminNet" />
+    <Setting Key="WINNER99_Aff_BaseCurrenciesSel" SpName="Aff_BaseCurrenciesSel" DbName="DBAFFWINNER99.Affiliate_Winner99.bodbAdminNet" />
+    <Setting Key="WINNER99_Aff_CurrencyListSel" SpName="Aff_CurrencyListSel" DbName="DBAFFWINNER99.Affiliate_Winner99.bodbAdminNet" />
+    <Setting Key="WINNER99_Aff_LanguageSel" SpName="Aff_LanguageSel" DbName="DBAFFWINNER99.Affiliate_Winner99.bodbAdminNet" />
+    <Setting Key="WINNER99_Aff_TaskLogUpdStatus" SpName="Aff_TaskLogUpdStatus" DbName="DBAFFWINNER99.Affiliate_Winner99.bodbAdminNet" />
+    <Setting Key="WINNER99_Aff_TaskLogIns" SpName="Aff_TaskLogIns" DbName="DBAFFWINNER99.Affiliate_Winner99.bodbAdminNet" />
+    <Setting Key="WINNER99_Aff_TaskDetailSelByName" SpName="Aff_TaskDetailSelByName" DbName="DBAFFWINNER99.Affiliate_Winner99.bodbAdminNet" />
+  </Function>
+</Functions>
