@@ -101,32 +101,72 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Fanex.Data\ALLBETCLUB.xml" />
-    <Content Include="Fanex.Data\AONCASH.xml" />
+    <Content Include="Fanex.Data\ALLBETCLUB.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\AONCASH.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Fanex.Data\ATHENA000.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Fanex.Data\BE7.xml" />
-    <Content Include="Fanex.Data\BWINNING.xml" />
+    <Content Include="Fanex.Data\BE7.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\BWINNING.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Fanex.Data\Common.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Fanex.Data\DB06.xml" />
-    <Content Include="Fanex.Data\GOOBET.xml" />
-    <Content Include="Fanex.Data\HBOBET.xml" />
-    <Content Include="Fanex.Data\IDLIVEBET365.xml" />
-    <Content Include="Fanex.Data\ITCBET.xml" />
-    <Content Include="Fanex.Data\LIVEBET365.xml" />
-    <Content Include="Fanex.Data\M8BOLA.xml" />
-    <Content Include="Fanex.Data\MACAUBET.xml" />
-    <Content Include="Fanex.Data\MGM88.xml" />
-    <Content Include="Fanex.Data\NBCBET.xml" />
-    <Content Include="Fanex.Data\Q8BOLA.xml" />
-    <Content Include="Fanex.Data\THBET.xml" />
-    <Content Include="Fanex.Data\UNOBET.xml" />
-    <Content Include="Fanex.Data\WAWABET.xml" />
-    <Content Include="Fanex.Data\WINNER99.xml" />
-    <Content Include="Fanex.Data\YHY1980.xml" />
+    <Content Include="Fanex.Data\DB06.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\GOOBET.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\HBOBET.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\IDLIVEBET365.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\ITCBET.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\LIVEBET365.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\M8BOLA.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\MACAUBET.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\MGM88.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\NBCBET.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\Q8BOLA.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\THBET.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\UNOBET.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\WAWABET.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\WINNER99.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fanex.Data\YHY1980.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Licensees.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
