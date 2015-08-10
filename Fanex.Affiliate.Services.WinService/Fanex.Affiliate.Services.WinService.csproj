@@ -99,6 +99,10 @@
       <Project>{0B347564-FA0B-4BBF-991C-CE48722C2B11}</Project>
       <Name>Fanex.Affiliate.Services.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Fanex.Affiliate.Services.Jobs\Fanex.Affiliate.Services.Jobs.csproj">
+      <Project>{CC1F026D-A04C-40E0-99A2-E47C53FCFF3F}</Project>
+      <Name>Fanex.Affiliate.Services.Jobs</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Fanex.Data\ALLBETCLUB.xml">
