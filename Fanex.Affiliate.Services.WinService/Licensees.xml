@@ -6,11 +6,6 @@
       <Setting Key="UsernamePrefix" Value="itcbet$" />
     </Settings>
   </Licensee>
-  <Licensee Name="bwinning">
-    <Settings>
-      <Setting Key="UsernamePrefix" Value="bwinning$" />
-    </Settings>
-  </Licensee>
   <Licensee Name="aoncash">
     <Settings>
       <Setting Key="UsernamePrefix" Value="aoncash$" />
@@ -26,34 +21,9 @@
       <Setting Key="UsernamePrefix" Value="Athena000$" />
     </Settings>
   </Licensee>
-  <Licensee Name="winner99">
-    <Settings>
-      <Setting Key="UsernamePrefix" Value="winner99$" />
-    </Settings>
-  </Licensee>
-  <Licensee Name="mgm88">
-    <Settings>
-      <Setting Key="UsernamePrefix" Value="mgm88$" />
-    </Settings>
-  </Licensee>
-  <Licensee Name="hbobet">
-    <Settings>
-      <Setting Key="UsernamePrefix" Value="hbobet$" />
-    </Settings>
-  </Licensee>
-  <Licensee Name="wawabet">
-    <Settings>
-      <Setting Key="UsernamePrefix" Value="wawabet$" />
-    </Settings>
-  </Licensee>
   <Licensee Name="allbetclub">
     <Settings>
       <Setting Key="UsernamePrefix" Value="allbetclub$" />
-    </Settings>
-  </Licensee>
-  <Licensee Name="thbet">
-    <Settings>
-      <Setting Key="UsernamePrefix" Value="thbet$" />
     </Settings>
   </Licensee>
   <Licensee Name="m8bola">
