@@ -32,7 +32,6 @@ namespace Fanex.Affiliate.Services.Jobs.QuartzJob
         /// <param name="context">The context.</param>
         public void Execute(IJobExecutionContext context)
         {
-            Fanex.Logging.LogService.Info("Importing exchange rate running");
             Run(context);
         }
     }

@@ -3,7 +3,6 @@ using Fanex.Affiliate.Services.Core.Configuration;
 using Fanex.Data.Configuration;
 using Quartz;
 using Quartz.Impl;
-using System;
 
 namespace Fanex.Afiliate.Services.ConsoleApp
 {
@@ -28,7 +27,6 @@ namespace Fanex.Afiliate.Services.ConsoleApp
             _schedulerFactory = new StdSchedulerFactory();
             _scheduler = _schedulerFactory.GetScheduler();
             _scheduler.Start();
-           
         }
     }
 
