@@ -32,6 +32,7 @@ namespace Fanex.Affiliate.Services.Jobs.QuartzJob
         /// <param name="context">The context.</param>
         public void Execute(IJobExecutionContext context)
         {
+            Fanex.Logging.LogService.Error("Affiliate service test");
             Run(context);
         }
     }
