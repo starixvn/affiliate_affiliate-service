@@ -35,8 +35,8 @@
         <description>Athena000_ImportExchangeRateTrigger</description>
         <job-name>ImportExchangeRateJob</job-name>
         <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>0</repeat-interval>
+        <repeat-count>10</repeat-count>
+        <repeat-interval>1</repeat-interval>
       </simple>
     </trigger>
     <trigger>
@@ -46,8 +46,8 @@
         <description>Athena000_ImportMemberDailyTrigger</description>
         <job-name>ImportMemberDailyJob</job-name>
         <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>0</repeat-interval>
+        <repeat-count>10</repeat-count>
+        <repeat-interval>1</repeat-interval>
       </simple>
     </trigger>
     <trigger>
@@ -57,8 +57,8 @@
         <description>Athena000_ImportMemberInfoTrigger</description>
         <job-name>ImportMemberInfoJob</job-name>
         <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>300000</repeat-interval>
+        <repeat-count>10</repeat-count>
+        <repeat-interval>1</repeat-interval>
       </simple>
     </trigger>
     <!--End - Athena000 Triggers-->

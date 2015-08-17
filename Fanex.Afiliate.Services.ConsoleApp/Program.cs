@@ -3,29 +3,40 @@ using Fanex.Affiliate.Services.Core.Configuration;
 using Fanex.Data.Configuration;
 using Quartz;
 using Quartz.Impl;
+using System;
+
 namespace Fanex.Afiliate.Services.ConsoleApp
 {
-    class Program
+    internal class JobInstance
     {
         /// <summary>
         /// Quartz ISchedulerFactory.
         /// </summary>
-        private static ISchedulerFactory _schedulerFactory;
+        private ISchedulerFactory _schedulerFactory;
 
         /// <summary>
         /// Quartz IScheduler.
         /// </summary>
-        private static IScheduler _scheduler;
+        private IScheduler _scheduler;
 
-        static void Main(string[] args)
+        public void Run()
         {
-
             DbSettingProviderManager.Current.Start();
+            Fanex.Logging.LogService.Error("test");
             AppSetting.Initialize();
             LicenseeManager.Initialize();
             _schedulerFactory = new StdSchedulerFactory();
             _scheduler = _schedulerFactory.GetScheduler();
             _scheduler.Start();
+           
+        }
+    }
+
+    internal class Program
+    {
+        private static void Main(string[] args)
+        {
+            (new JobInstance()).Run();
         }
     }
 }
