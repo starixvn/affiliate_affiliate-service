@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Functions>
+  <Function Name="ServiceUNOBET">
+    <!--ImportMemberInfo-->
+    <Setting Key="UNOBET_Aff_MemberInfoGetMissingCreatedDate" SpName="Aff_MemberInfoGetMissingCreatedDate" DbName="DBAFFUNOBET.Affiliate_UNOBET.bodbAdminNet" />
+    <Setting Key="UNOBET_Task_Aff_MemberInfoImportData" SpName="Task_Aff_MemberInfoImportData" DbName="DBAFFUNOBET.Affiliate_UNOBET.bodbAdminNet" TimeOut="1200" />
+    <Setting Key="UNOBET_Task_Aff_MemberInfoUpdateCreatedDate" SpName="Task_Aff_MemberInfoUpdateCreatedDate" DbName="DBAFFUNOBET.Affiliate_UNOBET.bodbAdminNet" />
+    <!--ImportMemberDaily-->
+    <Setting Key="UNOBET_Aff_GetMembers" SpName="Aff_GetMembers" DbName="DBAFFUNOBET.Affiliate_UNOBET.bodbAdminNet" />
+    <Setting Key="UNOBET_Task_Aff_MemberDailyImportData" SpName="Task_Aff_MemberDailyImportData" DbName="DBAFFUNOBET.Affiliate_UNOBET.bodbAdminNet" />
+    <Setting Key="UNOBET_Task_Aff_MemberDailyTransactionImportData" SpName="Task_Aff_MemberDailyTransactionImportData" DbName="DBAFFUNOBET.Affiliate_UNOBET.bodbAdminNet" />
+    <!--ImportExchange-->
+    <Setting Key="UNOBET_Task_aff_DailyImportExchange" SpName="Task_aff_DailyImportExchange" DbName="DBAFFUNOBET.Affiliate_UNOBET.bodbAdminNet" />
+    <!--Common-->
+    <Setting Key="UNOBET_Aff_CurrentDate" SpName="Aff_CurrentDate" DbName="DBAFFUNOBET.Affiliate_UNOBET.bodbAdminNet" />
+    <Setting Key="UNOBET_Aff_SystemSettingsSel" SpName="Aff_SystemSettingsSel" DbName="DBAFFUNOBET.Affiliate_UNOBET.bodbAdminNet" />
+    <Setting Key="UNOBET_Aff_AffiliateCurrenciesSel" SpName="Aff_AffiliateCurrenciesSel" DbName="DBAFFUNOBET.Affiliate_UNOBET.bodbAdminNet" />
+    <Setting Key="UNOBET_Aff_SystemSettingsSelByName" SpName="Aff_SystemSettingsSelByName" DbName="DBAFFUNOBET.Affiliate_UNOBET.bodbAdminNet" />
+    <Setting Key="UNOBET_Aff_BannerSelType" SpName="Aff_BannerSelType" DbName="DBAFFUNOBET.Affiliate_UNOBET.bodbAdminNet" />
+    <Setting Key="UNOBET_Aff_AffTypeSel" SpName="Aff_AffTypeSel" DbName="DBAFFUNOBET.Affiliate_UNOBET.bodbAdminNet" />
+    <Setting Key="UNOBET_Aff_CountrySelAll" SpName="Aff_CountrySelAll" DbName="DBAFFUNOBET.Affiliate_UNOBET.bodbAdminNet" />
+    <Setting Key="UNOBET_Aff_BaseCurrenciesSel" SpName="Aff_BaseCurrenciesSel" DbName="DBAFFUNOBET.Affiliate_UNOBET.bodbAdminNet" />
+    <Setting Key="UNOBET_Aff_CurrencyListSel" SpName="Aff_CurrencyListSel" DbName="DBAFFUNOBET.Affiliate_UNOBET.bodbAdminNet" />
+    <Setting Key="UNOBET_Aff_LanguageSel" SpName="Aff_LanguageSel" DbName="DBAFFUNOBET.Affiliate_UNOBET.bodbAdminNet" />
+    <Setting Key="UNOBET_Aff_TaskLogUpdStatus" SpName="Aff_TaskLogUpdStatus" DbName="DBAFFUNOBET.Affiliate_UNOBET.bodbAdminNet" />
+    <Setting Key="UNOBET_Aff_TaskLogIns" SpName="Aff_TaskLogIns" DbName="DBAFFUNOBET.Affiliate_UNOBET.bodbAdminNet" />
+    <Setting Key="UNOBET_Aff_TaskDetailSelByName" SpName="Aff_TaskDetailSelByName" DbName="DBAFFUNOBET.Affiliate_UNOBET.bodbAdminNet" />
+  </Function>
+</Functions>

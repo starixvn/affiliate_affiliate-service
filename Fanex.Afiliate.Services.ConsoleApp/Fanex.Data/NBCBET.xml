@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Functions>
+  <Function Name="ServiceNBCBET">
+    <!--ImportMemberInfo-->
+    <Setting Key="NBCBET_Aff_MemberInfoGetMissingCreatedDate" SpName="Aff_MemberInfoGetMissingCreatedDate" DbName="DBAFFNBCBET.Affiliate_NBCBET.bodbAdminNet" />
+    <Setting Key="NBCBET_Task_Aff_MemberInfoImportData" SpName="Task_Aff_MemberInfoImportData" DbName="DBAFFNBCBET.Affiliate_NBCBET.bodbAdminNet" TimeOut="1200" />
+    <Setting Key="NBCBET_Task_Aff_MemberInfoUpdateCreatedDate" SpName="Task_Aff_MemberInfoUpdateCreatedDate" DbName="DBAFFNBCBET.Affiliate_NBCBET.bodbAdminNet" />
+    <!--ImportMemberDaily-->
+    <Setting Key="NBCBET_Aff_GetMembers" SpName="Aff_GetMembers" DbName="DBAFFNBCBET.Affiliate_NBCBET.bodbAdminNet" />
+    <Setting Key="NBCBET_Task_Aff_MemberDailyImportData" SpName="Task_Aff_MemberDailyImportData" DbName="DBAFFNBCBET.Affiliate_NBCBET.bodbAdminNet" />
+    <Setting Key="NBCBET_Task_Aff_MemberDailyTransactionImportData" SpName="Task_Aff_MemberDailyTransactionImportData" DbName="DBAFFNBCBET.Affiliate_NBCBET.bodbAdminNet" />
+    <!--ImportExchange-->
+    <Setting Key="NBCBET_Task_aff_DailyImportExchange" SpName="Task_aff_DailyImportExchange" DbName="DBAFFNBCBET.Affiliate_NBCBET.bodbAdminNet" />
+    <!--Common-->
+    <Setting Key="NBCBET_Aff_CurrentDate" SpName="Aff_CurrentDate" DbName="DBAFFNBCBET.Affiliate_NBCBET.bodbAdminNet" />
+    <Setting Key="NBCBET_Aff_SystemSettingsSel" SpName="Aff_SystemSettingsSel" DbName="DBAFFNBCBET.Affiliate_NBCBET.bodbAdminNet" />
+    <Setting Key="NBCBET_Aff_AffiliateCurrenciesSel" SpName="Aff_AffiliateCurrenciesSel" DbName="DBAFFNBCBET.Affiliate_NBCBET.bodbAdminNet" />
+    <Setting Key="NBCBET_Aff_SystemSettingsSelByName" SpName="Aff_SystemSettingsSelByName" DbName="DBAFFNBCBET.Affiliate_NBCBET.bodbAdminNet" />
+    <Setting Key="NBCBET_Aff_BannerSelType" SpName="Aff_BannerSelType" DbName="DBAFFNBCBET.Affiliate_NBCBET.bodbAdminNet" />
+    <Setting Key="NBCBET_Aff_AffTypeSel" SpName="Aff_AffTypeSel" DbName="DBAFFNBCBET.Affiliate_NBCBET.bodbAdminNet" />
+    <Setting Key="NBCBET_Aff_CountrySelAll" SpName="Aff_CountrySelAll" DbName="DBAFFNBCBET.Affiliate_NBCBET.bodbAdminNet" />
+    <Setting Key="NBCBET_Aff_BaseCurrenciesSel" SpName="Aff_BaseCurrenciesSel" DbName="DBAFFNBCBET.Affiliate_NBCBET.bodbAdminNet" />
+    <Setting Key="NBCBET_Aff_CurrencyListSel" SpName="Aff_CurrencyListSel" DbName="DBAFFNBCBET.Affiliate_NBCBET.bodbAdminNet" />
+    <Setting Key="NBCBET_Aff_LanguageSel" SpName="Aff_LanguageSel" DbName="DBAFFNBCBET.Affiliate_NBCBET.bodbAdminNet" />
+    <Setting Key="NBCBET_Aff_TaskLogUpdStatus" SpName="Aff_TaskLogUpdStatus" DbName="DBAFFNBCBET.Affiliate_NBCBET.bodbAdminNet" />
+    <Setting Key="NBCBET_Aff_TaskLogIns" SpName="Aff_TaskLogIns" DbName="DBAFFNBCBET.Affiliate_NBCBET.bodbAdminNet" />
+    <Setting Key="NBCBET_Aff_TaskDetailSelByName" SpName="Aff_TaskDetailSelByName" DbName="DBAFFNBCBET.Affiliate_NBCBET.bodbAdminNet" />
+  </Function>
+</Functions>

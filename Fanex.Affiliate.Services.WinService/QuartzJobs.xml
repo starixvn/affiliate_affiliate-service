@@ -9,21 +9,21 @@
     <job>
       <name>ImportExchangeRateJob</name>
       <description>ImportExchangeRateJob</description>
-      <job-type>Fanex.Affiliate.Services.Controller.QuartzJob.ImportExchangeRateJob, Fanex.Affiliate.Services.Controller</job-type>
+      <job-type>Fanex.Affiliate.Services.Jobs.QuartzJob.ImportExchangeRateJob, Fanex.Affiliate.Services.Jobs.QuartzJob</job-type>
       <durable>true</durable>
       <recover>false</recover>
     </job>
     <job>
       <name>ImportMemberDailyJob</name>
       <description>ImportMemberDailyJob</description>
-      <job-type>Fanex.Affiliate.Services.Controller.QuartzJob.ImportMemberDailyJob, Fanex.Affiliate.Services.Controller</job-type>
+      <job-type>Fanex.Affiliate.Services.Jobs.QuartzJob.ImportMemberDailyJob, Fanex.Affiliate.Services.Jobs.QuartzJob</job-type>
       <durable>true</durable>
       <recover>false</recover>
     </job>
     <job>
       <name>ImportMemberInfoJob</name>
       <description>ImportMemberInfoJob</description>
-      <job-type>Fanex.Affiliate.Services.Controller.QuartzJob.ImportMemberInfoJob, Fanex.Affiliate.Services.Controller</job-type>
+      <job-type>Fanex.Affiliate.Services.Jobs.QuartzJob.ImportMemberInfoJob, Fanex.Affiliate.Services.Jobs.QuartzJob</job-type>
       <durable>true</durable>
       <recover>false</recover>
     </job>
