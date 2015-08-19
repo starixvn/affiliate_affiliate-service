@@ -166,7 +166,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Fanex.Data\ALLBETCLUB.xml" />
+    <Content Include="Fanex.Data\ALLBETCLUB.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Fanex.Data\AONCASH.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
