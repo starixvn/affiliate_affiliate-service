@@ -113,6 +113,7 @@ namespace Fanex.Affiliate.Services.WinForm
                 var controller = BaseImporter.Create(importType, importInfo.Licensee);
                 controller.Import(importInfo);
             }
+            MessageBox.Show("Done");
         }
 
         public void TestButtonClicked(object sender, EventArgs e)

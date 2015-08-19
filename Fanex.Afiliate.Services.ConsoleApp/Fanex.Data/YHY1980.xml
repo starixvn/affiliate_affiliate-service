@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Functions>
+  <Function Name="ServiceYHY1980">
+    <!--ImportMemberInfo-->
+    <Setting Key="YHY1980_Aff_MemberInfoGetMissingCreatedDate" SpName="Aff_MemberInfoGetMissingCreatedDate" DbName="DBAFFYHY1980.Affiliate_YHY1980.bodbAdminNet" />
+    <Setting Key="YHY1980_Task_Aff_MemberInfoImportData" SpName="Task_Aff_MemberInfoImportData" DbName="DBAFFYHY1980.Affiliate_YHY1980.bodbAdminNet" TimeOut="1200" />
+    <Setting Key="YHY1980_Task_Aff_MemberInfoUpdateCreatedDate" SpName="Task_Aff_MemberInfoUpdateCreatedDate" DbName="DBAFFYHY1980.Affiliate_YHY1980.bodbAdminNet" />
+    <!--ImportMemberDaily-->
+    <Setting Key="YHY1980_Aff_GetMembers" SpName="Aff_GetMembers" DbName="DBAFFYHY1980.Affiliate_YHY1980.bodbAdminNet" />
+    <Setting Key="YHY1980_Task_Aff_MemberDailyImportData" SpName="Task_Aff_MemberDailyImportData" DbName="DBAFFYHY1980.Affiliate_YHY1980.bodbAdminNet" />
+    <Setting Key="YHY1980_Task_Aff_MemberDailyTransactionImportData" SpName="Task_Aff_MemberDailyTransactionImportData" DbName="DBAFFYHY1980.Affiliate_YHY1980.bodbAdminNet" />
+    <!--ImportExchange-->
+    <Setting Key="YHY1980_Task_aff_DailyImportExchange" SpName="Task_aff_DailyImportExchange" DbName="DBAFFYHY1980.Affiliate_YHY1980.bodbAdminNet" />
+    <!--Common-->
+    <Setting Key="YHY1980_Aff_CurrentDate" SpName="Aff_CurrentDate" DbName="DBAFFYHY1980.Affiliate_YHY1980.bodbAdminNet" />
+    <Setting Key="YHY1980_Aff_SystemSettingsSel" SpName="Aff_SystemSettingsSel" DbName="DBAFFYHY1980.Affiliate_YHY1980.bodbAdminNet" />
+    <Setting Key="YHY1980_Aff_AffiliateCurrenciesSel" SpName="Aff_AffiliateCurrenciesSel" DbName="DBAFFYHY1980.Affiliate_YHY1980.bodbAdminNet" />
+    <Setting Key="YHY1980_Aff_SystemSettingsSelByName" SpName="Aff_SystemSettingsSelByName" DbName="DBAFFYHY1980.Affiliate_YHY1980.bodbAdminNet" />
+    <Setting Key="YHY1980_Aff_BannerSelType" SpName="Aff_BannerSelType" DbName="DBAFFYHY1980.Affiliate_YHY1980.bodbAdminNet" />
+    <Setting Key="YHY1980_Aff_AffTypeSel" SpName="Aff_AffTypeSel" DbName="DBAFFYHY1980.Affiliate_YHY1980.bodbAdminNet" />
+    <Setting Key="YHY1980_Aff_CountrySelAll" SpName="Aff_CountrySelAll" DbName="DBAFFYHY1980.Affiliate_YHY1980.bodbAdminNet" />
+    <Setting Key="YHY1980_Aff_BaseCurrenciesSel" SpName="Aff_BaseCurrenciesSel" DbName="DBAFFYHY1980.Affiliate_YHY1980.bodbAdminNet" />
+    <Setting Key="YHY1980_Aff_CurrencyListSel" SpName="Aff_CurrencyListSel" DbName="DBAFFYHY1980.Affiliate_YHY1980.bodbAdminNet" />
+    <Setting Key="YHY1980_Aff_LanguageSel" SpName="Aff_LanguageSel" DbName="DBAFFYHY1980.Affiliate_YHY1980.bodbAdminNet" />
+    <Setting Key="YHY1980_Aff_TaskLogUpdStatus" SpName="Aff_TaskLogUpdStatus" DbName="DBAFFYHY1980.Affiliate_YHY1980.bodbAdminNet" />
+    <Setting Key="YHY1980_Aff_TaskLogIns" SpName="Aff_TaskLogIns" DbName="DBAFFYHY1980.Affiliate_YHY1980.bodbAdminNet" />
+    <Setting Key="YHY1980_Aff_TaskDetailSelByName" SpName="Aff_TaskDetailSelByName" DbName="DBAFFYHY1980.Affiliate_YHY1980.bodbAdminNet" />
+  </Function>
+</Functions>
