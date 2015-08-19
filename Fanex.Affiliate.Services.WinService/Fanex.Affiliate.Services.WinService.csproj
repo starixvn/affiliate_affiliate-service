@@ -210,6 +210,7 @@
     </Content>
     <Content Include="Licensees.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="QuartzJobs.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

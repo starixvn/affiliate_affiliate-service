@@ -15,6 +15,7 @@ namespace Fanex.Affiliate.Services.WinForm
     using Fanex.Affiliate.Services.Core;
     using Fanex.Affiliate.Services.Jobs;
     using Fanex.Affiliate.Services.Jobs.DTO;
+    using System.Diagnostics.CodeAnalysis;
 
     /// <summary>
     /// The main form class.
@@ -64,6 +65,7 @@ namespace Fanex.Affiliate.Services.WinForm
         /// </summary>
         /// <param name="sender">The source of the event.</param>
         /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        [SuppressMessage("Microsoft.Globalization", "CA1300:SpecifyMessageBoxOptions", Justification = "Reviewed!")]
         public void ImportButtonClicked(object sender, EventArgs e)
         {
             const string ConfirmImportMessage = "Are you sure to import data right now?";
@@ -83,11 +85,11 @@ namespace Fanex.Affiliate.Services.WinForm
             }
 
             var diaglogResult = MessageBox.Show(
-                ConfirmImportMessage, 
+                ConfirmImportMessage,
                 Text,
                 MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question, 
-                MessageBoxDefaultButton.Button1, 
+                MessageBoxIcon.Question,
+                MessageBoxDefaultButton.Button1,
                 MessageBoxOptions.RightAlign);
             if (diaglogResult != DialogResult.Yes)
             {
@@ -113,6 +115,7 @@ namespace Fanex.Affiliate.Services.WinForm
                 var controller = BaseImporter.Create(importType, importInfo.Licensee);
                 controller.Import(importInfo);
             }
+
             MessageBox.Show("Done");
         }
 
