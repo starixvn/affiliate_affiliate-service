@@ -186,9 +186,6 @@
     <Content Include="Fanex.Data\UNOBET.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Fanex.Data\YHY1980.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Licensees.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
