@@ -10,12 +10,12 @@
 namespace Fanex.Affiliate.Services.WinForm
 {
     using System;
+    using System.Diagnostics.CodeAnalysis;
     using System.Linq;
     using System.Windows.Forms;
     using Fanex.Affiliate.Services.Core;
     using Fanex.Affiliate.Services.Jobs;
     using Fanex.Affiliate.Services.Jobs.DTO;
-    using System.Diagnostics.CodeAnalysis;
 
     /// <summary>
     /// The main form class.

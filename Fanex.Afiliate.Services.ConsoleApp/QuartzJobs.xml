@@ -381,41 +381,6 @@
             </simple>
         </trigger>
         <!--End - nbcbet Triggers-->
-        <!--Begin - yhy1980 Triggers-->
-        <trigger>
-            <simple>
-                <name>yhy1980_ImportExchangeRateTrigger</name>
-                <group>yhy1980</group>
-                <description>yhy1980_ImportExchangeRateTrigger</description>
-                <job-name>ImportExchangeRateJob</job-name>
-                <misfire-instruction>SmartPolicy</misfire-instruction>
-                <repeat-count>-1</repeat-count>
-                <repeat-interval>300000</repeat-interval>
-            </simple>
-        </trigger>
-        <trigger>
-            <simple>
-                <name>yhy1980_ImportMemberDailyTrigger</name>
-                <group>yhy1980</group>
-                <description>yhy1980_ImportMemberDailyTrigger</description>
-                <job-name>ImportMemberDailyJob</job-name>
-                <misfire-instruction>SmartPolicy</misfire-instruction>
-                <repeat-count>-1</repeat-count>
-                <repeat-interval>300000</repeat-interval>
-            </simple>
-        </trigger>
-        <trigger>
-            <simple>
-                <name>yhy1980_ImportMemberInfoTrigger</name>
-                <group>yhy1980</group>
-                <description>yhy1980_ImportMemberInfoTrigger</description>
-                <job-name>ImportMemberInfoJob</job-name>
-                <misfire-instruction>SmartPolicy</misfire-instruction>
-                <repeat-count>-1</repeat-count>
-                <repeat-interval>300000</repeat-interval>
-            </simple>
-        </trigger>
-        <!--End - yhy1980 Triggers-->
         <!--Begin - unobet Triggers-->
         <trigger>
             <simple>

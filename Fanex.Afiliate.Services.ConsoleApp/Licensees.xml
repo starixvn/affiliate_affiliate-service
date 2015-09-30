@@ -51,11 +51,6 @@
       <Setting Key="UsernamePrefix" Value="nbcbet$" />
     </Settings>
   </Licensee>
-  <Licensee Name="yhy1980">
-    <Settings>
-      <Setting Key="UsernamePrefix" Value="yhy1980$" />
-    </Settings>
-  </Licensee>
   <Licensee Name="unobet">
     <Settings>
       <Setting Key="UsernamePrefix" Value="unobet$" />
