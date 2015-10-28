@@ -198,6 +198,9 @@
     <Content Include="Fanex.Data\Common.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Fanex.Data\9BET.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Fanex.Data\DB06.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
