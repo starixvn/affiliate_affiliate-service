@@ -76,10 +76,10 @@ namespace Fanex.Affiliate.Services.DataAccess
         /// </summary>
         /// <param name="date">The selected date.</param>
         /// <returns>Returns Data table.</returns>
-        public DataTable GetAffiliateMembers(DateTime date)
+        public DataSet GetAffiliateMembers(DateTime date)
         {
             var param = new Hashtable { { "date", date } };
-            return ExecSpDataTable("Aff_GetMembers", param);
+            return ExecSpDataSet("Aff_GetMembers", param);
         }
 
         /// <summary>
@@ -89,9 +89,9 @@ namespace Fanex.Affiliate.Services.DataAccess
         /// <param name="usernamePrefix">The username prefix.</param>
         /// <param name="date">The selected date.</param>
         /// <returns>Returns data table.</returns>
-        public DataTable GetAffiliatePlayersWinlostByProduct(string xmlData, string usernamePrefix, DateTime date)
+        public DataTable GetAffiliatePlayersWinlostByProduct(string xmlData, string usernamePrefix, DateTime date, string productIds)
         {
-            var param = new Hashtable { { "xml", xmlData }, { "prefix", usernamePrefix }, { "date", date } };
+            var param = new Hashtable { { "xml", xmlData }, { "prefix", usernamePrefix }, { "date", date }, { "productids", productIds } };
             return ExecSpDataTable("Common_Aff_PlayersWinlostByProductSel", param);
         }
 
