@@ -68,22 +68,9 @@ namespace Fanex.Affiliate.Services.WinForm
         [SuppressMessage("Microsoft.Globalization", "CA1300:SpecifyMessageBoxOptions", Justification = "Reviewed!")]
         public void ImportButtonClicked(object sender, EventArgs e)
         {
+            CheckValidation();
+
             const string ConfirmImportMessage = "Are you sure to import data right now?";
-            const string SelectLicenseeWarning = "Please select a licensee";
-            const string SelectDateWarning = "ToDate must be equal or greater than FromDate";
-
-            if (licenseesListBox.SelectedItems.Count <= 0)
-            {
-                MessageBox.Show(SelectLicenseeWarning, Text, MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign);
-                return;
-            }
-
-            if (fromDatePicker.Value > toDatePicker.Value)
-            {
-                MessageBox.Show(SelectDateWarning, Text, MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign);
-                return;
-            }
-
             var diaglogResult = MessageBox.Show(
                 ConfirmImportMessage,
                 Text,
@@ -117,6 +104,24 @@ namespace Fanex.Affiliate.Services.WinForm
             }
 
             MessageBox.Show("Done");
+        }
+
+        private void CheckValidation()
+        {
+            const string SelectLicenseeWarning = "Please select a licensee";
+            const string SelectDateWarning = "ToDate must be equal or greater than FromDate";
+
+            if (licenseesListBox.SelectedItems.Count <= 0)
+            {
+                MessageBox.Show(SelectLicenseeWarning, Text, MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign);
+                return;
+            }
+
+            if (fromDatePicker.Value > toDatePicker.Value)
+            {
+                MessageBox.Show(SelectDateWarning, Text, MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.RightAlign);
+                return;
+            }
         }
 
         public void TestButtonClicked(object sender, EventArgs e)
