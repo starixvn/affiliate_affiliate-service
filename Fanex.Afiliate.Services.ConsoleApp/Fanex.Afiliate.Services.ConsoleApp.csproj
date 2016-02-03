@@ -205,7 +205,7 @@
     <Content Include="Fanex.Data\MACAUBET.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Fanex.Data\NBCBET.xml">
+    <Content Include="Fanex.Data\AIABET.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Fanex.Data\Q8BOLA.xml">
@@ -216,6 +216,7 @@
     </Content>
     <Content Include="Licensees.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>

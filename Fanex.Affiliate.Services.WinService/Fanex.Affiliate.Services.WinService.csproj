@@ -182,6 +182,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Fanex.Data\AIABET.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Fanex.Data\ALLBETCLUB.xml">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -214,9 +217,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Fanex.Data\MACAUBET.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Fanex.Data\NBCBET.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Fanex.Data\Q8BOLA.xml">
