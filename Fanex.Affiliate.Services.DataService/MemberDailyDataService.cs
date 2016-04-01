@@ -10,7 +10,10 @@
 namespace Fanex.Affiliate.Services.DataService
 {
     using System;
+    using System.Data;
+    using System.Diagnostics.CodeAnalysis;
     using System.Reflection;
+    using System.Text;
     using Fanex.Affiliate.Services.Core.Configuration;
     using Fanex.Affiliate.Services.DataAccess;
     using Fanex.Affiliate.Services.DataService.Xml;
@@ -40,11 +43,23 @@ namespace Fanex.Affiliate.Services.DataService
         /// </summary>
         /// <param name="date">The selected date.</param>
         /// <returns>Returns list of members.</returns>
-        public string GetMembers(DateTime date)
+        [SuppressMessage("Microsoft.Design", "CA1021:AvoidOutParameters", Justification = "Reviewed.")]
+        public string GetMembers(DateTime date, out string productIds)
         {
-            LogTracer.Append(LogFormatter.Format(MethodBase.GetCurrentMethod(), date));
-            var dataTable = _dataAccess.GetAffiliateMembers(date);
-            return XmlConverter.ToXmlString(dataTable);
+            productIds = null;
+            LogTracer.Append(LogFormatter.Format(MethodBase.GetCurrentMethod(), date, productIds));
+            var dataSet = _dataAccess.GetAffiliateMembers(date);
+            var memberXml = XmlConverter.ToXmlString(dataSet.Tables[0]);
+
+            // Get product id list.
+            var productIdBuilder = new StringBuilder();
+            foreach (DataRow row in dataSet.Tables[1].Rows)
+            {
+                productIdBuilder.Append(row["ProductId"]).Append(",");
+            }
+
+            productIds = productIdBuilder.ToString().TrimEnd(',');
+            return memberXml;
         }
 
         /// <summary>
@@ -54,12 +69,12 @@ namespace Fanex.Affiliate.Services.DataService
         /// <param name="usernamePrefix">The username prefix.</param>
         /// <param name="date">The selected date.</param>
         /// <returns>Returns list of players.</returns>
-        public string GetPlayersWinlostByProduct(string xmlMembers, string usernamePrefix, DateTime date)
+        public string GetPlayersWinlostByProduct(string xmlMembers, string usernamePrefix, DateTime date, string productIds)
         {
             if (!string.IsNullOrEmpty(xmlMembers))
             {
-                LogTracer.Append(LogFormatter.Format(MethodBase.GetCurrentMethod(), xmlMembers, usernamePrefix, date));
-                var dataTable = _dataAccess.GetAffiliatePlayersWinlostByProduct(xmlMembers, usernamePrefix, date);
+                LogTracer.Append(LogFormatter.Format(MethodBase.GetCurrentMethod(), xmlMembers, usernamePrefix, date, productIds));
+                var dataTable = _dataAccess.GetAffiliatePlayersWinlostByProduct(xmlMembers, usernamePrefix, date, productIds);
                 return XmlConverter.ToXmlString(dataTable);
             }
 
