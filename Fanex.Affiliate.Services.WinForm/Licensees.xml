@@ -61,4 +61,9 @@
       <Setting Key="UsernamePrefix" Value="9bet$" />
     </Settings>
   </Licensee>
+  <Licensee Name="be7th">
+    <Settings>
+      <Setting Key="UsernamePrefix" Value="be7th$" />
+    </Settings>
+  </Licensee>
 </Licensees>

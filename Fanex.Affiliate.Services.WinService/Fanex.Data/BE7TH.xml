@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Functions>
+  <Function Name="ServiceBE7TH">
+    <!--ImportMemberInfo-->
+    <Setting Key="BE7TH_Aff_MemberInfoGetMissingCreatedDate" SpName="Aff_MemberInfoGetMissingCreatedDate" DbName="DBAFFBE7TH.Affiliate_BE7TH.bodbAdminNet" />
+    <Setting Key="BE7TH_Task_Aff_MemberInfoImportData" SpName="Task_Aff_MemberInfoImportData" DbName="DBAFFBE7TH.Affiliate_BE7TH.bodbAdminNet" TimeOut="1200" />
+    <Setting Key="BE7TH_Task_Aff_MemberInfoUpdateCreatedDate" SpName="Task_Aff_MemberInfoUpdateCreatedDate" DbName="DBAFFBE7TH.Affiliate_BE7TH.bodbAdminNet" />
+    <!--ImportMemberDaily-->
+    <Setting Key="BE7TH_Aff_GetMembers" SpName="Aff_GetMembers" DbName="DBAFFBE7TH.Affiliate_BE7TH.bodbAdminNet" />
+    <Setting Key="BE7TH_Task_Aff_MemberDailyImportData" SpName="Task_Aff_MemberDailyImportData" DbName="DBAFFBE7TH.Affiliate_BE7TH.bodbAdminNet" />
+    <Setting Key="BE7TH_Task_Aff_MemberDailyTransactionImportData" SpName="Task_Aff_MemberDailyTransactionImportData" DbName="DBAFFBE7TH.Affiliate_BE7TH.bodbAdminNet" />
+    <!--ImportExchange-->
+    <Setting Key="BE7TH_Task_aff_DailyImportExchange" SpName="Task_aff_DailyImportExchange" DbName="DBAFFBE7TH.Affiliate_BE7TH.bodbAdminNet" />
+    <!--Common-->
+    <Setting Key="BE7TH_Aff_CurrentDate" SpName="Aff_CurrentDate" DbName="DBAFFBE7TH.Affiliate_BE7TH.bodbAdminNet" />
+    <Setting Key="BE7TH_Aff_SystemSettingsSel" SpName="Aff_SystemSettingsSel" DbName="DBAFFBE7TH.Affiliate_BE7TH.bodbAdminNet" />
+    <Setting Key="BE7TH_Aff_AffiliateCurrenciesSel" SpName="Aff_AffiliateCurrenciesSel" DbName="DBAFFBE7TH.Affiliate_BE7TH.bodbAdminNet" />
+    <Setting Key="BE7TH_Aff_SystemSettingsSelByName" SpName="Aff_SystemSettingsSelByName" DbName="DBAFFBE7TH.Affiliate_BE7TH.bodbAdminNet" />
+    <Setting Key="BE7TH_Aff_BannerSelType" SpName="Aff_BannerSelType" DbName="DBAFFBE7TH.Affiliate_BE7TH.bodbAdminNet" />
+    <Setting Key="BE7TH_Aff_AffTypeSel" SpName="Aff_AffTypeSel" DbName="DBAFFBE7TH.Affiliate_BE7TH.bodbAdminNet" />
+    <Setting Key="BE7TH_Aff_CountrySelAll" SpName="Aff_CountrySelAll" DbName="DBAFFBE7TH.Affiliate_BE7TH.bodbAdminNet" />
+    <Setting Key="BE7TH_Aff_BaseCurrenciesSel" SpName="Aff_BaseCurrenciesSel" DbName="DBAFFBE7TH.Affiliate_BE7TH.bodbAdminNet" />
+    <Setting Key="BE7TH_Aff_CurrencyListSel" SpName="Aff_CurrencyListSel" DbName="DBAFFBE7TH.Affiliate_BE7TH.bodbAdminNet" />
+    <Setting Key="BE7TH_Aff_LanguageSel" SpName="Aff_LanguageSel" DbName="DBAFFBE7TH.Affiliate_BE7TH.bodbAdminNet" />
+    <Setting Key="BE7TH_Aff_TaskLogUpdStatus" SpName="Aff_TaskLogUpdStatus" DbName="DBAFFBE7TH.Affiliate_BE7TH.bodbAdminNet" />
+    <Setting Key="BE7TH_Aff_TaskLogIns" SpName="Aff_TaskLogIns" DbName="DBAFFBE7TH.Affiliate_BE7TH.bodbAdminNet" />
+    <Setting Key="BE7TH_Aff_TaskDetailSelByName" SpName="Aff_TaskDetailSelByName" DbName="DBAFFBE7TH.Affiliate_BE7TH.bodbAdminNet" />
+  </Function>
+</Functions>

@@ -451,5 +451,40 @@
       </simple>
     </trigger>
     <!--End - 9bet Triggers-->
+    <!--Begin - be7th Triggers-->
+    <trigger>
+      <simple>
+        <name>be7th_ImportExchangeRateTrigger</name>
+        <group>be7th</group>
+        <description>be7th_ImportExchangeRateTrigger</description>
+        <job-name>ImportExchangeRateJob</job-name>
+        <misfire-instruction>SmartPolicy</misfire-instruction>
+        <repeat-count>-1</repeat-count>
+        <repeat-interval>300000</repeat-interval>
+      </simple>
+    </trigger>
+    <trigger>
+      <simple>
+        <name>be7th_ImportMemberDailyTrigger</name>
+        <group>be7th</group>
+        <description>be7th_ImportMemberDailyTrigger</description>
+        <job-name>ImportMemberDailyJob</job-name>
+        <misfire-instruction>SmartPolicy</misfire-instruction>
+        <repeat-count>-1</repeat-count>
+        <repeat-interval>300000</repeat-interval>
+      </simple>
+    </trigger>
+    <trigger>
+      <simple>
+        <name>be7th_ImportMemberInfoTrigger</name>
+        <group>be7th</group>
+        <description>be7th_ImportMemberInfoTrigger</description>
+        <job-name>ImportMemberInfoJob</job-name>
+        <misfire-instruction>SmartPolicy</misfire-instruction>
+        <repeat-count>-1</repeat-count>
+        <repeat-interval>300000</repeat-interval>
+      </simple>
+    </trigger>
+    <!--End - be7th Triggers-->
   </schedule>
 </job-scheduling-data>
