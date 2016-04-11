@@ -154,11 +154,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\Fanex.Affiliate.Services.WinService\QuartzJobs.xml">
-      <Link>QuartzJobs.xml</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="Fanex.Data\ATHENA000.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
@@ -168,7 +163,6 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Licensees.xml">
-      <SubType>Designer</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
