@@ -1,13 +1,4 @@
-﻿// --------------------------------------------------------------------------
-// <copyright file="XmlResult.cs" company="Nexcel Solutions Vietnam">
-// Copyright (c) Nexcel Solutions Vietnam. All rights reserved.
-// </copyright>
-// --------------------------------------------------------------------------
-// <history>
-//   <change who="Leo.Vo" date="2013.06.25">Created</change>
-// </history>
-
-namespace Fanex.Affiliate.Services.DataService.Xml.Objects
+﻿namespace Fanex.Affiliate.Services.DataService.Xml.Objects
 {
     using System.Xml.Linq;
 

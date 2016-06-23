@@ -1,13 +1,4 @@
-﻿// --------------------------------------------------------------------------
-// <copyright file="BaseDataService.cs" company="Nexcel Solutions Vietnam">
-// Copyright (c) Nexcel Solutions Vietnam. All rights reserved.
-// </copyright>
-// --------------------------------------------------------------------------
-// <history>
-//   <change who="Leo.Vo" date="2013.06.25">Created</change>
-// </history>
-
-namespace Fanex.Affiliate.Services.DataService
+﻿namespace Fanex.Affiliate.Services.DataService
 {
     using Fanex.Affiliate.Services.Core;
     using Fanex.Affiliate.Services.Core.Configuration;
