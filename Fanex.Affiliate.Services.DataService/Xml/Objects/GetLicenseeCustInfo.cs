@@ -1,7 +1,8 @@
 ﻿namespace Fanex.Affiliate.Services.DataService.Xml.Objects
 {
     using System;
-    using System.Diagnostics.CodeAnalysis;
+
+    #region Generated Code
 
     /// <summary>
     /// The XML object.
@@ -19,7 +20,7 @@
 
         /// <summary>
         /// Gets or sets the BTAG.
-        /// The name of this property must 
+        /// The name of this property must
         /// </summary>
         /// <value>
         /// The BTAG value.
@@ -90,4 +91,6 @@
         /// </value>
         public string Address { get; set; }
     }
+
+    #endregion Generated Code
 }
