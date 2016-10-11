@@ -1,13 +1,4 @@
-﻿// --------------------------------------------------------------------------
-// <copyright file="DataReaderExtension.cs" company="Nexcel Solutions Vietnam">
-// Copyright (c) Nexcel Solutions Vietnam. All rights reserved.
-// </copyright>
-// --------------------------------------------------------------------------
-// <history>
-//   <change who="Leo.Vo" date="2013.06.25">Created</change>
-// </history>
-
-namespace Fanex.Affiliate.Services.DataAccess.Util
+﻿namespace Fanex.Affiliate.Services.DataAccess.Util
 {
     using System;
     using System.Data;

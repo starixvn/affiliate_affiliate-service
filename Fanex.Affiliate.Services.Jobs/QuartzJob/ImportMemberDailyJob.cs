@@ -1,13 +1,4 @@
-﻿// --------------------------------------------------------------------------
-// <copyright file="ImportMemberDailyJob.cs" company="Nexcel Solutions Vietnam">
-// Copyright (c) Nexcel Solutions Vietnam. All rights reserved.
-// </copyright>
-// --------------------------------------------------------------------------
-// <history>
-//   <change who="Leo.Vo" date="2013.06.25">Created</change>
-// </history>
-
-namespace Fanex.Affiliate.Services.Jobs.QuartzJob
+﻿namespace Fanex.Affiliate.Services.Jobs.QuartzJob
 {
     using Fanex.Affiliate.Services.Jobs;
     using Fanex.Affiliate.Services.Jobs.Importer;
