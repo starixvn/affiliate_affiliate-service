@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<job-scheduling-data xmlns="http://quartznet.sourceforge.net/JobSchedulingData"
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     version="2.0">
+  <processing-directives>
+    <overwrite-existing-data>true</overwrite-existing-data>
+  </processing-directives>
+  <schedule>
+   <job>
+      <name>ImportExchangeRateJob</name>
+      <description>ImportExchangeRateJob</description>
+      <job-type>Fanex.Affiliate.Services.Jobs.QuartzJob.ImportExchangeRateJob, Fanex.Affiliate.Services.Jobs</job-type>
+      <durable>true</durable>
+      <recover>false</recover>
+    </job>
+    <job>
+      <name>ImportMemberDailyJob</name>
+      <description>ImportMemberDailyJob</description>
+      <job-type>Fanex.Affiliate.Services.Jobs.QuartzJob.ImportMemberDailyJob, Fanex.Affiliate.Services.Jobs</job-type>
+      <durable>true</durable>
+      <recover>false</recover>
+    </job>
+    <job>
+      <name>ImportMemberInfoJob</name>
+      <description>ImportMemberInfoJob</description>
+      <job-type>Fanex.Affiliate.Services.Jobs.QuartzJob.ImportMemberInfoJob, Fanex.Affiliate.Services.Jobs</job-type>
+      <durable>true</durable>
+      <recover>false</recover>
+    </job>
+    <!--Begin - Spondemo Triggers-->
+    <trigger>
+      <simple>
+        <name>Spondemo_ImportExchangeRateTrigger</name>
+        <group>Spondemo</group>
+        <description>Spondemo_ImportExchangeRateTrigger</description>
+        <job-name>ImportExchangeRateJob</job-name>
+        <misfire-instruction>SmartPolicy</misfire-instruction>
+        <repeat-count>-1</repeat-count>
+        <repeat-interval>300000</repeat-interval>
+      </simple>
+    </trigger>
+    <trigger>
+      <simple>
+        <name>Spondemo_ImportMemberDailyTrigger</name>
+        <group>Spondemo</group>
+        <description>Spondemo_ImportMemberDailyTrigger</description>
+        <job-name>ImportMemberDailyJob</job-name>
+        <misfire-instruction>SmartPolicy</misfire-instruction>
+        <repeat-count>-1</repeat-count>
+        <repeat-interval>300000</repeat-interval>
+      </simple>
+    </trigger>
+    <trigger>
+      <simple>
+        <name>Spondemo_ImportMemberInfoTrigger</name>
+        <group>Spondemo</group>
+        <description>Spondemo_ImportMemberInfoTrigger</description>
+        <job-name>ImportMemberInfoJob</job-name>
+        <misfire-instruction>SmartPolicy</misfire-instruction>
+        <repeat-count>-1</repeat-count>
+        <repeat-interval>300000</repeat-interval>
+      </simple>
+    </trigger>
+    <!--End - Spondemo Triggers-->
+    <!--Begin - Athena000 Triggers-->
+    <trigger>
+      <simple>
+        <name>Athena000_ImportExchangeRateTrigger</name>
+        <group>Athena000</group>
+        <description>Athena000_ImportExchangeRateTrigger</description>
+        <job-name>ImportExchangeRateJob</job-name>
+        <misfire-instruction>SmartPolicy</misfire-instruction>
+        <repeat-count>-1</repeat-count>
+        <repeat-interval>300000</repeat-interval>
+      </simple>
+    </trigger>
+    <trigger>
+      <simple>
+        <name>Athena000_ImportMemberDailyTrigger</name>
+        <group>Athena000</group>
+        <description>Athena000_ImportMemberDailyTrigger</description>
+        <job-name>ImportMemberDailyJob</job-name>
+        <misfire-instruction>SmartPolicy</misfire-instruction>
+        <repeat-count>-1</repeat-count>
+        <repeat-interval>300000</repeat-interval>
+      </simple>
+    </trigger>
+    <trigger>
+      <simple>
+        <name>Athena000_ImportMemberInfoTrigger</name>
+        <group>Athena000</group>
+        <description>Athena000_ImportMemberInfoTrigger</description>
+        <job-name>ImportMemberInfoJob</job-name>
+        <misfire-instruction>SmartPolicy</misfire-instruction>
+        <repeat-count>-1</repeat-count>
+        <repeat-interval>300000</repeat-interval>
+      </simple>
+    </trigger>
+    <!--End - Athena000 Triggers-->
+  </schedule>
+</job-scheduling-data>

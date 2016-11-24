@@ -27,6 +27,41 @@
       <durable>true</durable>
       <recover>false</recover>
     </job>
+    <!--Begin - Spondemo Triggers-->
+    <trigger>
+      <simple>
+        <name>Spondemo_ImportExchangeRateTrigger</name>
+        <group>Spondemo</group>
+        <description>Spondemo_ImportExchangeRateTrigger</description>
+        <job-name>ImportExchangeRateJob</job-name>
+        <misfire-instruction>SmartPolicy</misfire-instruction>
+        <repeat-count>-1</repeat-count>
+        <repeat-interval>300000</repeat-interval>
+      </simple>
+    </trigger>
+    <trigger>
+      <simple>
+        <name>Spondemo_ImportMemberDailyTrigger</name>
+        <group>Spondemo</group>
+        <description>Spondemo_ImportMemberDailyTrigger</description>
+        <job-name>ImportMemberDailyJob</job-name>
+        <misfire-instruction>SmartPolicy</misfire-instruction>
+        <repeat-count>-1</repeat-count>
+        <repeat-interval>300000</repeat-interval>
+      </simple>
+    </trigger>
+    <trigger>
+      <simple>
+        <name>Spondemo_ImportMemberInfoTrigger</name>
+        <group>Spondemo</group>
+        <description>Spondemo_ImportMemberInfoTrigger</description>
+        <job-name>ImportMemberInfoJob</job-name>
+        <misfire-instruction>SmartPolicy</misfire-instruction>
+        <repeat-count>-1</repeat-count>
+        <repeat-interval>300000</repeat-interval>
+      </simple>
+    </trigger>
+    <!--End - Spondemo Triggers-->
     <!--Begin - Athena000 Triggers-->
     <trigger>
       <simple>

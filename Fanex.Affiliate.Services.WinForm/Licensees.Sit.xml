@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Licensees xmlns="LicenseeXmlConfiguration"
+           xmlns:xsi="LicenseeXmlConfiguration">
+  <Licensee Name="spondemo">
+    <Settings>
+      <Setting Key="UsernamePrefix" Value="Spondemo$" />
+    </Settings>
+  </Licensee>
+  <Licensee Name="athena000">
+    <Settings>
+      <Setting Key="UsernamePrefix" Value="Athena000$" />
+    </Settings>
+  </Licensee>
+</Licensees>
