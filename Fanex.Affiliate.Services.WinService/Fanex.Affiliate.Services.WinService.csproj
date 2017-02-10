@@ -190,6 +190,7 @@
     </Content>
     <Content Include="Fanex.Data\AIABET.xml">
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Fanex.Data\ALLBETCLUB.xml">
       <SubType>Designer</SubType>
