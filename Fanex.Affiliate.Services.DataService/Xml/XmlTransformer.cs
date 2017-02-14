@@ -1,5 +1,6 @@
 ﻿namespace Fanex.Affiliate.Services.DataService.Xml
 {
+    using System.Diagnostics.CodeAnalysis;
     using System.IO;
     using System.Xml;
     using System.Xml.Linq;
@@ -31,6 +32,7 @@
         /// </summary>
         /// <param name="node">The XML element.</param>
         /// <returns>Return XML string.</returns>
+        [SuppressMessage("Microsoft.Usage", "CA2202:Do not dispose objects multiple times", Justification = "OK.")]
         public string Transform(XNode node)
         {
             var transform = new XslCompiledTransform();
