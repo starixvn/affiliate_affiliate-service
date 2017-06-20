@@ -27,6 +27,41 @@
       <durable>true</durable>
       <recover>false</recover>
     </job>
+    <!--Begin - Bolanation Triggers-->
+    <trigger>
+      <simple>
+        <name>Bolanation_ImportExchangeRateTrigger</name>
+        <group>Bolanation</group>
+        <description>Bolanation_ImportExchangeRateTrigger</description>
+        <job-name>ImportExchangeRateJob</job-name>
+        <misfire-instruction>SmartPolicy</misfire-instruction>
+        <repeat-count>-1</repeat-count>
+        <repeat-interval>300000</repeat-interval>
+      </simple>
+    </trigger>
+    <trigger>
+      <simple>
+        <name>Bolanation_ImportMemberDailyTrigger</name>
+        <group>Bolanation</group>
+        <description>Bolanation_ImportMemberDailyTrigger</description>
+        <job-name>ImportMemberDailyJob</job-name>
+        <misfire-instruction>SmartPolicy</misfire-instruction>
+        <repeat-count>-1</repeat-count>
+        <repeat-interval>300000</repeat-interval>
+      </simple>
+    </trigger>
+    <trigger>
+      <simple>
+        <name>Bolanation_ImportMemberInfoTrigger</name>
+        <group>Bolanation</group>
+        <description>Bolanation_ImportMemberInfoTrigger</description>
+        <job-name>ImportMemberInfoJob</job-name>
+        <misfire-instruction>SmartPolicy</misfire-instruction>
+        <repeat-count>-1</repeat-count>
+        <repeat-interval>300000</repeat-interval>
+      </simple>
+    </trigger>
+    <!--End - Bolanation Triggers-->
     <!--Begin - Spondemo Triggers-->
     <trigger>
       <simple>
