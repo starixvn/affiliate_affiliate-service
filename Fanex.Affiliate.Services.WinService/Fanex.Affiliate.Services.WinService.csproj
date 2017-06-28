@@ -182,6 +182,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Fanex.Data\BOLANATION.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Fanex.Data\SPONDEMO.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

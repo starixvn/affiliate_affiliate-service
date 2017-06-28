@@ -47,6 +47,8 @@
         protected override void OnStart(string[] args)
         {
             _scheduler.Start();
+
+            Logging.LogService.Info("Importing data service started");
         }
 
         /// <summary>

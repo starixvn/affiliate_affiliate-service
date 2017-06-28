@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Functions>
+  <Function Name="ServiceBOLANATION">
+    <!--ImportMemberInfo-->
+    <Setting Key="BOLANATION_Aff_MemberInfoGetMissingCreatedDate" SpName="Aff_MemberInfoGetMissingCreatedDate" DbName="DBAFFBOLANATION.Affiliate_Bolanation.bodbAdminNet" />
+    <Setting Key="BOLANATION_Task_Aff_MemberInfoImportData" SpName="Task_Aff_MemberInfoImportData" DbName="DBAFFBOLANATION.Affiliate_Bolanation.bodbAdminNet" TimeOut="1200" />
+    <Setting Key="BOLANATION_Task_Aff_MemberInfoUpdateCreatedDate" SpName="Task_Aff_MemberInfoUpdateCreatedDate" DbName="DBAFFBOLANATION.Affiliate_Bolanation.bodbAdminNet" />
+    <!--ImportMemberDaily-->
+    <Setting Key="BOLANATION_Aff_GetMembers" SpName="Aff_GetMembers" DbName="DBAFFBOLANATION.Affiliate_Bolanation.bodbAdminNet" />
+    <Setting Key="BOLANATION_Task_Aff_MemberDailyImportData" SpName="Task_Aff_MemberDailyImportData" DbName="DBAFFBOLANATION.Affiliate_Bolanation.bodbAdminNet" />
+    <Setting Key="BOLANATION_Task_Aff_MemberDailyTransactionImportData" SpName="Task_Aff_MemberDailyTransactionImportData" DbName="DBAFFBOLANATION.Affiliate_Bolanation.bodbAdminNet" />
+    <!--ImportExchange-->
+    <Setting Key="BOLANATION_Task_aff_DailyImportExchange" SpName="Task_aff_DailyImportExchange" DbName="DBAFFBOLANATION.Affiliate_Bolanation.bodbAdminNet" />
+    <!--Common-->
+    <Setting Key="BOLANATION_Aff_CurrentDate" SpName="Aff_CurrentDate" DbName="DBAFFBOLANATION.Affiliate_Bolanation.bodbAdminNet" />
+    <Setting Key="BOLANATION_Aff_SystemSettingsSel" SpName="Aff_SystemSettingsSel" DbName="DBAFFBOLANATION.Affiliate_Bolanation.bodbAdminNet" />
+    <Setting Key="BOLANATION_Aff_AffiliateCurrenciesSel" SpName="Aff_AffiliateCurrenciesSel" DbName="DBAFFBOLANATION.Affiliate_Bolanation.bodbAdminNet" />
+    <Setting Key="BOLANATION_Aff_SystemSettingsSelByName" SpName="Aff_SystemSettingsSelByName" DbName="DBAFFBOLANATION.Affiliate_Bolanation.bodbAdminNet" />
+    <Setting Key="BOLANATION_Aff_BannerSelType" SpName="Aff_BannerSelType" DbName="DBAFFBOLANATION.Affiliate_Bolanation.bodbAdminNet" />
+    <Setting Key="BOLANATION_Aff_AffTypeSel" SpName="Aff_AffTypeSel" DbName="DBAFFBOLANATION.Affiliate_Bolanation.bodbAdminNet" />
+    <Setting Key="BOLANATION_Aff_CountrySelAll" SpName="Aff_CountrySelAll" DbName="DBAFFBOLANATION.Affiliate_Bolanation.bodbAdminNet" />
+    <Setting Key="BOLANATION_Aff_BaseCurrenciesSel" SpName="Aff_BaseCurrenciesSel" DbName="DBAFFBOLANATION.Affiliate_Bolanation.bodbAdminNet" />
+    <Setting Key="BOLANATION_Aff_CurrencyListSel" SpName="Aff_CurrencyListSel" DbName="DBAFFBOLANATION.Affiliate_Bolanation.bodbAdminNet" />
+    <Setting Key="BOLANATION_Aff_LanguageSel" SpName="Aff_LanguageSel" DbName="DBAFFBOLANATION.Affiliate_Bolanation.bodbAdminNet" />
+    <Setting Key="BOLANATION_Aff_TaskLogUpdStatus" SpName="Aff_TaskLogUpdStatus" DbName="DBAFFBOLANATION.Affiliate_Bolanation.bodbAdminNet" />
+    <Setting Key="BOLANATION_Aff_TaskLogIns" SpName="Aff_TaskLogIns" DbName="DBAFFBOLANATION.Affiliate_Bolanation.bodbAdminNet" />
+    <Setting Key="BOLANATION_Aff_TaskDetailSelByName" SpName="Aff_TaskDetailSelByName" DbName="DBAFFBOLANATION.Affiliate_Bolanation.bodbAdminNet" />
+  </Function>
+</Functions>

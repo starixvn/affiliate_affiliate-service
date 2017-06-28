@@ -96,6 +96,7 @@
         public void ProcessException(Exception ex)
         {
             LogTracer.Append(ex);
+            Logging.LogService.Error(string.Format("Importing Data Service: {0}", ex.Message));
         }
 
         /// <summary>

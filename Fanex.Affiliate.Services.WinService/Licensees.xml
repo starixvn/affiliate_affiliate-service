@@ -1,6 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Licensees xmlns="LicenseeXmlConfiguration"
            xmlns:xsi="LicenseeXmlConfiguration">
+  <Licensee Name="bolanation">
+    <Settings>
+      <Setting Key="UsernamePrefix" Value="Bolanation$" />
+    </Settings>
+  </Licensee>
   <Licensee Name="spondemo">
     <Settings>
       <Setting Key="UsernamePrefix" Value="Spondemo$" />
