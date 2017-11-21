@@ -36,34 +36,9 @@
       <Setting Key="UsernamePrefix" Value="allbetclub$" />
     </Settings>
   </Licensee>
-  <Licensee Name="m8bola">
-    <Settings>
-      <Setting Key="UsernamePrefix" Value="m8bola$" />
-    </Settings>
-  </Licensee>
   <Licensee Name="be7">
     <Settings>
       <Setting Key="UsernamePrefix" Value="be7$" />
-    </Settings>
-  </Licensee>
-  <Licensee Name="q8bola">
-    <Settings>
-      <Setting Key="UsernamePrefix" Value="q8bola$" />
-    </Settings>
-  </Licensee>
-  <Licensee Name="goobet">
-    <Settings>
-      <Setting Key="UsernamePrefix" Value="goobet$" />
-    </Settings>
-  </Licensee>
-  <Licensee Name="aiabet">
-    <Settings>
-      <Setting Key="UsernamePrefix" Value="nbcbet$" />
-    </Settings>
-  </Licensee>
-  <Licensee Name="unobet">
-    <Settings>
-      <Setting Key="UsernamePrefix" Value="unobet$" />
     </Settings>
   </Licensee>
   <Licensee Name="9bet">
