@@ -97,5 +97,41 @@
       </simple>
     </trigger>
     <!--End - Athena000 Triggers-->
+
+    <!--Begin - Macaubet Triggers-->
+    <trigger>
+      <simple>
+        <name>Macaubet_ImportExchangeRateTrigger</name>
+        <group>Macaubet</group>
+        <description>Macaubet_ImportExchangeRateTrigger</description>
+        <job-name>ImportExchangeRateJob</job-name>
+        <misfire-instruction>SmartPolicy</misfire-instruction>
+        <repeat-count>-1</repeat-count>
+        <repeat-interval>300000</repeat-interval>
+      </simple>
+    </trigger>
+    <trigger>
+      <simple>
+        <name>Macaubet_ImportMemberDailyTrigger</name>
+        <group>Macaubet</group>
+        <description>Macaubet_ImportMemberDailyTrigger</description>
+        <job-name>ImportMemberDailyJob</job-name>
+        <misfire-instruction>SmartPolicy</misfire-instruction>
+        <repeat-count>-1</repeat-count>
+        <repeat-interval>300000</repeat-interval>
+      </simple>
+    </trigger>
+    <trigger>
+      <simple>
+        <name>Macaubet_ImportMemberInfoTrigger</name>
+        <group>Macaubet</group>
+        <description>Macaubet_ImportMemberInfoTrigger</description>
+        <job-name>ImportMemberInfoJob</job-name>
+        <misfire-instruction>SmartPolicy</misfire-instruction>
+        <repeat-count>-1</repeat-count>
+        <repeat-interval>300000</repeat-interval>
+      </simple>
+    </trigger>
+    <!--End - Macaubet Triggers-->
   </schedule>
 </job-scheduling-data>
