@@ -188,6 +188,9 @@
     <Content Include="Fanex.Data\SIT\ATHENA000.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Fanex.Data\SIT\Common.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Fanex.Data\SIT\MACAUBET.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
