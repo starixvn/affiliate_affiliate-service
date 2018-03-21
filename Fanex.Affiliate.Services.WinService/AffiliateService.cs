@@ -1,5 +1,6 @@
 ﻿namespace Fanex.Affiliate.Services.WinService
 {
+    using System;
     using System.ServiceProcess;
     using Fanex.Affiliate.Services.Core;
     using Fanex.Affiliate.Services.Core.Configuration;
@@ -27,15 +28,22 @@
         /// </summary>
         public AffiliateService()
         {
-            InitializeComponent();
+            try
+            {
+                InitializeComponent();
 
-            ServiceName = Constants.ServiceName;
+                ServiceName = Constants.ServiceName;
 
-            DbSettingProviderManager.Current.Start();
-            AppSetting.Initialize();
-            LicenseeManager.Initialize();
-            _schedulerFactory = new StdSchedulerFactory();
-            _scheduler = _schedulerFactory.GetScheduler();
+                DbSettingProviderManager.Current.Start();
+                AppSetting.Initialize();
+                LicenseeManager.Initialize();
+                _schedulerFactory = new StdSchedulerFactory();
+                _scheduler = _schedulerFactory.GetScheduler();
+            }
+            catch (Exception ex)
+            {
+                Logging.LogService.Error(ex.Message, ex);
+            }
         }
 
         /// <summary>
