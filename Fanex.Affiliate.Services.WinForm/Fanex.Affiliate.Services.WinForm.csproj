@@ -169,6 +169,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Fanex.Data\MACAUBET.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Fanex.Data\SPONDEMO.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
