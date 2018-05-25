@@ -382,41 +382,6 @@
     </trigger>
     <!--End - be7th Triggers-->
 
-    <!--Begin - Indowin Triggers-->
-    <trigger>
-      <simple>
-        <name>indowin_ImportExchangeRateTrigger</name>
-        <group>indowin</group>
-        <description>indowin_ImportExchangeRateTrigger</description>
-        <job-name>ImportExchangeRateJob</job-name>
-        <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>300000</repeat-interval>
-      </simple>
-    </trigger>
-    <trigger>
-      <simple>
-        <name>indowin_ImportMemberDailyTrigger</name>
-        <group>indowin</group>
-        <description>indowin_ImportMemberDailyTrigger</description>
-        <job-name>ImportMemberDailyJob</job-name>
-        <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>300000</repeat-interval>
-      </simple>
-    </trigger>
-    <trigger>
-      <simple>
-        <name>indowin_ImportMemberInfoTrigger</name>
-        <group>indowin</group>
-        <description>indowin_ImportMemberInfoTrigger</description>
-        <job-name>ImportMemberInfoJob</job-name>
-        <misfire-instruction>SmartPolicy</misfire-instruction>
-        <repeat-count>-1</repeat-count>
-        <repeat-interval>300000</repeat-interval>
-      </simple>
-    </trigger>
-    <!--End - indowin Triggers-->
     <!--Begin - aragon88 Triggers-->
     <trigger>
       <simple>

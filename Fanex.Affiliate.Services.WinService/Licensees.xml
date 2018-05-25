@@ -51,11 +51,6 @@
       <Setting Key="UsernamePrefix" Value="be7th$" />
     </Settings>
   </Licensee>
-  <Licensee Name="indowin">
-    <Settings>
-      <Setting Key="UsernamePrefix" Value="indowin$" />
-    </Settings>
-  </Licensee>
   <Licensee Name="aragon88">
     <Settings>
       <Setting Key="UsernamePrefix" Value="aragon88$" />
