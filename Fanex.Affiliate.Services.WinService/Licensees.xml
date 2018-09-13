@@ -1,11 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Licensees xmlns="LicenseeXmlConfiguration"
            xmlns:xsi="LicenseeXmlConfiguration">
-  <Licensee Name="bolanation">
-    <Settings>
-      <Setting Key="UsernamePrefix" Value="Bolanation$" />
-    </Settings>
-  </Licensee>
   <Licensee Name="spondemo">
     <Settings>
       <Setting Key="UsernamePrefix" Value="Spondemo$" />
@@ -29,31 +24,6 @@
   <Licensee Name="athena000">
     <Settings>
       <Setting Key="UsernamePrefix" Value="Athena000$" />
-    </Settings>
-  </Licensee>
-  <Licensee Name="allbetclub">
-    <Settings>
-      <Setting Key="UsernamePrefix" Value="allbetclub$" />
-    </Settings>
-  </Licensee>
-  <Licensee Name="be7">
-    <Settings>
-      <Setting Key="UsernamePrefix" Value="be7$" />
-    </Settings>
-  </Licensee>
-  <Licensee Name="9bet">
-    <Settings>
-      <Setting Key="UsernamePrefix" Value="9bet$" />
-    </Settings>
-  </Licensee>
-  <Licensee Name="be7th">
-    <Settings>
-      <Setting Key="UsernamePrefix" Value="be7th$" />
-    </Settings>
-  </Licensee>
-  <Licensee Name="aragon88">
-    <Settings>
-      <Setting Key="UsernamePrefix" Value="aragon88$" />
     </Settings>
   </Licensee>
 </Licensees>
