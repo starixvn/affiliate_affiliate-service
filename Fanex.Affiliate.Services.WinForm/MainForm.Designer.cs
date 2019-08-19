@@ -196,7 +196,7 @@ namespace Fanex.Affiliate.Services.WinForm
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Affilicate Service Application";
+            this.Text = "Affiliate Service Application";
             this.Load += new System.EventHandler(this.MainFormLoad);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

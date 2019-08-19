@@ -11,4 +11,9 @@
       <Setting Key="UsernamePrefix" Value="Athena000$" />
     </Settings>
   </Licensee>
+  <Licensee Name="macaubet">
+    <Settings>
+      <Setting Key="UsernamePrefix" Value="macaubet$" />
+    </Settings>
+  </Licensee>
 </Licensees>

@@ -5,17 +5,10 @@
     <Setting Key="ATHENA000_Aff_MemberInfoGetMissingCreatedDate" SpName="Aff_MemberInfoGetMissingCreatedDate" DbName="DBAFFATHENA000.Affiliate_Athena000.bodbAdminNet" />
     <Setting Key="ATHENA000_Task_Aff_MemberInfoImportData" SpName="Task_Aff_MemberInfoImportData" DbName="DBAFFATHENA000.Affiliate_Athena000.bodbAdminNet" TimeOut="1200" />
     <Setting Key="ATHENA000_Task_Aff_MemberInfoUpdateCreatedDate" SpName="Task_Aff_MemberInfoUpdateCreatedDate" DbName="DBAFFATHENA000.Affiliate_Athena000.bodbAdminNet" />
-    <Setting Key="ATHENA000_Aff_GetAllMembers" SpName="Aff_GetAllMembers" DbName="DBAFFATHENA000.Affiliate_Athena000.bodbAdminNet" />
-    <Setting Key="ATHENA000_Aff_MemberInfoUpdate" SpName="Aff_MemberInfoUpdate" DbName="DBAFFATHENA000.Affiliate_Athena000.bodbAdminNet" />
-    
     <!--ImportMemberDaily-->
     <Setting Key="ATHENA000_Aff_GetMembers" SpName="Aff_GetMembers" DbName="DBAFFATHENA000.Affiliate_Athena000.bodbAdminNet" />
     <Setting Key="ATHENA000_Task_Aff_MemberDailyImportData" SpName="Task_Aff_MemberDailyImportData" DbName="DBAFFATHENA000.Affiliate_Athena000.bodbAdminNet" />
     <Setting Key="ATHENA000_Task_Aff_MemberDailyTransactionImportData" SpName="Task_Aff_MemberDailyTransactionImportData" DbName="DBAFFATHENA000.Affiliate_Athena000.bodbAdminNet" />
-    <Setting Key="ATHENA000_DBA_GetAllWinlostDate" SpName="DBA_GetAllWinlostDate" DbName="DBAFFATHENA000.Affiliate_Athena000.bodbAdminNet" />
-    <Setting Key="ATHENA000_DBA_GetMemberList" SpName="DBA_GetMemberList" DbName="DBAFFATHENA000.Affiliate_Athena000.bodbAdminNet" />
-    <Setting Key="ATHENA000_DBA_Aff_MemberDailyUpdateData" SpName="DBA_Aff_MemberDailyUpdateData" DbName="DBAFFATHENA000.Affiliate_Athena000.bodbAdminNet" />
-    
     <!--ImportExchange-->
     <Setting Key="ATHENA000_Task_aff_DailyImportExchange" SpName="Task_aff_DailyImportExchange" DbName="DBAFFATHENA000.Affiliate_Athena000.bodbAdminNet" />
     <!--Common-->
@@ -31,5 +24,6 @@
     <Setting Key="ATHENA000_Aff_LanguageSel" SpName="Aff_LanguageSel" DbName="DBAFFATHENA000.Affiliate_Athena000.bodbAdminNet" />
     <Setting Key="ATHENA000_Aff_TaskLogUpdStatus" SpName="Aff_TaskLogUpdStatus" DbName="DBAFFATHENA000.Affiliate_Athena000.bodbAdminNet" />
     <Setting Key="ATHENA000_Aff_TaskLogIns" SpName="Aff_TaskLogIns" DbName="DBAFFATHENA000.Affiliate_Athena000.bodbAdminNet" />
+    <Setting Key="ATHENA000_Aff_TaskDetailSelByName" SpName="Aff_TaskDetailSelByName" DbName="DBAFFATHENA000.Affiliate_Athena000.bodbAdminNet" />
   </Function>
 </Functions>
