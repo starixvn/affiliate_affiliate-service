@@ -1,12 +1,17 @@
 ﻿namespace Fanex.Affiliate.Services.WinService
 {
     using System;
+    using System.Collections.Generic;
+    using System.Configuration;
     using System.ServiceProcess;
     using Fanex.Affiliate.Services.Core;
     using Fanex.Affiliate.Services.Core.Configuration;
     using Fanex.Data.Configuration;
+    using Fanex.Logging;
+    using Fanex.Logging.Sentry.RavenClient;
     using Quartz;
     using Quartz.Impl;
+    using SharpRaven;
 
     /// <summary>
     /// Affiliate Service.
@@ -34,6 +39,7 @@
 
                 ServiceName = Constants.ServiceName;
 
+                SetupSentryLogging();
                 DbSettingProviderManager.Current.Start();
                 AppSetting.Initialize();
                 LicenseeManager.Initialize();
@@ -66,6 +72,27 @@
         protected override void OnStop()
         {
             _scheduler.Shutdown(true);
+        }
+
+        private static void SetupSentryLogging()
+        {
+            var appSetting = ConfigurationManager.AppSettings;
+
+            var env = appSetting.Get("Environment");
+            var backEndDsn = appSetting.Get("SentryBackEndDsn");
+            var category = appSetting.Get("LoggingCategory");
+
+            if (!string.IsNullOrEmpty(backEndDsn))
+            {
+                LogManager.SetDefaultLogCategory(category).Use(new List<ILogEngine>
+                {
+                    new SentryLogging(new SentryEngineOptions
+                    {
+                        Dsn = new Dsn(backEndDsn),
+                        Environment = env
+                    })
+                });
+            }
         }
     }
 }
