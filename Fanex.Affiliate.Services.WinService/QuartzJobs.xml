@@ -27,7 +27,7 @@
       <durable>true</durable>
       <recover>false</recover>
     </job>
-    
+
     <!--Begin - Spondemo Triggers-->
     <trigger>
       <simple>
@@ -206,5 +206,40 @@
       </simple>
     </trigger>
     <!--End - macaubet Triggers-->
+    <!--Begin - 9bet Triggers-->
+    <trigger>
+      <simple>
+        <name>9bet_ImportExchangeRateTrigger</name>
+        <group>9bet</group>
+        <description>9bet_ImportExchangeRateTrigger</description>
+        <job-name>ImportExchangeRateJob</job-name>
+        <misfire-instruction>SmartPolicy</misfire-instruction>
+        <repeat-count>-1</repeat-count>
+        <repeat-interval>300000</repeat-interval>
+      </simple>
+    </trigger>
+    <trigger>
+      <simple>
+        <name>9bet_ImportMemberDailyTrigger</name>
+        <group>9bet</group>
+        <description>9bet_ImportMemberDailyTrigger</description>
+        <job-name>ImportMemberDailyJob</job-name>
+        <misfire-instruction>SmartPolicy</misfire-instruction>
+        <repeat-count>-1</repeat-count>
+        <repeat-interval>300000</repeat-interval>
+      </simple>
+    </trigger>
+    <trigger>
+      <simple>
+        <name>9bet_ImportMemberInfoTrigger</name>
+        <group>9bet</group>
+        <description>9bet_ImportMemberInfoTrigger</description>
+        <job-name>ImportMemberInfoJob</job-name>
+        <misfire-instruction>SmartPolicy</misfire-instruction>
+        <repeat-count>-1</repeat-count>
+        <repeat-interval>300000</repeat-interval>
+      </simple>
+    </trigger>
+    <!--End - 9bet Triggers-->
   </schedule>
 </job-scheduling-data>
