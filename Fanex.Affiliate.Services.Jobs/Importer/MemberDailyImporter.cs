@@ -94,8 +94,7 @@
         /// <param name="date">The import date.</param>
         private void ImportMemberDaily(DateTime date)
         {
-            string productIds = null;
-            var xmlMembers = _dataService.GetMembers(date, out productIds);
+            var xmlMembers = _dataService.GetMembers(date, out string productIds);
             var usernamePrefix = _dataService.Licensee.UsernamePrefix;
             
             // ImportMemberDaily
