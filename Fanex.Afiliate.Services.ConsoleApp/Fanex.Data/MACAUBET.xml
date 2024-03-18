@@ -2,28 +2,28 @@
 <Functions>
   <Function Name="ServiceMACAUBET">
     <!--ImportMemberInfo-->
-    <Setting Key="MACAUBET_Aff_MemberInfoGetMissingCreatedDate" SpName="Aff_MemberInfoGetMissingCreatedDate" DbName="DBAFFMACAUBET.Affiliate_MacauBet.bodbAdminNet" />
-    <Setting Key="MACAUBET_Task_Aff_MemberInfoImportData" SpName="Task_Aff_MemberInfoImportData" DbName="DBAFFMACAUBET.Affiliate_MacauBet.bodbAdminNet" TimeOut="1200" />
-    <Setting Key="MACAUBET_Task_Aff_MemberInfoUpdateCreatedDate" SpName="Task_Aff_MemberInfoUpdateCreatedDate" DbName="DBAFFMACAUBET.Affiliate_MacauBet.bodbAdminNet" />
+    <Setting Key="MACAUBET_Aff_MemberInfoGetMissingCreatedDate" SpName="Aff_MemberInfoGetMissingCreatedDate" DbName="DBAFFMACAUBET.Affiliate_MacauBet.wsv_aff" />
+    <Setting Key="MACAUBET_Task_Aff_MemberInfoImportData" SpName="Task_Aff_MemberInfoImportData" DbName="DBAFFMACAUBET.Affiliate_MacauBet.wsv_aff" TimeOut="1200" />
+    <Setting Key="MACAUBET_Task_Aff_MemberInfoUpdateCreatedDate" SpName="Task_Aff_MemberInfoUpdateCreatedDate" DbName="DBAFFMACAUBET.Affiliate_MacauBet.wsv_aff" />
     <!--ImportMemberDaily-->
-    <Setting Key="MACAUBET_Aff_GetMembers" SpName="Aff_GetMembers" DbName="DBAFFMACAUBET.Affiliate_MacauBet.bodbAdminNet" />
-    <Setting Key="MACAUBET_Task_Aff_MemberDailyImportData" SpName="Task_Aff_MemberDailyImportData" DbName="DBAFFMACAUBET.Affiliate_MacauBet.bodbAdminNet" />
-    <Setting Key="MACAUBET_Task_Aff_MemberDailyTransactionImportData" SpName="Task_Aff_MemberDailyTransactionImportData" DbName="DBAFFMACAUBET.Affiliate_MacauBet.bodbAdminNet" />
+    <Setting Key="MACAUBET_Aff_GetMembers" SpName="Aff_GetMembers" DbName="DBAFFMACAUBET.Affiliate_MacauBet.wsv_aff" />
+    <Setting Key="MACAUBET_Task_Aff_MemberDailyImportData" SpName="Task_Aff_MemberDailyImportData" DbName="DBAFFMACAUBET.Affiliate_MacauBet.wsv_aff" />
+    <Setting Key="MACAUBET_Task_Aff_MemberDailyTransactionImportData" SpName="Task_Aff_MemberDailyTransactionImportData" DbName="DBAFFMACAUBET.Affiliate_MacauBet.wsv_aff" />
     <!--ImportExchange-->
-    <Setting Key="MACAUBET_Task_aff_DailyImportExchange" SpName="Task_aff_DailyImportExchange" DbName="DBAFFMACAUBET.Affiliate_MacauBet.bodbAdminNet" />
+    <Setting Key="MACAUBET_Task_aff_DailyImportExchange" SpName="Task_aff_DailyImportExchange" DbName="DBAFFMACAUBET.Affiliate_MacauBet.wsv_aff" />
     <!--Common-->
-    <Setting Key="MACAUBET_Aff_CurrentDate" SpName="Aff_CurrentDate" DbName="DBAFFMACAUBET.Affiliate_MacauBet.bodbAdminNet" />
-    <Setting Key="MACAUBET_Aff_SystemSettingsSel" SpName="Aff_SystemSettingsSel" DbName="DBAFFMACAUBET.Affiliate_MacauBet.bodbAdminNet" />
-    <Setting Key="MACAUBET_Aff_AffiliateCurrenciesSel" SpName="Aff_AffiliateCurrenciesSel" DbName="DBAFFMACAUBET.Affiliate_MacauBet.bodbAdminNet" />
-    <Setting Key="MACAUBET_Aff_SystemSettingsSelByName" SpName="Aff_SystemSettingsSelByName" DbName="DBAFFMACAUBET.Affiliate_MacauBet.bodbAdminNet" />
-    <Setting Key="MACAUBET_Aff_BannerSelType" SpName="Aff_BannerSelType" DbName="DBAFFMACAUBET.Affiliate_MacauBet.bodbAdminNet" />
-    <Setting Key="MACAUBET_Aff_AffTypeSel" SpName="Aff_AffTypeSel" DbName="DBAFFMACAUBET.Affiliate_MacauBet.bodbAdminNet" />
-    <Setting Key="MACAUBET_Aff_CountrySelAll" SpName="Aff_CountrySelAll" DbName="DBAFFMACAUBET.Affiliate_MacauBet.bodbAdminNet" />
-    <Setting Key="MACAUBET_Aff_BaseCurrenciesSel" SpName="Aff_BaseCurrenciesSel" DbName="DBAFFMACAUBET.Affiliate_MacauBet.bodbAdminNet" />
-    <Setting Key="MACAUBET_Aff_CurrencyListSel" SpName="Aff_CurrencyListSel" DbName="DBAFFMACAUBET.Affiliate_MacauBet.bodbAdminNet" />
-    <Setting Key="MACAUBET_Aff_LanguageSel" SpName="Aff_LanguageSel" DbName="DBAFFMACAUBET.Affiliate_MacauBet.bodbAdminNet" />
-    <Setting Key="MACAUBET_Aff_TaskLogUpdStatus" SpName="Aff_TaskLogUpdStatus" DbName="DBAFFMACAUBET.Affiliate_MacauBet.bodbAdminNet" />
-    <Setting Key="MACAUBET_Aff_TaskLogIns" SpName="Aff_TaskLogIns" DbName="DBAFFMACAUBET.Affiliate_MacauBet.bodbAdminNet" />
-    <Setting Key="MACAUBET_Aff_TaskDetailSelByName" SpName="Aff_TaskDetailSelByName" DbName="DBAFFMACAUBET.Affiliate_MacauBet.bodbAdminNet" />
+    <Setting Key="MACAUBET_Aff_CurrentDate" SpName="Aff_CurrentDate" DbName="DBAFFMACAUBET.Affiliate_MacauBet.wsv_aff" />
+    <Setting Key="MACAUBET_Aff_SystemSettingsSel" SpName="Aff_SystemSettingsSel" DbName="DBAFFMACAUBET.Affiliate_MacauBet.wsv_aff" />
+    <Setting Key="MACAUBET_Aff_AffiliateCurrenciesSel" SpName="Aff_AffiliateCurrenciesSel" DbName="DBAFFMACAUBET.Affiliate_MacauBet.wsv_aff" />
+    <Setting Key="MACAUBET_Aff_SystemSettingsSelByName" SpName="Aff_SystemSettingsSelByName" DbName="DBAFFMACAUBET.Affiliate_MacauBet.wsv_aff" />
+    <Setting Key="MACAUBET_Aff_BannerSelType" SpName="Aff_BannerSelType" DbName="DBAFFMACAUBET.Affiliate_MacauBet.wsv_aff" />
+    <Setting Key="MACAUBET_Aff_AffTypeSel" SpName="Aff_AffTypeSel" DbName="DBAFFMACAUBET.Affiliate_MacauBet.wsv_aff" />
+    <Setting Key="MACAUBET_Aff_CountrySelAll" SpName="Aff_CountrySelAll" DbName="DBAFFMACAUBET.Affiliate_MacauBet.wsv_aff" />
+    <Setting Key="MACAUBET_Aff_BaseCurrenciesSel" SpName="Aff_BaseCurrenciesSel" DbName="DBAFFMACAUBET.Affiliate_MacauBet.wsv_aff" />
+    <Setting Key="MACAUBET_Aff_CurrencyListSel" SpName="Aff_CurrencyListSel" DbName="DBAFFMACAUBET.Affiliate_MacauBet.wsv_aff" />
+    <Setting Key="MACAUBET_Aff_LanguageSel" SpName="Aff_LanguageSel" DbName="DBAFFMACAUBET.Affiliate_MacauBet.wsv_aff" />
+    <Setting Key="MACAUBET_Aff_TaskLogUpdStatus" SpName="Aff_TaskLogUpdStatus" DbName="DBAFFMACAUBET.Affiliate_MacauBet.wsv_aff" />
+    <Setting Key="MACAUBET_Aff_TaskLogIns" SpName="Aff_TaskLogIns" DbName="DBAFFMACAUBET.Affiliate_MacauBet.wsv_aff" />
+    <Setting Key="MACAUBET_Aff_TaskDetailSelByName" SpName="Aff_TaskDetailSelByName" DbName="DBAFFMACAUBET.Affiliate_MacauBet.wsv_aff" />
   </Function>
 </Functions>

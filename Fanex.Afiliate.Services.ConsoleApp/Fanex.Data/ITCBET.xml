@@ -2,28 +2,28 @@
 <Functions>
   <Function Name="ServiceITCBET">
     <!--ImportMemberInfo-->
-    <Setting Key="ITCBET_Aff_MemberInfoGetMissingCreatedDate" SpName="Aff_MemberInfoGetMissingCreatedDate" DbName="DBAFFITCBET.Affiliate_itcbet.bodbAdminNet" />
-    <Setting Key="ITCBET_Task_Aff_MemberInfoImportData" SpName="Task_Aff_MemberInfoImportData" DbName="DBAFFITCBET.Affiliate_itcbet.bodbAdminNet" TimeOut="1200" />
-    <Setting Key="ITCBET_Task_Aff_MemberInfoUpdateCreatedDate" SpName="Task_Aff_MemberInfoUpdateCreatedDate" DbName="DBAFFITCBET.Affiliate_itcbet.bodbAdminNet" />
+    <Setting Key="ITCBET_Aff_MemberInfoGetMissingCreatedDate" SpName="Aff_MemberInfoGetMissingCreatedDate" DbName="DBAFFITCBET.Affiliate_itcbet.wsv_aff" />
+    <Setting Key="ITCBET_Task_Aff_MemberInfoImportData" SpName="Task_Aff_MemberInfoImportData" DbName="DBAFFITCBET.Affiliate_itcbet.wsv_aff" TimeOut="1200" />
+    <Setting Key="ITCBET_Task_Aff_MemberInfoUpdateCreatedDate" SpName="Task_Aff_MemberInfoUpdateCreatedDate" DbName="DBAFFITCBET.Affiliate_itcbet.wsv_aff" />
     <!--ImportMemberDaily-->
-    <Setting Key="ITCBET_Aff_GetMembers" SpName="Aff_GetMembers" DbName="DBAFFITCBET.Affiliate_itcbet.bodbAdminNet" />
-    <Setting Key="ITCBET_Task_Aff_MemberDailyImportData" SpName="Task_Aff_MemberDailyImportData" DbName="DBAFFITCBET.Affiliate_itcbet.bodbAdminNet" />
-    <Setting Key="ITCBET_Task_Aff_MemberDailyTransactionImportData" SpName="Task_Aff_MemberDailyTransactionImportData" DbName="DBAFFITCBET.Affiliate_itcbet.bodbAdminNet" />
+    <Setting Key="ITCBET_Aff_GetMembers" SpName="Aff_GetMembers" DbName="DBAFFITCBET.Affiliate_itcbet.wsv_aff" />
+    <Setting Key="ITCBET_Task_Aff_MemberDailyImportData" SpName="Task_Aff_MemberDailyImportData" DbName="DBAFFITCBET.Affiliate_itcbet.wsv_aff" />
+    <Setting Key="ITCBET_Task_Aff_MemberDailyTransactionImportData" SpName="Task_Aff_MemberDailyTransactionImportData" DbName="DBAFFITCBET.Affiliate_itcbet.wsv_aff" />
     <!--ImportExchange-->
-    <Setting Key="ITCBET_Task_aff_DailyImportExchange" SpName="Task_aff_DailyImportExchange" DbName="DBAFFITCBET.Affiliate_itcbet.bodbAdminNet" />
+    <Setting Key="ITCBET_Task_aff_DailyImportExchange" SpName="Task_aff_DailyImportExchange" DbName="DBAFFITCBET.Affiliate_itcbet.wsv_aff" />
     <!--Common-->
-    <Setting Key="ITCBET_Aff_CurrentDate" SpName="Aff_CurrentDate" DbName="DBAFFITCBET.Affiliate_itcbet.bodbAdminNet" />
-    <Setting Key="ITCBET_Aff_SystemSettingsSel" SpName="Aff_SystemSettingsSel" DbName="DBAFFITCBET.Affiliate_itcbet.bodbAdminNet" />
-    <Setting Key="ITCBET_Aff_AffiliateCurrenciesSel" SpName="Aff_AffiliateCurrenciesSel" DbName="DBAFFITCBET.Affiliate_itcbet.bodbAdminNet" />
-    <Setting Key="ITCBET_Aff_SystemSettingsSelByName" SpName="Aff_SystemSettingsSelByName" DbName="DBAFFITCBET.Affiliate_itcbet.bodbAdminNet" />
-    <Setting Key="ITCBET_Aff_BannerSelType" SpName="Aff_BannerSelType" DbName="DBAFFITCBET.Affiliate_itcbet.bodbAdminNet" />
-    <Setting Key="ITCBET_Aff_AffTypeSel" SpName="Aff_AffTypeSel" DbName="DBAFFITCBET.Affiliate_itcbet.bodbAdminNet" />
-    <Setting Key="ITCBET_Aff_CountrySelAll" SpName="Aff_CountrySelAll" DbName="DBAFFITCBET.Affiliate_itcbet.bodbAdminNet" />
-    <Setting Key="ITCBET_Aff_BaseCurrenciesSel" SpName="Aff_BaseCurrenciesSel" DbName="DBAFFITCBET.Affiliate_itcbet.bodbAdminNet" />
-    <Setting Key="ITCBET_Aff_CurrencyListSel" SpName="Aff_CurrencyListSel" DbName="DBAFFITCBET.Affiliate_itcbet.bodbAdminNet" />
-    <Setting Key="ITCBET_Aff_LanguageSel" SpName="Aff_LanguageSel" DbName="DBAFFITCBET.Affiliate_itcbet.bodbAdminNet" />
-    <Setting Key="ITCBET_Aff_TaskLogUpdStatus" SpName="Aff_TaskLogUpdStatus" DbName="DBAFFITCBET.Affiliate_itcbet.bodbAdminNet" />
-    <Setting Key="ITCBET_Aff_TaskLogIns" SpName="Aff_TaskLogIns" DbName="DBAFFITCBET.Affiliate_itcbet.bodbAdminNet" />
-    <Setting Key="ITCBET_Aff_TaskDetailSelByName" SpName="Aff_TaskDetailSelByName" DbName="DBAFFITCBET.Affiliate_itcbet.bodbAdminNet" />
+    <Setting Key="ITCBET_Aff_CurrentDate" SpName="Aff_CurrentDate" DbName="DBAFFITCBET.Affiliate_itcbet.wsv_aff" />
+    <Setting Key="ITCBET_Aff_SystemSettingsSel" SpName="Aff_SystemSettingsSel" DbName="DBAFFITCBET.Affiliate_itcbet.wsv_aff" />
+    <Setting Key="ITCBET_Aff_AffiliateCurrenciesSel" SpName="Aff_AffiliateCurrenciesSel" DbName="DBAFFITCBET.Affiliate_itcbet.wsv_aff" />
+    <Setting Key="ITCBET_Aff_SystemSettingsSelByName" SpName="Aff_SystemSettingsSelByName" DbName="DBAFFITCBET.Affiliate_itcbet.wsv_aff" />
+    <Setting Key="ITCBET_Aff_BannerSelType" SpName="Aff_BannerSelType" DbName="DBAFFITCBET.Affiliate_itcbet.wsv_aff" />
+    <Setting Key="ITCBET_Aff_AffTypeSel" SpName="Aff_AffTypeSel" DbName="DBAFFITCBET.Affiliate_itcbet.wsv_aff" />
+    <Setting Key="ITCBET_Aff_CountrySelAll" SpName="Aff_CountrySelAll" DbName="DBAFFITCBET.Affiliate_itcbet.wsv_aff" />
+    <Setting Key="ITCBET_Aff_BaseCurrenciesSel" SpName="Aff_BaseCurrenciesSel" DbName="DBAFFITCBET.Affiliate_itcbet.wsv_aff" />
+    <Setting Key="ITCBET_Aff_CurrencyListSel" SpName="Aff_CurrencyListSel" DbName="DBAFFITCBET.Affiliate_itcbet.wsv_aff" />
+    <Setting Key="ITCBET_Aff_LanguageSel" SpName="Aff_LanguageSel" DbName="DBAFFITCBET.Affiliate_itcbet.wsv_aff" />
+    <Setting Key="ITCBET_Aff_TaskLogUpdStatus" SpName="Aff_TaskLogUpdStatus" DbName="DBAFFITCBET.Affiliate_itcbet.wsv_aff" />
+    <Setting Key="ITCBET_Aff_TaskLogIns" SpName="Aff_TaskLogIns" DbName="DBAFFITCBET.Affiliate_itcbet.wsv_aff" />
+    <Setting Key="ITCBET_Aff_TaskDetailSelByName" SpName="Aff_TaskDetailSelByName" DbName="DBAFFITCBET.Affiliate_itcbet.wsv_aff" />
   </Function>
 </Functions>
