@@ -2,28 +2,28 @@
 <Functions>
   <Function Name="ServiceSPONDEMO">
     <!--ImportMemberInfo-->
-    <Setting Key="SPONDEMO_Aff_MemberInfoGetMissingCreatedDate" SpName="Aff_MemberInfoGetMissingCreatedDate" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.bodbAdminNet" />
-    <Setting Key="SPONDEMO_Task_Aff_MemberInfoImportData" SpName="Task_Aff_MemberInfoImportData" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.bodbAdminNet" TimeOut="1200" />
-    <Setting Key="SPONDEMO_Task_Aff_MemberInfoUpdateCreatedDate" SpName="Task_Aff_MemberInfoUpdateCreatedDate" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.bodbAdminNet" />
+    <Setting Key="SPONDEMO_Aff_MemberInfoGetMissingCreatedDate" SpName="Aff_MemberInfoGetMissingCreatedDate" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.wsv_aff" />
+    <Setting Key="SPONDEMO_Task_Aff_MemberInfoImportData" SpName="Task_Aff_MemberInfoImportData" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.wsv_aff" TimeOut="1200" />
+    <Setting Key="SPONDEMO_Task_Aff_MemberInfoUpdateCreatedDate" SpName="Task_Aff_MemberInfoUpdateCreatedDate" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.wsv_aff" />
     <!--ImportMemberDaily-->
-    <Setting Key="SPONDEMO_Aff_GetMembers" SpName="Aff_GetMembers" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.bodbAdminNet" />
-    <Setting Key="SPONDEMO_Task_Aff_MemberDailyImportData" SpName="Task_Aff_MemberDailyImportData" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.bodbAdminNet" />
-    <Setting Key="SPONDEMO_Task_Aff_MemberDailyTransactionImportData" SpName="Task_Aff_MemberDailyTransactionImportData" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.bodbAdminNet" />
+    <Setting Key="SPONDEMO_Aff_GetMembers" SpName="Aff_GetMembers" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.wsv_aff" />
+    <Setting Key="SPONDEMO_Task_Aff_MemberDailyImportData" SpName="Task_Aff_MemberDailyImportData" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.wsv_aff" />
+    <Setting Key="SPONDEMO_Task_Aff_MemberDailyTransactionImportData" SpName="Task_Aff_MemberDailyTransactionImportData" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.wsv_aff" />
     <!--ImportExchange-->
-    <Setting Key="SPONDEMO_Task_aff_DailyImportExchange" SpName="Task_aff_DailyImportExchange" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.bodbAdminNet" />
+    <Setting Key="SPONDEMO_Task_aff_DailyImportExchange" SpName="Task_aff_DailyImportExchange" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.wsv_aff" />
     <!--Common-->
-    <Setting Key="SPONDEMO_Aff_CurrentDate" SpName="Aff_CurrentDate" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.bodbAdminNet" />
-    <Setting Key="SPONDEMO_Aff_SystemSettingsSel" SpName="Aff_SystemSettingsSel" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.bodbAdminNet" />
-    <Setting Key="SPONDEMO_Aff_AffiliateCurrenciesSel" SpName="Aff_AffiliateCurrenciesSel" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.bodbAdminNet" />
-    <Setting Key="SPONDEMO_Aff_SystemSettingsSelByName" SpName="Aff_SystemSettingsSelByName" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.bodbAdminNet" />
-    <Setting Key="SPONDEMO_Aff_BannerSelType" SpName="Aff_BannerSelType" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.bodbAdminNet" />
-    <Setting Key="SPONDEMO_Aff_AffTypeSel" SpName="Aff_AffTypeSel" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.bodbAdminNet" />
-    <Setting Key="SPONDEMO_Aff_CountrySelAll" SpName="Aff_CountrySelAll" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.bodbAdminNet" />
-    <Setting Key="SPONDEMO_Aff_BaseCurrenciesSel" SpName="Aff_BaseCurrenciesSel" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.bodbAdminNet" />
-    <Setting Key="SPONDEMO_Aff_CurrencyListSel" SpName="Aff_CurrencyListSel" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.bodbAdminNet" />
-    <Setting Key="SPONDEMO_Aff_LanguageSel" SpName="Aff_LanguageSel" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.bodbAdminNet" />
-    <Setting Key="SPONDEMO_Aff_TaskLogUpdStatus" SpName="Aff_TaskLogUpdStatus" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.bodbAdminNet" />
-    <Setting Key="SPONDEMO_Aff_TaskLogIns" SpName="Aff_TaskLogIns" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.bodbAdminNet" />
-    <Setting Key="SPONDEMO_Aff_TaskDetailSelByName" SpName="Aff_TaskDetailSelByName" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.bodbAdminNet" />
+    <Setting Key="SPONDEMO_Aff_CurrentDate" SpName="Aff_CurrentDate" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.wsv_aff" />
+    <Setting Key="SPONDEMO_Aff_SystemSettingsSel" SpName="Aff_SystemSettingsSel" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.wsv_aff" />
+    <Setting Key="SPONDEMO_Aff_AffiliateCurrenciesSel" SpName="Aff_AffiliateCurrenciesSel" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.wsv_aff" />
+    <Setting Key="SPONDEMO_Aff_SystemSettingsSelByName" SpName="Aff_SystemSettingsSelByName" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.wsv_aff" />
+    <Setting Key="SPONDEMO_Aff_BannerSelType" SpName="Aff_BannerSelType" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.wsv_aff" />
+    <Setting Key="SPONDEMO_Aff_AffTypeSel" SpName="Aff_AffTypeSel" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.wsv_aff" />
+    <Setting Key="SPONDEMO_Aff_CountrySelAll" SpName="Aff_CountrySelAll" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.wsv_aff" />
+    <Setting Key="SPONDEMO_Aff_BaseCurrenciesSel" SpName="Aff_BaseCurrenciesSel" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.wsv_aff" />
+    <Setting Key="SPONDEMO_Aff_CurrencyListSel" SpName="Aff_CurrencyListSel" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.wsv_aff" />
+    <Setting Key="SPONDEMO_Aff_LanguageSel" SpName="Aff_LanguageSel" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.wsv_aff" />
+    <Setting Key="SPONDEMO_Aff_TaskLogUpdStatus" SpName="Aff_TaskLogUpdStatus" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.wsv_aff" />
+    <Setting Key="SPONDEMO_Aff_TaskLogIns" SpName="Aff_TaskLogIns" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.wsv_aff" />
+    <Setting Key="SPONDEMO_Aff_TaskDetailSelByName" SpName="Aff_TaskDetailSelByName" DbName="DBAFFSPONDEMO.Affiliate_Spondemo.wsv_aff" />
   </Function>
 </Functions>
