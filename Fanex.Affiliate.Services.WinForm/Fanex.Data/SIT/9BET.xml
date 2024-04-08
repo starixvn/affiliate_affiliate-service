@@ -2,28 +2,28 @@
 <Functions>
   <Function Name="Service9BET">
     <!--ImportMemberInfo-->
-    <Setting Key="9BET_Aff_MemberInfoGetMissingCreatedDate" SpName="Aff_MemberInfoGetMissingCreatedDate" DbName="DBAFF9BET.Affiliate_9bet.wsv_aff" />
-    <Setting Key="9BET_Task_Aff_MemberInfoImportData" SpName="Task_Aff_MemberInfoImportData" DbName="DBAFF9BET.Affiliate_9bet.wsv_aff" TimeOut="1200" />
-    <Setting Key="9BET_Task_Aff_MemberInfoUpdateCreatedDate" SpName="Task_Aff_MemberInfoUpdateCreatedDate" DbName="DBAFF9BET.Affiliate_9bet.wsv_aff" />
+    <Setting Key="9BET_Aff_MemberInfoGetMissingCreatedDate" SpName="Aff_MemberInfoGetMissingCreatedDate" DbName="DBAFF9BET.Affiliate_9bet.wsv_afinet" />
+    <Setting Key="9BET_Task_Aff_MemberInfoImportData" SpName="Task_Aff_MemberInfoImportData" DbName="DBAFF9BET.Affiliate_9bet.wsv_afinet" TimeOut="1200" />
+    <Setting Key="9BET_Task_Aff_MemberInfoUpdateCreatedDate" SpName="Task_Aff_MemberInfoUpdateCreatedDate" DbName="DBAFF9BET.Affiliate_9bet.wsv_afinet" />
     <!--ImportMemberDaily-->
-    <Setting Key="9BET_Aff_GetMembers" SpName="Aff_GetMembers" DbName="DBAFF9BET.Affiliate_9bet.wsv_aff" />
-    <Setting Key="9BET_Task_Aff_MemberDailyImportData" SpName="Task_Aff_MemberDailyImportData" DbName="DBAFF9BET.Affiliate_9bet.wsv_aff" />
-    <Setting Key="9BET_Task_Aff_MemberDailyTransactionImportData" SpName="Task_Aff_MemberDailyTransactionImportData" DbName="DBAFF9BET.Affiliate_9bet.wsv_aff" />
+    <Setting Key="9BET_Aff_GetMembers" SpName="Aff_GetMembers" DbName="DBAFF9BET.Affiliate_9bet.wsv_afinet" />
+    <Setting Key="9BET_Task_Aff_MemberDailyImportData" SpName="Task_Aff_MemberDailyImportData" DbName="DBAFF9BET.Affiliate_9bet.wsv_afinet" />
+    <Setting Key="9BET_Task_Aff_MemberDailyTransactionImportData" SpName="Task_Aff_MemberDailyTransactionImportData" DbName="DBAFF9BET.Affiliate_9bet.wsv_afinet" />
     <!--ImportExchange-->
-    <Setting Key="9BET_Task_aff_DailyImportExchange" SpName="Task_aff_DailyImportExchange" DbName="DBAFF9BET.Affiliate_9bet.wsv_aff" />
+    <Setting Key="9BET_Task_aff_DailyImportExchange" SpName="Task_aff_DailyImportExchange" DbName="DBAFF9BET.Affiliate_9bet.wsv_afinet" />
     <!--Common-->
-    <Setting Key="9BET_Aff_CurrentDate" SpName="Aff_CurrentDate" DbName="DBAFF9BET.Affiliate_9bet.wsv_aff" />
-    <Setting Key="9BET_Aff_SystemSettingsSel" SpName="Aff_SystemSettingsSel" DbName="DBAFF9BET.Affiliate_9bet.wsv_aff" />
-    <Setting Key="9BET_Aff_AffiliateCurrenciesSel" SpName="Aff_AffiliateCurrenciesSel" DbName="DBAFF9BET.Affiliate_9bet.wsv_aff" />
-    <Setting Key="9BET_Aff_SystemSettingsSelByName" SpName="Aff_SystemSettingsSelByName" DbName="DBAFF9BET.Affiliate_9bet.wsv_aff" />
-    <Setting Key="9BET_Aff_BannerSelType" SpName="Aff_BannerSelType" DbName="DBAFF9BET.Affiliate_9bet.wsv_aff" />
-    <Setting Key="9BET_Aff_AffTypeSel" SpName="Aff_AffTypeSel" DbName="DBAFF9BET.Affiliate_9bet.wsv_aff" />
-    <Setting Key="9BET_Aff_CountrySelAll" SpName="Aff_CountrySelAll" DbName="DBAFF9BET.Affiliate_9bet.wsv_aff" />
-    <Setting Key="9BET_Aff_BaseCurrenciesSel" SpName="Aff_BaseCurrenciesSel" DbName="DBAFF9BET.Affiliate_9bet.wsv_aff" />
-    <Setting Key="9BET_Aff_CurrencyListSel" SpName="Aff_CurrencyListSel" DbName="DBAFF9BET.Affiliate_9bet.wsv_aff" />
-    <Setting Key="9BET_Aff_LanguageSel" SpName="Aff_LanguageSel" DbName="DBAFF9BET.Affiliate_9bet.wsv_aff" />
-    <Setting Key="9BET_Aff_TaskLogUpdStatus" SpName="Aff_TaskLogUpdStatus" DbName="DBAFF9BET.Affiliate_9bet.wsv_aff" />
-    <Setting Key="9BET_Aff_TaskLogIns" SpName="Aff_TaskLogIns" DbName="DBAFF9BET.Affiliate_9bet.wsv_aff" />
-    <Setting Key="9BET_Aff_TaskDetailSelByName" SpName="Aff_TaskDetailSelByName" DbName="DBAFF9BET.Affiliate_9bet.wsv_aff" />
+    <Setting Key="9BET_Aff_CurrentDate" SpName="Aff_CurrentDate" DbName="DBAFF9BET.Affiliate_9bet.wsv_afinet" />
+    <Setting Key="9BET_Aff_SystemSettingsSel" SpName="Aff_SystemSettingsSel" DbName="DBAFF9BET.Affiliate_9bet.wsv_afinet" />
+    <Setting Key="9BET_Aff_AffiliateCurrenciesSel" SpName="Aff_AffiliateCurrenciesSel" DbName="DBAFF9BET.Affiliate_9bet.wsv_afinet" />
+    <Setting Key="9BET_Aff_SystemSettingsSelByName" SpName="Aff_SystemSettingsSelByName" DbName="DBAFF9BET.Affiliate_9bet.wsv_afinet" />
+    <Setting Key="9BET_Aff_BannerSelType" SpName="Aff_BannerSelType" DbName="DBAFF9BET.Affiliate_9bet.wsv_afinet" />
+    <Setting Key="9BET_Aff_AffTypeSel" SpName="Aff_AffTypeSel" DbName="DBAFF9BET.Affiliate_9bet.wsv_afinet" />
+    <Setting Key="9BET_Aff_CountrySelAll" SpName="Aff_CountrySelAll" DbName="DBAFF9BET.Affiliate_9bet.wsv_afinet" />
+    <Setting Key="9BET_Aff_BaseCurrenciesSel" SpName="Aff_BaseCurrenciesSel" DbName="DBAFF9BET.Affiliate_9bet.wsv_afinet" />
+    <Setting Key="9BET_Aff_CurrencyListSel" SpName="Aff_CurrencyListSel" DbName="DBAFF9BET.Affiliate_9bet.wsv_afinet" />
+    <Setting Key="9BET_Aff_LanguageSel" SpName="Aff_LanguageSel" DbName="DBAFF9BET.Affiliate_9bet.wsv_afinet" />
+    <Setting Key="9BET_Aff_TaskLogUpdStatus" SpName="Aff_TaskLogUpdStatus" DbName="DBAFF9BET.Affiliate_9bet.wsv_afinet" />
+    <Setting Key="9BET_Aff_TaskLogIns" SpName="Aff_TaskLogIns" DbName="DBAFF9BET.Affiliate_9bet.wsv_afinet" />
+    <Setting Key="9BET_Aff_TaskDetailSelByName" SpName="Aff_TaskDetailSelByName" DbName="DBAFF9BET.Affiliate_9bet.wsv_afinet" />
   </Function>
 </Functions>
