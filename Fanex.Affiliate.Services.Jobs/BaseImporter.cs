@@ -5,6 +5,7 @@
     using Fanex.Affiliate.Services.Core.Configuration;
     using Fanex.Affiliate.Services.DataService;
     using Fanex.Affiliate.Services.Jobs.DTO;
+    using Fanex.Affiliate.Services.Jobs.Helpers;
     using Fanex.Affiliate.Services.Jobs.Importer;
 
     /// <summary>

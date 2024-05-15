@@ -6,17 +6,15 @@ using System.Data.SqlClient;
 using System.Net.Sockets;
 using System.Text;
 
-namespace Fanex.Affiliate.Services.Core
+namespace Fanex.Affiliate.Services.Jobs.Helpers
 {
     public static class LogHelper
     {
         private const int LimitedLevelOfInnerException = 3;
 
-        private const string GMT_PLUS_8 = "Taipei Standard Time";
-
         public static void InfoImport(string jobTitle, DateTime date)
         {
-            LogService.Info($"{jobTitle} {TimeZoneInfo.ConvertTimeBySystemTimeZoneId(date, GMT_PLUS_8)}");
+            LogService.Info($"{jobTitle} - date {date}");
         }
 
         public static void Error(Exception exception, string additionalMessage = null)

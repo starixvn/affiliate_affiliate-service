@@ -6,6 +6,7 @@
     using System.ServiceProcess;
     using Fanex.Affiliate.Services.Core;
     using Fanex.Affiliate.Services.Core.Configuration;
+    using Fanex.Affiliate.Services.Jobs.Helpers;
     using Fanex.Data.Configuration;
     using Fanex.Logging;
     using Fanex.Logging.Sentry.RavenClient;
