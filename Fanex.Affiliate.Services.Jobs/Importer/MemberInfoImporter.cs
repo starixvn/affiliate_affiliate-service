@@ -1,6 +1,7 @@
 ﻿namespace Fanex.Affiliate.Services.Jobs.Importer
 {
     using System;
+    using Fanex.Affiliate.Services.Core;
     using Fanex.Affiliate.Services.Core.Configuration;
     using Fanex.Affiliate.Services.DataService;
     using Fanex.Affiliate.Services.Jobs.DTO;
@@ -113,11 +114,15 @@
         /// <param name="date">The import date.</param>
         private void ImportMemberInfo(DateTime date)
         {
+            LogHelper.InfoImport($"{_commonService.SystemName} starting {nameof(ImportMemberInfo)}", date);
+
             string xmlData = _dataService.GetMemberInfo(date);
             if (xmlData != "<root />")
             {
                 _dataService.ImportMemberInfo(xmlData, date);
             }
+
+            LogHelper.InfoImport($"{_commonService.SystemName} finished {nameof(ImportMemberInfo)}", date);
         }
 
         /// <summary>
