@@ -6,6 +6,7 @@
     using System.ServiceProcess;
     using Fanex.Affiliate.Services.Core;
     using Fanex.Affiliate.Services.Core.Configuration;
+    using Fanex.Affiliate.Services.Jobs.Helpers;
     using Fanex.Data.Configuration;
     using Fanex.Logging;
     using Fanex.Logging.Sentry.RavenClient;
@@ -48,7 +49,7 @@
             }
             catch (Exception ex)
             {
-                Logging.LogService.Error(ex.Message, ex);
+                LogHelper.Error(ex);
             }
         }
 
@@ -60,9 +61,15 @@
         /// <param name="args">Data passed by the start command.</param>
         protected override void OnStart(string[] args)
         {
-            _scheduler.Start();
-
-            Logging.LogService.Info("Importing data service started");
+            try
+            {
+                LogService.Info("Starting Athena services!");
+                _scheduler.Start();
+            }
+            catch (Exception exception)
+            {
+                LogHelper.Error(exception);
+            }
         }
 
         /// <summary>
@@ -71,6 +78,7 @@
         /// </summary>
         protected override void OnStop()
         {
+            LogService.Info("Stop Athena services!");
             _scheduler.Shutdown(true);
         }
 

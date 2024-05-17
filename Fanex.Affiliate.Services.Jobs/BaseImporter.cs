@@ -5,6 +5,7 @@
     using Fanex.Affiliate.Services.Core.Configuration;
     using Fanex.Affiliate.Services.DataService;
     using Fanex.Affiliate.Services.Jobs.DTO;
+    using Fanex.Affiliate.Services.Jobs.Helpers;
     using Fanex.Affiliate.Services.Jobs.Importer;
 
     /// <summary>
@@ -96,7 +97,8 @@
         public void ProcessException(Exception ex)
         {
             LogTracer.Append(ex);
-            Logging.LogService.Error(string.Format("Importing Data Service: {0}", ex.Message));
+
+            LogHelper.Error(ex);
         }
 
         /// <summary>

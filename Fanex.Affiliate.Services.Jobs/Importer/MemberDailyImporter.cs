@@ -1,9 +1,11 @@
 ﻿namespace Fanex.Affiliate.Services.Jobs.Importer
 {
     using System;
+    using Fanex.Affiliate.Services.Core;
     using Fanex.Affiliate.Services.Core.Configuration;
     using Fanex.Affiliate.Services.DataService;
     using Fanex.Affiliate.Services.Jobs.DTO;
+    using Fanex.Affiliate.Services.Jobs.Helpers;
 
     /// <summary>
     ///     The controller to import member daily.
@@ -94,6 +96,9 @@
         /// <param name="date">The import date.</param>
         private void ImportMemberDaily(DateTime date)
         {
+            var message = $"{nameof(ImportMemberDaily)} {DateTime.Now}";
+            LogHelper.InfoImport($"{_commonService.SystemName} starting {message}", date);
+
             var xmlMembers = _dataService.GetMembers(date, out string productIds);
             var usernamePrefix = _dataService.Licensee.UsernamePrefix;
             
@@ -104,6 +109,8 @@
             // ImportMemberDailyTransaction
             string xmlPlayersFunding = _dataService.GetPlayersFunding(xmlMembers, usernamePrefix, date);
             _dataService.ImportMemberDailyTransaction(xmlPlayersFunding, date);
+
+            LogHelper.InfoImport($"{_commonService.SystemName} finished {message}", date);
         }
     }
 }

@@ -3,11 +3,13 @@
     using System;
     using System.Linq;
     using System.Reflection;
+    using Fanex.Affiliate.Services.Core;
     using Fanex.Affiliate.Services.Core.Configuration;
     using Fanex.Affiliate.Services.Core.Util;
     using Fanex.Affiliate.Services.DataAccess;
     using Fanex.Affiliate.Services.DataService.Xml;
     using Fanex.Affiliate.Services.DataService.Xml.Objects;
+    using Fanex.Logging;
 
     /// <summary>
     /// Member Info Data Service.
@@ -46,12 +48,15 @@
                 if (usernames.Any())
                 {
                     var root = new MemberFirstDepositDate();
+
+                    LogService.Info($"{systemName} - TW Service was called {usernames.Count()} GetLicenseeCustInfo {DateTime.Now} times");
                     foreach (var username in usernames)
                     {
                         var custInfo = webService.GetLicenseeCustInfo(systemName, username);
                         LogTracer.Append(custInfo);
                         if (custInfo.IsError)
                         {
+                            LogService.Info($"{systemName} - {username} player is error!");
                             continue;
                         }
 
@@ -88,6 +93,8 @@
             var webService = new WebDataService(Licensee, LogTracer);
 
             var systemName = commonService.SystemName;
+
+            LogService.Info($"{systemName} - TW Service called GetRegList {DateTime.Now}");
             var xmlElement = webService.GetRegList(systemName, selectedDate);
             var xmlResult = XmlResult.Create(xmlElement);
             LogTracer.Append(xmlResult);
