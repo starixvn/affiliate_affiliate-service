@@ -99,6 +99,7 @@
             LogTracer.Append(ex);
 
             LogHelper.Error(ex);
+            LogHelper.Error(ex.GetBaseException(), baseExceptionTitle: "BASE EXCEPTION - ");
         }
 
         /// <summary>

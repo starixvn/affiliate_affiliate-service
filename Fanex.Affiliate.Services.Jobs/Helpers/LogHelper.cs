@@ -10,16 +10,16 @@ namespace Fanex.Affiliate.Services.Jobs.Helpers
 {
     public static class LogHelper
     {
-        private const int LimitedLevelOfInnerException = 3;
+        private const int LimitedLevelOfInnerException = 5;
 
         public static void InfoImport(string jobTitle, DateTime date)
         {
             LogService.Info($"{jobTitle} - date {date}");
         }
 
-        public static void Error(Exception exception, string additionalMessage = null)
+        public static void Error(Exception exception, string additionalMessage = null, string baseExceptionTitle = "")
         {
-            var content = new StringBuilder().AppendLine($"Error Message: {exception?.Message}");
+            var content = new StringBuilder().AppendLine($"{baseExceptionTitle}Error Message: {exception?.Message}");
             if (!string.IsNullOrWhiteSpace(additionalMessage))
             {
                 content.AppendLine(additionalMessage);
