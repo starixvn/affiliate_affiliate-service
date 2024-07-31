@@ -43,7 +43,7 @@
                 if (UmService.IsDownTime)
                 {
                     LogTracer.Append("Is Down Time");
-                    LogHelper.Info("Is Down Time");
+                    LogHelper.LogUM();
                     return;
                 }
 
@@ -74,7 +74,7 @@
                 if (UmService.IsDownTime)
                 {
                     LogTracer.Append("Is Down Time");
-                    LogHelper.Info("Is Down Time");
+                    LogHelper.LogUM();
                     return;
                 }
 

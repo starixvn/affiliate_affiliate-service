@@ -12,6 +12,11 @@ namespace Fanex.Affiliate.Services.Jobs.Helpers
     {
         private const int LimitedLevelOfInnerException = 5;
 
+        public static void LogUM()
+        {
+            LogService.Info("The system is currently unavailable due to scheduled maintenance!");
+        }
+        
         public static void Info(string message)
         {
             LogService.Info(message);
