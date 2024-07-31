@@ -34,7 +34,6 @@
         /// </summary>
         /// <param name="date">The selected date.</param>
         /// <returns>Returns list of members.</returns>
-        [SuppressMessage("Microsoft.Design", "CA1021:AvoidOutParameters", Justification = "Reviewed.")]
         public string GetMembers(DateTime date, out string productIds)
         {
             productIds = null;

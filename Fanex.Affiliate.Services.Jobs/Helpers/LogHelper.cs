@@ -12,6 +12,11 @@ namespace Fanex.Affiliate.Services.Jobs.Helpers
     {
         private const int LimitedLevelOfInnerException = 5;
 
+        public static void Info(string message)
+        {
+            LogService.Info(message);
+        }
+
         public static void InfoImport(string jobTitle, DateTime date)
         {
             LogService.Info($"{jobTitle} - date {date}");

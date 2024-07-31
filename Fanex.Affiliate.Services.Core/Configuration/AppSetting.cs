@@ -44,14 +44,6 @@
         public static LoggingMode LoggingMode { get; private set; }
 
         /// <summary>
-        /// Gets Maintenance URL.
-        /// </summary>
-        /// <value>
-        /// The URL to check maintenance.
-        /// </value>
-        public static string MainternanceServiceLocation { get; private set; }
-
-        /// <summary>
         /// Gets the time to import data for yesterday.
         /// </summary>
         /// <value>
@@ -76,7 +68,6 @@
             ExpiredCacheTime = 10000; // seconds
             LocalTest = Convert.ToInt32(ConfigurationManager.AppSettings["LocalTest"]) == 1;
             LoggingMode = (LoggingMode)Convert.ToInt32(ConfigurationManager.AppSettings["LoggingMode"]);
-            MainternanceServiceLocation = ConfigurationManager.AppSettings["LBUrl"];
 
             ImportExchangeRateStdTime = DateTimeUtil.GetLocalTime(ConfigurationManager.AppSettings["ImportExchangeRateStdTime"]);
             ImportMemberInfoStdTime = DateTimeUtil.GetLocalTime(ConfigurationManager.AppSettings["ImportMemberInfoStdTime"]);

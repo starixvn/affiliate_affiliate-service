@@ -23,9 +23,9 @@
             foreach (var parameter in methodInfo.GetParameters())
             {
                 var value = values[i];
-                if (value is DateTime)
+                if (value is DateTime time)
                 {
-                    value = ((DateTime)value).ToShortDateString();
+                    value = time.ToShortDateString();
                 }
 
                 stringBuilder.AppendFormat("\n   {0}: {1}", parameter.Name, value);

@@ -3,6 +3,7 @@
     using Fanex.Affiliate.Services.Core;
     using Fanex.Affiliate.Services.Core.Configuration;
     using Fanex.Caching;
+    using Fanex.Caching.Memory;
 
     /// <summary>
     /// Base DataService.
@@ -14,7 +15,7 @@
         /// </summary>
         static BaseDataService()
         {
-            Cache = CacheService.CreateInstance(CacheType.MemoryCache);
+            Cache = new MemoryCache(new MemoryCacheOptions());
         }
 
         /// <summary>
