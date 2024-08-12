@@ -46,9 +46,10 @@
         {
             try
             {
-                if (AppService.IsDownTime)
+                if (UmService.IsDownTime)
                 {
                     LogTracer.Append("Is Down Time");
+                    LogHelper.LogUM();
                     return;
                 }
 
@@ -85,9 +86,10 @@
         {
             try
             {
-                if (AppService.IsDownTime)
+                if (UmService.IsDownTime)
                 {
                     LogTracer.Append("Is Down Time");
+                    LogHelper.LogUM();
                     return;
                 }
 

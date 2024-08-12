@@ -24,6 +24,7 @@
         protected BaseImporter()
         {
             LogTracer = LogTracer.Create();
+            UmService = UmService.Create();
         }
 
         /// <summary>
@@ -33,6 +34,15 @@
         ///     The log tracer.
         /// </value>
         protected LogTracer LogTracer { get; private set; }
+
+
+        /// <summary>
+        ///     Gets the um service.
+        /// </summary>
+        /// <value>
+        ///     The um service.
+        /// </value>
+        protected UmService UmService { get; private set; }
 
         /// <summary>
         ///     Creates the specified import type.
@@ -99,6 +109,7 @@
             LogTracer.Append(ex);
 
             LogHelper.Error(ex);
+            LogHelper.Error(ex.GetBaseException(), baseExceptionTitle: "BASE EXCEPTION - ");
         }
 
         /// <summary>

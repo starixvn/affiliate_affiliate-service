@@ -1,18 +1,13 @@
 ﻿namespace Fanex.Affiliate.Services.WinService
 {
     using System;
-    using System.Collections.Generic;
-    using System.Configuration;
     using System.ServiceProcess;
     using Fanex.Affiliate.Services.Core;
     using Fanex.Affiliate.Services.Core.Configuration;
     using Fanex.Affiliate.Services.Jobs.Helpers;
     using Fanex.Data.Configuration;
-    using Fanex.Logging;
-    using Fanex.Logging.Sentry.RavenClient;
     using Quartz;
     using Quartz.Impl;
-    using SharpRaven;
 
     /// <summary>
     /// Affiliate Service.
@@ -22,12 +17,12 @@
         /// <summary>
         /// Quartz ISchedulerFactory.
         /// </summary>
-        private ISchedulerFactory _schedulerFactory;
+        private readonly ISchedulerFactory _schedulerFactory;
 
         /// <summary>
         /// Quartz IScheduler.
         /// </summary>
-        private IScheduler _scheduler;
+        private readonly IScheduler _scheduler;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="AffiliateService"/> class.
@@ -40,7 +35,8 @@
 
                 ServiceName = Constants.ServiceName;
 
-                SetupSentryLogging();
+                FanexService.SetupSentryLogging();
+                FanexService.SetUpUMEnviroment();
                 DbSettingProviderManager.Current.Start();
                 AppSetting.Initialize();
                 LicenseeManager.Initialize();
@@ -63,7 +59,7 @@
         {
             try
             {
-                LogService.Info("Starting Athena services!");
+                LogHelper.Info("Starting Athena services!");
                 _scheduler.Start();
             }
             catch (Exception exception)
@@ -78,29 +74,8 @@
         /// </summary>
         protected override void OnStop()
         {
-            LogService.Info("Stop Athena services!");
+            LogHelper.Info("Stop Athena services!");
             _scheduler.Shutdown(true);
-        }
-
-        private static void SetupSentryLogging()
-        {
-            var appSetting = ConfigurationManager.AppSettings;
-
-            var env = appSetting.Get("Environment");
-            var backEndDsn = appSetting.Get("SentryBackEndDsn");
-            var category = appSetting.Get("LoggingCategory");
-
-            if (!string.IsNullOrEmpty(backEndDsn))
-            {
-                LogManager.SetDefaultLogCategory(category).Use(new List<ILogEngine>
-                {
-                    new SentryLogging(new SentryEngineOptions
-                    {
-                        Dsn = new Dsn(backEndDsn),
-                        Environment = env
-                    })
-                });
-            }
         }
     }
 }

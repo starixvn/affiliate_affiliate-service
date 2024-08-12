@@ -5,6 +5,8 @@
     using Fanex.Affiliate.Services.Core.Configuration;
     using Fanex.Affiliate.Services.DataAccess;
     using Fanex.Affiliate.Services.DataAccess.DTO;
+    using Fanex.Caching;
+    using Newtonsoft.Json;
 
     /// <summary>
     /// Common DataService.
@@ -46,15 +48,36 @@
             get
             {
                 var cacheKey = GetLicenseeCacheKey("SystemName");
-                var result = Cache.Get<SystemSettings>(cacheKey);
+                var result = Get<SystemSettings>(cacheKey);
                 if (result == null)
                 {
                     result = _dataAccess.GetAffiliateSystemSettingsByName("SystemName");
-                    Cache.Set(cacheKey, result, TimeSpan.FromSeconds(AppSetting.ExpiredCacheTime));
+                    Set(cacheKey, result, AppSetting.ExpiredCacheTime);
                 }
 
                 return result;
             }
+        }
+
+        public void Set<T>(string key, T value, int seconds)
+        {
+            var cachePolicy = new CacheItemOptions().SetAbsoluteExpiration(TimeSpan.FromSeconds(seconds));
+            Cache.Set(key, DeepClone(value), cachePolicy);
+        }
+
+        private T Get<T>(string key)
+        {
+            if (Cache.TryGet<T>(key, out T value))
+            {
+                return DeepClone(value);
+            }
+
+            return value;
+        }
+
+        private static T DeepClone<T>(T source)
+        {
+            return JsonConvert.DeserializeObject<T>(JsonConvert.SerializeObject(source));
         }
 
         /// <summary>
