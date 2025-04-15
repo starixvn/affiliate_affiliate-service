@@ -258,9 +258,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="AppSetting.Sandbox.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="AppSetting.Uat.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -275,9 +272,6 @@
     <Content Include="ConnectionString.Pro.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
-    </Content>
-    <Content Include="ConnectionString.Sandbox.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="ConnectionString.Uat.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
