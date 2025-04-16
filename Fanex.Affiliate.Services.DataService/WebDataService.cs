@@ -11,6 +11,7 @@
     using Fanex.Affiliate.Services.DataService.Api;
     using Fanex.Affiliate.Services.DataService.Xml;
     using Fanex.Affiliate.Services.DataService.Xml.Objects;
+    using Fanex.Logging;
     using Refit;
 
     /// <summary>
@@ -18,11 +19,6 @@
     /// </summary>
     public class WebDataService : BaseDataService
     {
-        /// <summary>
-        /// The web service.
-        /// </summary>
-        private static ISagaApi _sagaApi;
-
         /// <summary>
         /// Initializes a new instance of the <see cref="WebDataService"/> class.
         /// </summary>
@@ -63,7 +59,8 @@
 
                 var httpClient = new HttpClient(httpClientHandler)
                 {
-                    BaseAddress = new Uri(apiUrl)
+                    BaseAddress = new Uri(apiUrl),
+                    Timeout = TimeSpan.FromSeconds(60)
                 };
 
                 return RestService.For<ISagaApi>(httpClient);
@@ -74,13 +71,7 @@
             }
         });
 
-        private static ISagaApi SagaApi
-        {
-            get
-            {
-                return _sagaApi ?? (_sagaApi = _instance.Value);
-            }
-        }
+        private static ISagaApi SagaApi => _instance.Value;
 
         /// <summary>
         /// Gets the register list.
@@ -98,7 +89,7 @@
                 DtimeTargetDate = targetDate
             };
 
-            var rawXml = SagaApi.GetRegList(param).Result;
+            var rawXml = SagaApi.GetRegList(param).GetAwaiter().GetResult();
 
             return GetXElement(rawXml);
         }
@@ -146,8 +137,10 @@
             {
                 return XDocument.Parse(xmlString).Root;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                LogService.Error("Failed to parse xml response!", ex);
+
                 return null;
             }
         }
