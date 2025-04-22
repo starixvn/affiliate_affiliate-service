@@ -49,7 +49,7 @@
                 {
                     var root = new MemberFirstDepositDate();
 
-                    LogService.Info($"{systemName} - TW Service was called {usernames.Count()} GetLicenseeCustInfo {DateTime.Now} times");
+                    LogService.Info($"{systemName} - Saga TW Service was called {usernames.Count()} GetLicenseeCustInfo {DateTime.Now} times");
                     foreach (var username in usernames)
                     {
                         var custInfo = webService.GetLicenseeCustInfo(systemName, username);
@@ -94,7 +94,7 @@
 
             var systemName = commonService.SystemName;
 
-            LogService.Info($"{systemName} - TW Service called GetRegList {DateTime.Now}");
+            LogService.Info($"{systemName} - Saga TW Service called GetRegList {DateTime.Now}");
             var xmlElement = webService.GetRegList(systemName, selectedDate);
             var xmlResult = XmlResult.Create(xmlElement);
             LogTracer.Append(xmlResult);
