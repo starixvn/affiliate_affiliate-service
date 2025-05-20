@@ -1,24 +1,24 @@
 ﻿namespace Fanex.Affiliate.Services.DataService
 {
     using System;
+    using System.Configuration;
+    using System.Net;
+    using System.Net.Http;
     using System.Reflection;
     using System.Xml.Linq;
     using Fanex.Affiliate.Services.Core;
     using Fanex.Affiliate.Services.Core.Configuration;
-    using Fanex.Affiliate.Services.DataService.AffiliateWebService;
+    using Fanex.Affiliate.Services.DataService.Api;
     using Fanex.Affiliate.Services.DataService.Xml;
     using Fanex.Affiliate.Services.DataService.Xml.Objects;
+    using Fanex.Logging;
+    using Refit;
 
     /// <summary>
     /// Xml Web Service Wrapper.
     /// </summary>
     public class WebDataService : BaseDataService
     {
-        /// <summary>
-        /// The web service.
-        /// </summary>
-        private static readonly ServiceSoapClient AffiliateWebService = new ServiceSoapClient("ServiceSoap");
-
         /// <summary>
         /// Initializes a new instance of the <see cref="WebDataService"/> class.
         /// </summary>
@@ -39,6 +39,40 @@
             LogTracer = logTracer;
         }
 
+        private static readonly Lazy<ISagaApi> _instance = new Lazy<ISagaApi>(() =>
+        {
+            try
+            {
+                var apiUrl = ConfigurationManager.AppSettings["SagaApiUrl"];
+                if (string.IsNullOrEmpty(apiUrl))
+                {
+                    throw new ConfigurationErrorsException("SagaApiUrl is not configured in AppSettings");
+                }
+
+                var isUsingProxy = Convert.ToBoolean(ConfigurationManager.AppSettings["IsUseProxyToGetSagaApi"]);
+                var httpClientHandler = new HttpClientHandler
+                {
+                    Proxy = isUsingProxy ? GetConfiguredProxy() : null,
+                    AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate,
+                    UseCookies = false
+                };
+
+                var httpClient = new HttpClient(httpClientHandler)
+                {
+                    BaseAddress = new Uri(apiUrl),
+                    Timeout = TimeSpan.FromSeconds(60)
+                };
+
+                return RestService.For<ISagaApi>(httpClient);
+            }
+            catch (Exception ex)
+            {
+                throw new InvalidOperationException("Failed to initialize SagaApi client", ex);
+            }
+        });
+
+        private static ISagaApi SagaApi => _instance.Value;
+
         /// <summary>
         /// Gets the register list.
         /// </summary>
@@ -48,7 +82,16 @@
         public XElement GetRegList(string siteName, DateTime targetDate)
         {
             LogTracer.Append(LogFormatter.Format(MethodBase.GetCurrentMethod(), siteName, targetDate));
-            return AffiliateWebService.GetRegList(siteName, targetDate);
+
+            var param = new RegParam
+            {
+                StrSiteName = siteName,
+                DtimeTargetDate = targetDate
+            };
+
+            var rawXml = SagaApi.GetRegList(param).GetAwaiter().GetResult();
+
+            return GetXElement(rawXml);
         }
 
         /// <summary>
@@ -60,8 +103,46 @@
         public GetLicenseeCustInfo GetLicenseeCustInfo(string siteName, string licenseeUserName)
         {
             LogTracer.Append(LogFormatter.Format(MethodBase.GetCurrentMethod(), siteName, licenseeUserName));
-            var element = AffiliateWebService.GetLicenseeCustInfo(siteName, licenseeUserName);
+            var element = HandleGetLicenseeCustInfo(siteName, licenseeUserName);
             return XmlConverter.To<GetLicenseeCustInfo>(element);
+        }
+
+        private XElement HandleGetLicenseeCustInfo(string siteName, string licenseeUserName)
+        {
+            var param = new LicenseCustInfoParam
+            {
+                StrSiteName = siteName,
+                StrLicenseeUserName = licenseeUserName
+            };
+
+            var rawXml = SagaApi.GetLicenseeCustInfo(param).Result;
+
+            return GetXElement(rawXml);
+        }
+
+        private static IWebProxy GetConfiguredProxy()
+        {
+            var proxyUrl = ConfigurationManager.AppSettings["ApiProxyUrl"];
+            if (string.IsNullOrEmpty(proxyUrl))
+            {
+                throw new ConfigurationErrorsException("ApiProxyUrl is not configured in AppSettings when proxy is enabled");
+            }
+
+            return new WebProxy(new Uri(proxyUrl));
+        }
+
+        private static XElement GetXElement(string xmlString)
+        {
+            try
+            {
+                return XDocument.Parse(xmlString).Root;
+            }
+            catch (Exception ex)
+            {
+                LogService.Error("Failed to parse xml response!", ex);
+
+                return null;
+            }
         }
     }
 }
