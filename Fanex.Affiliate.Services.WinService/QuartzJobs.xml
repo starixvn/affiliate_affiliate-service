@@ -5,7 +5,7 @@
   <processing-directives>
     <overwrite-existing-data>true</overwrite-existing-data>
   </processing-directives>
-  <schedule>
+  <!--<schedule>
     <job>
       <name>ImportExchangeRateJob</name>
       <description>ImportExchangeRateJob</description>
@@ -28,7 +28,7 @@
       <recover>false</recover>
     </job>
 
-    <!--Begin - Spondemo Triggers-->
+    --><!--Begin - Spondemo Triggers--><!--
     <trigger>
       <simple>
         <name>Spondemo_ImportExchangeRateTrigger</name>
@@ -62,8 +62,8 @@
         <repeat-interval>300000</repeat-interval>
       </simple>
     </trigger>
-    <!--End - Spondemo Triggers-->
-    <!--Begin - Athena000 Triggers-->
+    --><!--End - Spondemo Triggers--><!--
+    --><!--Begin - Athena000 Triggers--><!--
     <trigger>
       <simple>
         <name>Athena000_ImportExchangeRateTrigger</name>
@@ -97,9 +97,9 @@
         <repeat-interval>300000</repeat-interval>
       </simple>
     </trigger>
-    <!--End - Athena000 Triggers-->
+    --><!--End - Athena000 Triggers--><!--
 
-    <!--Begin - itcbet Triggers-->
+    --><!--Begin - itcbet Triggers--><!--
     <trigger>
       <simple>
         <name>itcbet_ImportExchangeRateTrigger</name>
@@ -133,8 +133,8 @@
         <repeat-interval>300000</repeat-interval>
       </simple>
     </trigger>
-    <!--End - itcbet Triggers-->
-    <!--Begin - aoncash Triggers-->
+    --><!--End - itcbet Triggers--><!--
+    --><!--Begin - aoncash Triggers--><!--
     <trigger>
       <simple>
         <name>aoncash_ImportExchangeRateTrigger</name>
@@ -168,10 +168,10 @@
         <repeat-interval>300000</repeat-interval>
       </simple>
     </trigger>
-    <!--End - aoncash Triggers-->
+    --><!--End - aoncash Triggers--><!--
 
 
-    <!--Begin - macaubet Triggers-->
+    --><!--Begin - macaubet Triggers--><!--
     <trigger>
       <simple>
         <name>macaubet_ImportExchangeRateTrigger</name>
@@ -205,8 +205,8 @@
         <repeat-interval>300000</repeat-interval>
       </simple>
     </trigger>
-    <!--End - macaubet Triggers-->
-    <!--Begin - 9bet Triggers-->
+    --><!--End - macaubet Triggers--><!--
+    --><!--Begin - 9bet Triggers--><!--
     <trigger>
       <simple>
         <name>9bet_ImportExchangeRateTrigger</name>
@@ -240,6 +240,6 @@
         <repeat-interval>300000</repeat-interval>
       </simple>
     </trigger>
-    <!--End - 9bet Triggers-->
-  </schedule>
+    --><!--End - 9bet Triggers--><!--
+  </schedule>-->
 </job-scheduling-data>
