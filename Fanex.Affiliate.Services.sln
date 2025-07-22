@@ -1,8 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fanex.Affiliate.Services.WinForm", "Fanex.Affiliate.Services.WinForm\Fanex.Affiliate.Services.WinForm.csproj", "{381366D1-A075-4CBF-9EE6-8AC6A556BD88}"
-EndProject
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fanex.Affiliate.Services.DataAccess", "Fanex.Affiliate.Services.DataAccess\Fanex.Affiliate.Services.DataAccess.csproj", "{62ECBB03-E39B-45F0-8BCC-98B95DFA9E57}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fanex.Affiliate.Services.Core", "Fanex.Affiliate.Services.Core\Fanex.Affiliate.Services.Core.csproj", "{0B347564-FA0B-4BBF-991C-CE48722C2B11}"
@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeAnalysis", "CodeAnalysi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fanex.Afiliate.Services.ConsoleApp", "Fanex.Afiliate.Services.ConsoleApp\Fanex.Afiliate.Services.ConsoleApp.csproj", "{D69F5B70-C57F-4012-93FC-FDD27FEB50FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fanex.Affiliate.Services.WinForm", "Fanex.Affiliate.Services.WinForm\Fanex.Affiliate.Services.WinForm.csproj", "{381366D1-A075-4CBF-9EE6-8AC6A556BD88}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,17 +33,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{381366D1-A075-4CBF-9EE6-8AC6A556BD88}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{381366D1-A075-4CBF-9EE6-8AC6A556BD88}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{381366D1-A075-4CBF-9EE6-8AC6A556BD88}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{381366D1-A075-4CBF-9EE6-8AC6A556BD88}.Debug|x86.ActiveCfg = Debug|x86
-		{381366D1-A075-4CBF-9EE6-8AC6A556BD88}.Debug|x86.Build.0 = Debug|x86
-		{381366D1-A075-4CBF-9EE6-8AC6A556BD88}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{381366D1-A075-4CBF-9EE6-8AC6A556BD88}.Release|Any CPU.Build.0 = Release|Any CPU
-		{381366D1-A075-4CBF-9EE6-8AC6A556BD88}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{381366D1-A075-4CBF-9EE6-8AC6A556BD88}.Release|Mixed Platforms.Build.0 = Release|x86
-		{381366D1-A075-4CBF-9EE6-8AC6A556BD88}.Release|x86.ActiveCfg = Release|x86
-		{381366D1-A075-4CBF-9EE6-8AC6A556BD88}.Release|x86.Build.0 = Release|x86
 		{62ECBB03-E39B-45F0-8BCC-98B95DFA9E57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{62ECBB03-E39B-45F0-8BCC-98B95DFA9E57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62ECBB03-E39B-45F0-8BCC-98B95DFA9E57}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -104,8 +95,23 @@ Global
 		{D69F5B70-C57F-4012-93FC-FDD27FEB50FA}.Release|Mixed Platforms.Build.0 = Release|x86
 		{D69F5B70-C57F-4012-93FC-FDD27FEB50FA}.Release|x86.ActiveCfg = Release|x86
 		{D69F5B70-C57F-4012-93FC-FDD27FEB50FA}.Release|x86.Build.0 = Release|x86
+		{381366D1-A075-4CBF-9EE6-8AC6A556BD88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{381366D1-A075-4CBF-9EE6-8AC6A556BD88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{381366D1-A075-4CBF-9EE6-8AC6A556BD88}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{381366D1-A075-4CBF-9EE6-8AC6A556BD88}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{381366D1-A075-4CBF-9EE6-8AC6A556BD88}.Debug|x86.ActiveCfg = Debug|x86
+		{381366D1-A075-4CBF-9EE6-8AC6A556BD88}.Debug|x86.Build.0 = Debug|x86
+		{381366D1-A075-4CBF-9EE6-8AC6A556BD88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{381366D1-A075-4CBF-9EE6-8AC6A556BD88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{381366D1-A075-4CBF-9EE6-8AC6A556BD88}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{381366D1-A075-4CBF-9EE6-8AC6A556BD88}.Release|Mixed Platforms.Build.0 = Release|x86
+		{381366D1-A075-4CBF-9EE6-8AC6A556BD88}.Release|x86.ActiveCfg = Release|x86
+		{381366D1-A075-4CBF-9EE6-8AC6A556BD88}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF3F37C3-1265-4F89-842E-0F17E7784D17}
 	EndGlobalSection
 EndGlobal
